@@ -2,8 +2,8 @@
 
 # FluentTongueAngular
 
+**Live URL:** [https://startling-dieffenbachia-a90272.netlify.app](https://startling-dieffenbachia-a90272.netlify.app)
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.0.0.
-URL: https://startling-dieffenbachia-a90272.netlify.app/home
 
 ## Development server
 
