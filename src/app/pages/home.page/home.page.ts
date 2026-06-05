@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
   topics = [
-    { name: 'Travel', emoji: '✈️', count: 48 },
-    { name: 'Food', emoji: '🍜', count: 36 },
-    { name: 'Work', emoji: '💼', count: 29 },
-    { name: 'Daily Life', emoji: '🏡', count: 54 },
+    { id: '1', name: 'Travel', emoji: '✈️', count: 48 },
+    { id: '2', name: 'Food', emoji: '🍜', count: 36 },
+    { id: '3', name: 'Work', emoji: '💼', count: 29 },
+    { id: '4', name: 'Daily Life', emoji: '🏡', count: 54 },
   ];
 }

@@ -53,8 +53,9 @@
 
       <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         @for (topic of topics; track $index) {
-          <article
-            class="flex items-center gap-4 rounded-2xl border border-slate-700/40 bg-slate-900/70 p-4 backdrop-blur"
+          <a
+            class="flex items-center gap-4 rounded-2xl border border-slate-700/40 bg-slate-900/70 p-4 backdrop-blur transition hover:-translate-y-0.5 hover:border-sky-400/40"
+            [href]="'/topics/' + topic.id"
           >
             <div class="grid h-12 w-12 place-items-center rounded-xl bg-blue-500/10 text-2xl">
               {{ topic.emoji }}
@@ -64,7 +65,7 @@
               <h3 class="text-base font-semibold text-white">{{ topic.name }}</h3>
               <p class="text-sm text-slate-400">{{ topic.count }} cards</p>
             </div>
-          </article>
+          </a>
         }
       </div>
     </section>

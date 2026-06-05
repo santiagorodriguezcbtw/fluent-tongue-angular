@@ -87,6 +87,7 @@ src/
     images/
     icons/
     i18n/
+    data/
   environments/
 ```
 
@@ -104,10 +105,13 @@ Contains cross-cutting logic for the whole application:
 - Base models.
 - Global configuration.
 - Reusable constants.
+- Shared domain interfaces in `src/app/core/models.ts`.
+- Local persistence services for browser storage access.
 
 **Expected examples:**
 
 - `src/app/core/services/auth.service.ts`
+- `src/app/core/services/storage.service.ts`
 - `src/app/core/services/storage.service.ts`
 - `src/app/core/guards/auth.guard.ts`
 
@@ -166,6 +170,12 @@ src/app/features/dashboard/pages/home-page/
 src/app/features/topics/pages/topic-list-page/
 src/app/features/topics/pages/topic-detail-page/
 src/app/features/topics/pages/topic-form-page/
+```
+
+Temporary implementation in this project also uses:
+
+```text
+src/app/pages/topics.page/
 ```
 
 #### Vocabulary
@@ -275,6 +285,8 @@ Example main navigation:
 - `/study/:topicId`
 - `/progress`
 - `/settings`
+
+Home page topic cards should redirect to `/topics/:id`.
 
 ---
 

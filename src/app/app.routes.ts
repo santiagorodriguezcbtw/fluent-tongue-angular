@@ -1,5 +1,7 @@
 import { Routes } from '@angular/router';
 
+const loadTopicsPage = () => import('./pages/topics.page/topics.page').then((m) => m.TopicsPage);
+
 export const routes: Routes = [
   {
     path: '',
@@ -9,6 +11,27 @@ export const routes: Routes = [
   {
     path: 'home',
     loadComponent: () => import('./pages/home.page/home.page').then((m) => m.HomePage),
+  },
+
+  {
+    path: 'topics',
+    loadComponent: loadTopicsPage,
+  },
+  {
+    path: 'topics/new',
+    loadComponent: loadTopicsPage,
+  },
+  {
+    path: 'topics/:id',
+    loadComponent: loadTopicsPage,
+  },
+  {
+    path: 'topics/:id/edit',
+    loadComponent: loadTopicsPage,
+  },
+  {
+    path: 'topics/:id/vocabulary',
+    loadComponent: loadTopicsPage,
   },
 
   // TODO: enable when auth pages are implemented
@@ -24,43 +47,6 @@ export const routes: Routes = [
   //   loadComponent: () =>
   //     import('./features/auth/pages/register-page/register-page.component').then(
   //       (m) => m.RegisterPageComponent,
-  //     ),
-  // },
-
-  // TODO: enable when topics pages are implemented
-  // {
-  //   path: 'topics',
-  //   loadComponent: () =>
-  //     import('./features/topics/pages/topic-list-page/topic-list-page.component').then(
-  //       (m) => m.TopicListPageComponent,
-  //     ),
-  // },
-  // {
-  //   path: 'topics/new',
-  //   loadComponent: () =>
-  //     import('./features/topics/pages/topic-form-page/topic-form-page.component').then(
-  //       (m) => m.TopicFormPageComponent,
-  //     ),
-  // },
-  // {
-  //   path: 'topics/:id',
-  //   loadComponent: () =>
-  //     import('./features/topics/pages/topic-detail-page/topic-detail-page.component').then(
-  //       (m) => m.TopicDetailPageComponent,
-  //     ),
-  // },
-  // {
-  //   path: 'topics/:id/edit',
-  //   loadComponent: () =>
-  //     import('./features/topics/pages/topic-form-page/topic-form-page.component').then(
-  //       (m) => m.TopicFormPageComponent,
-  //     ),
-  // },
-  // {
-  //   path: 'topics/:id/vocabulary',
-  //   loadComponent: () =>
-  //     import('./features/vocabulary/pages/vocabulary-list-page/vocabulary-list-page.component').then(
-  //       (m) => m.VocabularyListPageComponent,
   //     ),
   // },
 
