@@ -1,8 +1,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ff302063-4b43-483a-b583-82818d939e72/deploy-status)](https://app.netlify.com/projects/startling-dieffenbachia-a90272/deploys)
 
-# FluentTongueAngular
+# [Fluent Tongue](https://startling-dieffenbachia-a90272.netlify.app)
 
-**Live URL:** [https://startling-dieffenbachia-a90272.netlify.app](https://startling-dieffenbachia-a90272.netlify.app)
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.0.0.
 
 ## Development server
