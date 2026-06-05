@@ -1,0 +1,72 @@
+<main
+  class="min-h-screen bg-slate-950 bg-[radial-gradient(circle_at_top,#1e293b_0%,#0f172a_40%,#020617_100%)] text-slate-200"
+>
+  <div class="mx-auto max-w-6xl px-6 py-16">
+    <section class="grid min-h-[70vh] items-center gap-8 md:grid-cols-2">
+      <div>
+        <span
+          class="inline-block rounded-full border border-slate-700/60 bg-slate-900/50 px-3 py-1 text-sm text-sky-300"
+        >
+          Topic-based English practice
+        </span>
+
+        <h1 class="mt-4 text-5xl font-bold tracking-tight text-white md:text-7xl">
+          Remember words and phrases faster.
+        </h1>
+
+        <p class="mt-6 max-w-xl text-lg leading-8 text-slate-300">
+          Study useful English vocabulary by topic with flashcards, review sessions, and spaced
+          repetition.
+        </p>
+
+        <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+          <a
+            class="rounded-xl bg-gradient-to-r from-sky-400 to-indigo-500 px-5 py-3 text-center font-semibold text-white transition hover:-translate-y-0.5"
+            href="/topics"
+          >
+            Start learning
+          </a>
+          <a
+            class="rounded-xl border border-slate-700/60 bg-slate-900/50 px-5 py-3 text-center font-semibold text-slate-200 transition hover:-translate-y-0.5"
+            href="/review"
+          >
+            Review today
+          </a>
+        </div>
+      </div>
+
+      <div
+        class="rounded-2xl border border-slate-700/40 bg-slate-900/70 p-6 shadow-2xl shadow-slate-950/40 backdrop-blur"
+      >
+        <div class="mb-4 text-sm text-sky-300">Today’s card</div>
+        <div class="mb-2 text-3xl font-bold text-white">book a flight</div>
+        <div class="mb-4 text-indigo-300">reserve an airplane ticket</div>
+        <div class="text-slate-300 italic">“I need to book a flight for next Friday.”</div>
+      </div>
+    </section>
+
+    <section class="mt-12">
+      <div class="mb-5">
+        <h2 class="text-2xl font-semibold text-white">Browse by topic</h2>
+        <p class="mt-2 text-slate-300">Start with practical vocabulary sets.</p>
+      </div>
+
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        @for (topic of topics; track $index) {
+          <article
+            class="flex items-center gap-4 rounded-2xl border border-slate-700/40 bg-slate-900/70 p-4 backdrop-blur"
+          >
+            <div class="grid h-12 w-12 place-items-center rounded-xl bg-blue-500/10 text-2xl">
+              {{ topic.emoji }}
+            </div>
+
+            <div>
+              <h3 class="text-base font-semibold text-white">{{ topic.name }}</h3>
+              <p class="text-sm text-slate-400">{{ topic.count }} cards</p>
+            </div>
+          </article>
+        }
+      </div>
+    </section>
+  </div>
+</main>
