@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ff302063-4b43-483a-b583-82818d939e72/deploy-status)](https://app.netlify.com/projects/startling-dieffenbachia-a90272/deploys)
+
 # FluentTongueAngular
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.0.0.
