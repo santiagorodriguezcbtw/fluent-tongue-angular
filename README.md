@@ -60,65 +60,67 @@ For more information on using the Angular CLI, including detailed command refere
 
 ## Folder Structure
 
+```text
 app/
 ├── core/ # Singleton services, guards, interceptors, config global
-│ ├── services/
-│ ├── guards/
-│ ├── interceptors/
-│ ├── models/
-│ └── core.module.ts
+│   ├── services/
+│   ├── guards/
+│   ├── interceptors/
+│   ├── models/
+│   └── core.module.ts
 │
 ├── shared/ # Reutilizable en toda la app
-│ ├── components/
-│ ├── directives/
-│ ├── pipes/
-│ ├── ui/
-│ └── shared.module.ts
+│   ├── components/
+│   ├── directives/
+│   ├── pipes/
+│   ├── ui/
+│   └── shared.module.ts
 │
 ├── layouts/ # Estructuras visuales principales
-│ ├── main-layout/
-│ │ ├── components/
-│ │ ├── main-layout.component.ts
-│ │ ├── main-layout.component.html
-│ │ └── main-layout.component.scss
-│ ├── auth-layout/
-│ └── admin-layout/
+│   ├── main-layout/
+│   │   ├── components/
+│   │   ├── main-layout.component.ts
+│   │   ├── main-layout.component.html
+│   │   └── main-layout.component.scss
+│   ├── auth-layout/
+│   └── admin-layout/
 │
 ├── routes/ # Configuración central de rutas
-│ ├── app.routes.ts
-│ ├── auth.routes.ts
-│ └── admin.routes.ts
+│   ├── app.routes.ts
+│   ├── auth.routes.ts
+│   └── admin.routes.ts
 │
 ├── pages/ # Páginas agrupadas por dominio/feature
-│ ├── home/
-│ │ ├── components/
-│ │ ├── services/
-│ │ ├── home.page.ts
-│ │ ├── home.page.html
-│ │ └── home.page.scss
-│ ├── auth/
-│ │ ├── login/
-│ │ ├── register/
-│ │ └── services/
-│ ├── users/
-│ │ ├── components/
-│ │ ├── services/
-│ │ ├── pages/
-│ │ │ ├── user-list/
-│ │ │ └── user-detail/
-│ │ └── models/
-│ └── dashboard/
+│   ├── home/
+│   │   ├── components/
+│   │   ├── services/
+│   │   ├── home.page.ts
+│   │   ├── home.page.html
+│   │   └── home.page.scss
+│   ├── auth/
+│   │   ├── login/
+│   │   ├── register/
+│   │   └── services/
+│   ├── users/
+│   │   ├── components/
+│   │   ├── services/
+│   │   ├── pages/
+│   │   │   ├── user-list/
+│   │   │   └── user-detail/
+│   │   └── models/
+│   └── dashboard/
 │
 ├── components/ # Componentes globales si no van en shared
-│ ├── header/
-│ ├── footer/
-│ └── sidebar/
+│   ├── header/
+│   ├── footer/
+│   └── sidebar/
 │
 ├── services/ # Servicios globales si no pertenecen a core
-│ ├── api.service.ts
-│ └── storage.service.ts
+│   ├── api.service.ts
+│   └── storage.service.ts
 │
 ├── app.component.ts
 ├── app.component.html
 ├── app.component.scss
 └── app.config.ts
+```
