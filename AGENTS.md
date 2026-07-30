@@ -301,7 +301,6 @@ Represents a thematic learning category.
 - `description`
 - `slug`
 - `level`
-- `createdAt`
 
 ### VocabularyItem
 

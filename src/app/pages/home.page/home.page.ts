@@ -1,16 +1,17 @@
-import { Component } from '@angular/core';
-
+import { Component, signal } from '@angular/core';
+import { CoreService } from '../../core/core.service';
+import type { Topic } from '../../core/models';
+import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-home.page',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './home.page.html',
   styleUrl: './home.page.css',
 })
 export class HomePage {
-  topics = [
-    { id: '1', name: 'Travel', emoji: '✈️', count: 48 },
-    { id: '2', name: 'Food', emoji: '🍜', count: 36 },
-    { id: '3', name: 'Work', emoji: '💼', count: 29 },
-    { id: '4', name: 'Daily Life', emoji: '🏡', count: 54 },
-  ];
+  topics = signal<Topic[]>([]);
+
+  constructor(private coreService: CoreService) {
+    this.topics.set(this.coreService.getTopics());
+  }
 }

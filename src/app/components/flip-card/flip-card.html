@@ -1,0 +1,14 @@
+<div class="flip-card">
+  <div
+    class="flip-card-inner rounded-2xl border border-slate-700/60 shadow-2xl"
+    [class.is-card-flipped]="isFlipped()"
+  >
+    <div class="flip-card-front p-6" (click)="turnOver()">
+      <p class="mt-6 text-3xl font-semibold text-cyan-300">Back down</p>
+      <p class="mt-4 text-sm text-slate-400">Click to flip back</p>
+    </div>
+    <div class="flip-card-back p-6" (click)="turnOver()">
+      <h1>stop resisting</h1>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,74 @@
+/* main {
+  --font-ui: 'Plus Jakarta Sans', sans-serif;
+  font-family: var(--font-ui);
+} */
+
+@keyframes card-entrance {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes progress-width-entrance {
+  from {
+    width: 0;
+  }
+  to {
+    width: 20%;
+  }
+}
+
+@keyframes anim-card-enter-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes anim-card-leave-fade-down {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+@keyframes anim-toast-enter-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.progress-bar-entrance-animation {
+  animation: progress-width-entrance 0.5s ease-out both;
+}
+
+.card-entrance-animation {
+  animation: card-entrance 0.35s ease-out 0.1s both;
+}
+.fade-up-animation {
+  animation: anim-card-enter-fade-up 0.35s ease-out both;
+}
+
+.fade-down-animation {
+  animation: anim-card-leave-fade-down 0.35s ease-out both;
+}
+
+.toast-entrance-animation {
+  animation: anim-toast-enter-fade 0.35s ease-out both 0.36s;
+}

@@ -3,12 +3,12 @@ import { CoreService } from '../../core/core.service';
 import { Topic } from '../../core/models';
 
 @Component({
-  selector: 'app-topics.page',
+  selector: 'app-admin.page',
   imports: [],
-  templateUrl: './topics.page.html',
-  styleUrl: './topics.page.css',
+  templateUrl: './admin.page.html',
+  styleUrl: './admin.page.css',
 })
-export class TopicsPage {
+export class AdminPage {
   private readonly coreService = inject(CoreService);
 
   protected readonly defaultTopicEmoji = '📘';

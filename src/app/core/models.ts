@@ -3,12 +3,12 @@
 export interface Topic {
   id: string;
   name: string;
-  emoji: string;
+  emoji?: string;
   count: number;
   description: string;
   slug: string;
   level: string;
-  createdAt: string;
+  items: VocabularyItem[];
 }
 
 export interface VocabularyItem {
@@ -16,9 +16,8 @@ export interface VocabularyItem {
   topicId: string;
   term: string;
   translation: string;
-  example: string;
+  examples: string[];
   notes: string;
-  lastReviewedAt: string;
 }
 
 export interface ReviewSession {
