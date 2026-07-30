@@ -1,11 +1,11 @@
 <div class="min-h-screen bg-background flex flex-col font-jakarta">
-  <main class="flex-1 flex items-start justify-center py-8 px-4">
+  <main class="flex-1 flex items-start justify-center pt-10 pb-8 px-4">
     <div class="w-full max-w-5xl grid md:grid-cols-[1fr_340px] gap-6 items-start">
       <div class="flex flex-col gap-5">
         <div class="w-full">
           <div class="flex items-center justify-between mb-2">
             <span class="text-xs font-mono text-muted-foreground tracking-widest uppercase"
-              >Progreso
+              >Progress
             </span>
             <span class="text-xs font-mono text-muted-foreground">
               {{ currentIndex() + 1 }} / {{ total }}
@@ -24,7 +24,7 @@
             role="button"
             class="relative w-full cursor-pointer select-none"
             (click)="toggleFlip()"
-            [attr.aria-label]="isFlipped() ? 'Ver frente' : 'Ver respuesta'"
+            [attr.aria-label]="isFlipped() ? 'See front' : 'See answer'"
             (keydown)="onCardKeydown($event)"
             tabindex="0"
             style="perspective: 1200px; min-height: 260px"
@@ -50,7 +50,7 @@
                 <p class="font-mono text-sm text-muted-foreground">/ɪˈfem.ər.əl/</p>
                 <div class="mt-4 flex items-center gap-2 text-muted-foreground">
                   <div class="w-8 h-px bg-border"></div>
-                  <span class="text-xs font-mono">Da clic para ver el significado</span>
+                  <span class="text-xs font-mono">Click to see the meaning</span>
                   <div class="w-8 h-px bg-border"></div>
                 </div>
               </div>
@@ -60,7 +60,7 @@
               >
                 <span
                   class="font-mono text-xs text-primary-foreground/50 uppercase tracking-widest border border-primary-foreground/20 rounded-full px-3 py-1"
-                  >Significado</span
+                  >Meaning</span
                 >
                 <p
                   class="text-xl md:text-2xl font-medium text-primary-foreground text-center leading-relaxed"
@@ -90,18 +90,18 @@
               class="lucide lucide-chevron-left"
             >
               <path d="m15 18-6-6 6-6"></path></svg
-            >Anterior</button
+            >Previous</button
           ><button
             (click)="toggleFlip()"
-            class="flex-1 py-3.5 rounded-xl bg-accent text-accent-foreground font-semibold text-sm hover:brightness-95 active:scale-[0.98] transition-all shadow-sm"
+            class="flex-1 py-3.5 rounded-xl bg-accent text-accent-foreground font-semibold text-sm hover:brightness-95 active:scale-[0.98] transition-all shadow-sm cursor-pointer"
           >
-            {{ isFlipped() ? 'Ocultar respuesta' : 'Revelar respuesta' }}</button
+            {{ isFlipped() ? 'Hide answer' : 'Reveal answer' }}</button
           ><button
             (click)="goNext()"
             [disabled]="currentIndex() === total - 1"
-            class="flex items-center gap-2 px-5 py-3 rounded-xl bg-foreground text-primary-foreground hover:opacity-90 disabled:opacity-30 disabled:cursor-not-allowed transition-all text-sm font-semibold shadow-sm"
+            class="flex items-center gap-2 px-5 py-3 rounded-xl bg-foreground text-primary-foreground hover:opacity-90 disabled:opacity-30 disabled:cursor-not-allowed transition-all text-sm font-semibold shadow-sm cursor-pointer"
           >
-            Siguiente<svg
+            Next<svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"
@@ -118,10 +118,9 @@
           </button>
         </div>
         <p class="font-mono text-xs text-muted-foreground text-center">
-          Presiona
-          <kbd class="border border-border rounded px-1.5 py-0.5 bg-card mx-1">Space</kbd> para
-          voltear ·
-          <kbd class="border border-border rounded px-1.5 py-0.5 bg-card mx-1">→</kbd> siguiente
+          Press
+          <kbd class="border border-border rounded px-1.5 py-0.5 bg-card mx-1">Space</kbd> to flip ·
+          <kbd class="border border-border rounded px-1.5 py-0.5 bg-card mx-1">→</kbd> next
         </p>
       </div>
       <div class="pt-9">
@@ -146,7 +145,7 @@
                     <path
                       d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"
                     ></path></svg
-                  ><span class="font-mono text-xs uppercase tracking-widest">Ejemplos de uso</span>
+                  ><span class="font-mono text-xs uppercase tracking-widest">Usage examples</span>
                 </div>
                 <ul class="space-y-3">
                   @for (ex of currentCard().examples; track $index) {
@@ -178,7 +177,9 @@
                     <path
                       d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"
                     ></path></svg
-                  ><span class="font-mono text-xs uppercase tracking-widest">Nota etimológica</span>
+                  ><span class="font-mono text-xs uppercase tracking-widest"
+                    >Etymological note</span
+                  >
                 </div>
                 <p class="text-sm text-foreground/70 leading-relaxed">
                   {{ currentCard().notes }}
@@ -210,7 +211,7 @@
               </svg>
             </div>
             <p class="font-mono text-xs text-center opacity-50">
-              Voltea la tarjeta para<br />ver ejemplos y notas
+              Flip the card to<br />see examples and notes
             </p>
           </div>
         }
