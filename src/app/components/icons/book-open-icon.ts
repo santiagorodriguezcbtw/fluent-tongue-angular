@@ -1,7 +1,7 @@
 import { Component, input } from '@angular/core';
 
 @Component({
-  selector: 'app-icon-chevron-left',
+  selector: 'app-book-open-icon',
   standalone: true,
   template: `
     <svg
@@ -14,12 +14,15 @@ import { Component, input } from '@angular/core';
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
-      class="lucide lucide-chevron-left"
+      class="lucide lucide-book-open"
     >
-      <path d="m15 18-6-6 6-6"></path>
+      <path d="M12 7v14"></path>
+      <path
+        d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"
+      ></path>
     </svg>
   `
 })
-export class IconChevronLeftIcon {
-  size = input<number | string>(16);
+export class BookOpenIcon {
+  size = input<number | string>(14);
 }

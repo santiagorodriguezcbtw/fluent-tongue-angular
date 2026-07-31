@@ -1,7 +1,7 @@
 import { Component, input } from '@angular/core';
 
 @Component({
-  selector: 'app-icon-book-placeholder',
+  selector: 'app-chevron-right-icon',
   standalone: true,
   template: `
     <svg
@@ -12,12 +12,14 @@ import { Component, input } from '@angular/core';
       fill="none"
       stroke="currentColor"
       stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="lucide lucide-chevron-right"
     >
-      <path d="M12 7v14" />
-      <path d="M3 18a72 72 0 0 1 9-2 72 72 0 0 1 9 2V4a72 72 0 0 0-9 2 72 72 0 0 0-9-2z" />
+      <path d="m9 18 6-6-6-6"></path>
     </svg>
   `
 })
-export class IconBookPlaceholderIcon {
+export class ChevronRightIcon {
   size = input<number | string>(16);
 }

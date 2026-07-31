@@ -1,16 +1,18 @@
 import { Component, computed, inject, signal } from '@angular/core';
 import { FlipCard } from '../../components/flip-card/flip-card';
-import { VocabularyItem } from '../../core/models';
+import { Topic, VocabularyItem } from '../../core/models';
 import { CoreService } from '../../core/core.service';
 import { ActivatedRoute } from '@angular/router';
 import {
-  IconBookOpenIcon,
-  IconBookPlaceholderIcon,
-  IconChevronLeftIcon,
-  IconChevronRightIcon,
-  IconZapIcon
+  BookOpenIcon,
+  BookPlaceholderIcon,
+  ChevronLeftIcon,
+  ChevronRightIcon,
+  ZapIcon
 } from '../../components/icons';
 import { FlipCardService } from '../../services/flip-card.service';
+import { Footer } from '../../components/footer/footer';
+import { Header } from '../../components/header/header';
 
 @Component({
   selector: 'app-study-flash-page',
@@ -18,11 +20,13 @@ import { FlipCardService } from '../../services/flip-card.service';
   styleUrls: ['./study-flash.page.css'],
   imports: [
     FlipCard,
-    IconChevronLeftIcon,
-    IconChevronRightIcon,
-    IconBookOpenIcon,
-    IconZapIcon,
-    IconBookPlaceholderIcon
+    ChevronLeftIcon,
+    ChevronRightIcon,
+    BookOpenIcon,
+    ZapIcon,
+    BookPlaceholderIcon,
+    Footer,
+    Header
   ]
 })
 export class StudyFlashPage {
@@ -36,6 +40,7 @@ export class StudyFlashPage {
 
   readonly isError = signal('');
   readonly vocabularyItems = signal<VocabularyItem[]>([]);
+  readonly vocabTopic = signal<Topic | null>(null);
 
   isFlipped = this.flipCardService.isFlipped;
 
@@ -50,7 +55,18 @@ export class StudyFlashPage {
         return;
       }
 
+      const vocabTopic = this.coreService.getTopicBySlug(slugUrlParam);
+      this.vocabTopic.set(vocabTopic ?? null);
+
       const vocabularyItems = this.coreService.getVocabularyItemsBySlug(slugUrlParam);
+
+      if (!vocabularyItems || vocabularyItems.length === 0) {
+        const errorMessage = 'No vocabulary items found for the given slug.';
+        console.error(errorMessage);
+        this.isError.set(errorMessage);
+        return;
+      }
+
       this.vocabularyItems.set(vocabularyItems);
     });
   }

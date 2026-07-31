@@ -14,6 +14,7 @@ export class FlipCard {
   isFlipped = this.flipCardService.isFlipped;
 
   vocabularyItem = input<VocabularyItem>();
+  categoryItem = input<string>();
   goNext = output<void>();
   goPrev = output<void>();
 

@@ -1,5 +1,13 @@
 <div class="min-h-screen bg-background flex flex-col font-jakarta">
-  <main class="flex-1 flex items-start justify-center pt-10 pb-8 px-4">
+  <app-header />
+
+  <div class="">
+    <div class="mx-auto max-w-5xl px-4 py-5 flex items-center justify-between">
+      <a class="text-foreground tracking-tight">Category: {{ vocabTopic()?.description }}</a>
+    </div>
+  </div>
+
+  <main class="flex-1 flex items-start justify-center pt-8 pb-8 px-4">
     <div class="w-full max-w-5xl grid md:grid-cols-[1fr_340px] gap-6 items-start">
       <div class="flex flex-col gap-5">
         <div class="w-full">
@@ -21,14 +29,19 @@
           </div>
         </div>
 
-        <app-flip-card [vocabularyItem]="currentTerm()" (goNext)="goNext()" (goPrev)="goPrev()" />
+        <app-flip-card
+          [vocabularyItem]="currentTerm()"
+          (goNext)="goNext()"
+          (goPrev)="goPrev()"
+          [categoryItem]="vocabTopic()?.description"
+        />
         <div class="flex items-center gap-3">
           <button
             (click)="goPrev()"
             [disabled]="currentIndex() === 0"
-            class="flex items-center gap-2 px-4 py-3 rounded-xl border border-border bg-card hover:bg-muted disabled:opacity-30 disabled:cursor-not-allowed transition-all text-sm font-medium"
+            class="flex items-center gap-2 px-5 py-3 rounded-xl border border-border bg-card hover:bg-muted disabled:opacity-30 disabled:cursor-not-allowed transition-all text-sm font-medium cursor-pointer"
           >
-            <app-icon-chevron-left />Previous
+            <app-chevron-left-icon /><span class="hidden sm:inline">Previous</span>
           </button>
           <button
             (click)="toggleFlip()"
@@ -41,7 +54,7 @@
             [disabled]="currentIndex() === total() - 1"
             class="flex items-center gap-2 px-5 py-3 rounded-xl bg-foreground text-primary-foreground hover:opacity-90 disabled:opacity-30 disabled:cursor-not-allowed transition-all text-sm font-semibold shadow-sm cursor-pointer"
           >
-            Next<app-icon-chevron-right />
+            <span class="hidden sm:inline">Next</span><app-chevron-right-icon />
           </button>
         </div>
         <p class="font-mono text-xs text-muted-foreground text-center">
@@ -50,14 +63,14 @@
           <kbd class="border border-border rounded px-1.5 py-0.5 bg-card mx-1">→</kbd> next
         </p>
       </div>
-      <div class="pt-9">
+      <div class="pt-13">
         @if (isFlipped()) {
           <div animate.enter="fade-up-animation" animate.leave="fade-down-animation">
             <div class="w-full space-y-4">
               <div class="bg-card rounded-2xl border border-border p-5 space-y-3">
                 <div class="flex items-center gap-2 text-muted-foreground">
-                  <app-icon-book-open />
-                  ><span class="font-mono text-xs uppercase tracking-widest">Usage examples</span>
+                  <app-book-open-icon />
+                  <span class="font-mono text-xs uppercase tracking-widest">Usage examples</span>
                 </div>
                 <ul class="space-y-3">
                   @for (ex of currentTerm()?.examples; track $index) {
@@ -86,12 +99,12 @@
         } @else {
           <div
             animate.enter="toast-entrance-animation"
-            class="flex flex-col items-center justify-center h-40 gap-2 text-muted-foreground"
+            class="flex flex-col items-center justify-center h-40 gap-2 text-muted-foreground border-border rounded-2xl"
           >
             <div
               class="w-10 h-10 rounded-full border border-dashed border-border flex items-center justify-center"
             >
-              <app-icon-book-placeholder class="opacity-40"></app-icon-book-placeholder>
+              <app-book-placeholder-icon class="opacity-40"></app-book-placeholder-icon>
             </div>
             <p class="font-mono text-xs text-center opacity-50">
               Flip the card to<br />see examples and notes
@@ -101,4 +114,6 @@
       </div>
     </div>
   </main>
+
+  <app-footer />
 </div>
