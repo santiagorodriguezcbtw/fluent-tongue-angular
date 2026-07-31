@@ -1,4 +1,4 @@
-import { Component, computed, inject, input, output, signal } from '@angular/core';
+import { Component, computed, inject, input, output } from '@angular/core';
 import type { VocabularyItem } from '../../core/models';
 import { capitalizeFirstLetter } from '../../utils';
 import { FlipCardService } from '../../services/flip-card.service';

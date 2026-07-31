@@ -1,4 +1,4 @@
-import { Component, computed, inject, signal, viewChild } from '@angular/core';
+import { Component, computed, inject, signal } from '@angular/core';
 import { FlipCard } from '../../components/flip-card/flip-card';
 import { VocabularyItem } from '../../core/models';
 import { CoreService } from '../../core/core.service';
@@ -11,16 +11,6 @@ import {
   IconZapIcon
 } from '../../components/icons';
 import { FlipCardService } from '../../services/flip-card.service';
-
-interface DeckCard {
-  id: number;
-  front: string;
-  category: string;
-  back: string;
-  phonetic: string;
-  examples: string[];
-  notes: string;
-}
 
 @Component({
   selector: 'app-study-flash-page',
