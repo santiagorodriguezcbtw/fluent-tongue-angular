@@ -15,7 +15,7 @@ export interface VocabularyItem {
   id: string;
   topicId: string;
   term: string;
-  translation: string;
+  definition: string;
   examples: string[];
   notes: string;
 }

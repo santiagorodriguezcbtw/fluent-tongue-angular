@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Topic } from './models';
+import { Topic, VocabularyItem } from './models';
 import { INITIAL_TOPICS } from './data/data';
 
 // const TOPICS_STORAGE_KEY = 'fluent-tongue.topics';
@@ -14,6 +14,11 @@ export class CoreService {
 
   loadTopics(): Topic[] {
     return this.getTopics();
+  }
+
+  getVocabularyItemsBySlug(slug: string): VocabularyItem[] {
+    const topic = this.getTopicBySlug(slug);
+    return topic ? topic.items : [];
   }
 
   getTopicById(id: string): Topic | null {
@@ -56,7 +61,7 @@ export class CoreService {
     return {
       ...topic,
       emoji: topic.emoji ?? '📘',
-      items: topic.items ?? [],
+      items: topic.items ?? []
     };
   }
 }

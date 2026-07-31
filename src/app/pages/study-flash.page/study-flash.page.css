@@ -1,17 +1,5 @@
-/* main {
-  --font-ui: 'Plus Jakarta Sans', sans-serif;
-  font-family: var(--font-ui);
-} */
-
-@keyframes card-entrance {
-  from {
-    opacity: 0;
-    transform: translateX(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+:root {
+  --progress-bar-width: 0;
 }
 
 @keyframes progress-width-entrance {
@@ -19,7 +7,7 @@
     width: 0;
   }
   to {
-    width: 20%;
+    width: var(--progress-bar-width, 0);
   }
 }
 
@@ -58,9 +46,6 @@
   animation: progress-width-entrance 0.5s ease-out both;
 }
 
-.card-entrance-animation {
-  animation: card-entrance 0.35s ease-out 0.1s both;
-}
 .fade-up-animation {
   animation: anim-card-enter-fade-up 0.35s ease-out both;
 }
