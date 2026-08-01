@@ -3,7 +3,7 @@ import {
   AIR_TRAVEL_VERBS_ITEMS,
   B1_PHRASAL_VERBS_I_ITEMS,
   TECHNOLOGY_ITEMS,
-  ENGLISH_CLASS_JULY_31_ITEMS,
+  ENGLISH_CLASS_JULY_31,
 } from './vocabulary-items'
 
 export const INITIAL_TOPICS: Topic[] = [
@@ -71,12 +71,12 @@ export const INITIAL_TOPICS: Topic[] = [
     items: AIR_TRAVEL_VERBS_ITEMS,
   },
   {
-    id: 'english-class-july-31',
+    id: '8',
     name: 'English-Class-july- 31',
-    emoji: '📘',
-    description: 'Vocabulary from English class on July 31.',
+    emoji: '🗣️',
+    description: 'Phrasal verbs and useful expressions from the July 31 English class.',
     slug: 'english-class-july-31',
     level: 'intermediate',
-    items: ENGLISH_CLASS_JULY_31_ITEMS,
+    items: ENGLISH_CLASS_JULY_31,
   },
 ]

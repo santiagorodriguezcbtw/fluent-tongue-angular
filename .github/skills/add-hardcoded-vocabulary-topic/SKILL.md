@@ -31,14 +31,14 @@ Add exactly one new topic and its vocabulary items by editing only:
 
 1. Exactly one topic provided.
 2. At least one vocabulary item provided.
-3. `topic.id` must be unique in `INITIAL_TOPICS`.
+3. `topic.id` must be unique within `INITIAL_TOPICS` and assigned a string value that follows the existing ID sequence.
 4. `topic.slug` must be unique and kebab-case.
 5. Every `item.topicId` must equal `topic.id`.
-6. Every vocabulary `id` must be unique (no duplicates).
-7. For each item:
+6. For each item:
    - Ensure `examples.length >= 3`.
    - If fewer than 3 are provided, add complete, relevant sentences.
    - Use present tense by default unless the definition requires another tense.
+7. Assign a topic-appropriate emoji; avoid duplicates unless necessary.
 
 ## Naming rule for vocabulary array const
 
@@ -72,6 +72,7 @@ Example: `Business English` -> `BUSINESS_ENGLISH`.
 - Exactly one new topic added.
 - All input vocabulary items present once.
 - No unrelated imports/blocks reordered or changed.
+- Append all new data to the end of the corresponding files.
 
 ## Output format
 
