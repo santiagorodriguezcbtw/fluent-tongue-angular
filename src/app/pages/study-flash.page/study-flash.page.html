@@ -1,23 +1,19 @@
 <div class="min-h-screen bg-background flex flex-col font-jakarta">
   <app-header />
 
-  <div class="">
+  <!-- <div class="">
     <div class="mx-auto max-w-5xl px-4 py-5 flex items-center justify-between">
       <a class="text-foreground tracking-tight">Category: {{ vocabTopic()?.description }}</a>
     </div>
-  </div>
+  </div> -->
 
   <main class="flex-1 flex items-start justify-center pt-8 pb-8 px-4">
     <div class="w-full max-w-5xl grid md:grid-cols-[1fr_340px] gap-6 items-start">
       <div class="flex flex-col gap-5">
         <div class="w-full">
           <div class="flex items-center justify-between mb-2">
-            <span class="text-xs font-mono text-muted-foreground tracking-widest uppercase"
-              >Progress
-            </span>
-            <span class="text-xs font-mono text-muted-foreground">
-              {{ currentIndex() + 1 }} / {{ total() }}
-            </span>
+            <span class="text-xs font-mono text-muted-foreground tracking-widest uppercase">Progress </span>
+            <span class="text-xs font-mono text-muted-foreground"> {{ currentIndex() + 1 }} / {{ total() }} </span>
           </div>
           <div class="h-1.5 w-full bg-muted rounded-full overflow-hidden">
             <div
@@ -59,8 +55,10 @@
         </div>
         <p class="font-mono text-xs text-muted-foreground text-center">
           Press
-          <kbd class="border border-border rounded px-1.5 py-0.5 bg-card mx-1">Space</kbd> to flip ·
-          <kbd class="border border-border rounded px-1.5 py-0.5 bg-card mx-1">→</kbd> next
+          <kbd class="border border-border rounded px-1.5 py-0.5 bg-card mx-1">Space</kbd>
+          to flip ·
+          <kbd class="border border-border rounded px-1.5 py-0.5 bg-card mx-1">→</kbd>
+          next
         </p>
       </div>
       <div class="pt-13">
@@ -101,14 +99,10 @@
             animate.enter="toast-entrance-animation"
             class="flex flex-col items-center justify-center h-40 gap-2 text-muted-foreground border-border rounded-2xl"
           >
-            <div
-              class="w-10 h-10 rounded-full border border-dashed border-border flex items-center justify-center"
-            >
+            <div class="w-10 h-10 rounded-full border border-dashed border-border flex items-center justify-center">
               <app-book-placeholder-icon class="opacity-40"></app-book-placeholder-icon>
             </div>
-            <p class="font-mono text-xs text-center opacity-50">
-              Flip the card to<br />see examples and notes
-            </p>
+            <p class="font-mono text-xs text-center opacity-50">Flip the card to<br />see examples and notes</p>
           </div>
         }
       </div>

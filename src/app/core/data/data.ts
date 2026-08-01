@@ -1,16 +1,16 @@
-import { Topic } from '../models';
+import { Topic } from '../models'
 import {
   AIR_TRAVEL_VERBS_ITEMS,
   B1_PHRASAL_VERBS_I_ITEMS,
   TECHNOLOGY_ITEMS,
-} from './vovabulary-items';
+  ENGLISH_CLASS_JULY_31_ITEMS,
+} from './vocabulary-items'
 
 export const INITIAL_TOPICS: Topic[] = [
   {
     id: '1',
     name: 'Travel',
     emoji: '✈️',
-    count: 48,
     description: 'Airport, transportation, and trip conversations.',
     slug: 'travel',
     level: 'beginner',
@@ -20,7 +20,6 @@ export const INITIAL_TOPICS: Topic[] = [
     id: '2',
     name: 'Food',
     emoji: '🍜',
-    count: 36,
     description: 'Meals, ingredients, restaurants, and ordering food.',
     slug: 'food',
     level: 'beginner',
@@ -30,7 +29,6 @@ export const INITIAL_TOPICS: Topic[] = [
     id: '3',
     name: 'Work',
     emoji: '💼',
-    count: 29,
     description: 'Office vocabulary, meetings, and professional phrases.',
     slug: 'work',
     level: 'intermediate',
@@ -40,7 +38,6 @@ export const INITIAL_TOPICS: Topic[] = [
     id: '4',
     name: 'Daily Life',
     emoji: '🏡',
-    count: 54,
     description: 'Useful words and phrases for everyday routines.',
     slug: 'daily-life',
     level: 'beginner',
@@ -50,7 +47,6 @@ export const INITIAL_TOPICS: Topic[] = [
     id: '5',
     name: 'B1+ Phrasal verbs I',
     emoji: '📘',
-    count: 54,
     description: 'Common phrasal verbs for B1+ learners.',
     slug: 'b1-phrasal-verbs-i',
     level: 'intermediate',
@@ -60,7 +56,6 @@ export const INITIAL_TOPICS: Topic[] = [
     id: '6',
     name: 'Technology',
     emoji: '💻',
-    count: 16,
     description: 'Computers, devices, internet, and digital tools vocabulary.',
     slug: 'technology',
     level: 'beginner',
@@ -70,10 +65,18 @@ export const INITIAL_TOPICS: Topic[] = [
     id: '7',
     name: 'Air Travel: Verbs & Verb Phrases',
     emoji: '🛫',
-    count: 12,
     description: 'Essential verbs and phrases used in air travel situations.',
     slug: 'air-travel-verbs',
     level: 'beginner',
     items: AIR_TRAVEL_VERBS_ITEMS,
   },
-];
+  {
+    id: 'english-class-july-31',
+    name: 'English-Class-july- 31',
+    emoji: '📘',
+    description: 'Vocabulary from English class on July 31.',
+    slug: 'english-class-july-31',
+    level: 'intermediate',
+    items: ENGLISH_CLASS_JULY_31_ITEMS,
+  },
+]
