@@ -35,9 +35,9 @@ Add exactly one new topic and its vocabulary items by editing only:
 4. `topic.slug` must be unique and kebab-case.
 5. Every `item.topicId` must equal `topic.id`.
 6. For each item:
-   - Ensure `examples.length >= 3`.
-   - If fewer than 3 are provided, add complete, relevant sentences.
-   - Use present tense by default unless the definition requires another tense.
+   - Ensure `examples.length` is between 3 and 5 (inclusive),
+   - Generate complete, natural-sounding example sentences that accurately reflect the definition.
+   - Use a variety of verb tenses by default, unless the definition naturally requires a specific tense.
 7. Assign a topic-appropriate emoji; avoid duplicates unless necessary.
 
 ## Naming rule for vocabulary array const

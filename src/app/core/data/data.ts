@@ -4,6 +4,13 @@ import {
   B1_PHRASAL_VERBS_I_ITEMS,
   TECHNOLOGY_ITEMS,
   ENGLISH_CLASS_JULY_31,
+  CLOTHING_PHRASAL_VERBS,
+  PHRASAL_VERBS_WITH_LOOK,
+  FREE_TIME_ACTIVITIES,
+  TRAVEL_ITEMS,
+  FOOD_ITEMS,
+  WORK_ITEMS,
+  DAILY_LIFE_ITEMS,
 } from './vocabulary-items'
 
 export const INITIAL_TOPICS: Topic[] = [
@@ -14,7 +21,8 @@ export const INITIAL_TOPICS: Topic[] = [
     description: 'Airport, transportation, and trip conversations.',
     slug: 'travel',
     level: 'beginner',
-    items: [],
+    items: TRAVEL_ITEMS,
+    tags: ['travel', 'airport', 'transportation', 'trips'],
   },
   {
     id: '2',
@@ -23,7 +31,8 @@ export const INITIAL_TOPICS: Topic[] = [
     description: 'Meals, ingredients, restaurants, and ordering food.',
     slug: 'food',
     level: 'beginner',
-    items: [],
+    items: FOOD_ITEMS,
+    tags: ['food', 'restaurant', 'cooking', 'meals'],
   },
   {
     id: '3',
@@ -32,7 +41,8 @@ export const INITIAL_TOPICS: Topic[] = [
     description: 'Office vocabulary, meetings, and professional phrases.',
     slug: 'work',
     level: 'intermediate',
-    items: [],
+    items: WORK_ITEMS,
+    tags: ['work', 'office', 'career', 'meetings'],
   },
   {
     id: '4',
@@ -41,7 +51,8 @@ export const INITIAL_TOPICS: Topic[] = [
     description: 'Useful words and phrases for everyday routines.',
     slug: 'daily-life',
     level: 'beginner',
-    items: [],
+    items: DAILY_LIFE_ITEMS,
+    tags: ['daily-life', 'routines', 'home', 'habits'],
   },
   {
     id: '5',
@@ -51,6 +62,7 @@ export const INITIAL_TOPICS: Topic[] = [
     slug: 'b1-phrasal-verbs-i',
     level: 'intermediate',
     items: B1_PHRASAL_VERBS_I_ITEMS,
+    tags: ['phrasal-verbs', 'b1', 'verbs', 'intermediate'],
   },
   {
     id: '6',
@@ -60,6 +72,7 @@ export const INITIAL_TOPICS: Topic[] = [
     slug: 'technology',
     level: 'beginner',
     items: TECHNOLOGY_ITEMS,
+    tags: ['technology', 'internet', 'devices', 'digital'],
   },
   {
     id: '7',
@@ -69,6 +82,7 @@ export const INITIAL_TOPICS: Topic[] = [
     slug: 'air-travel-verbs',
     level: 'beginner',
     items: AIR_TRAVEL_VERBS_ITEMS,
+    tags: ['air-travel', 'airport', 'verbs', 'flights'],
   },
   {
     id: '8',
@@ -78,5 +92,48 @@ export const INITIAL_TOPICS: Topic[] = [
     slug: 'english-class-july-31',
     level: 'intermediate',
     items: ENGLISH_CLASS_JULY_31,
+    tags: ['classroom', 'expressions', 'phrasal-verbs', 'intermediate'],
   },
+  {
+    id: '9',
+    name: 'Clothing Phrasal Verbs',
+    emoji: '👕',
+    description: 'Common phrasal verbs used for clothes, dressing, and changing outfits.',
+    slug: 'clothing-phrasal-verbs',
+    level: 'intermediate',
+    items: CLOTHING_PHRASAL_VERBS,
+    tags: ['clothing', 'fashion', 'phrasal-verbs', 'verbs'],
+  },
+  {
+    id: '10',
+    name: 'Phrasal Verbs with Look',
+    emoji: '👀',
+    description: 'Common phrasal verbs with "look" for everyday English.',
+    slug: 'phrasal-verbs-with-look',
+    level: 'intermediate',
+    items: PHRASAL_VERBS_WITH_LOOK,
+    tags: ['phrasal-verbs', 'look', 'verbs', 'everyday'],
+  },
+  {
+    id: '11',
+    name: 'Free Time Activities',
+    emoji: '🎉',
+    description: 'Common words and phrases for talking about hobbies and free time activities.',
+    slug: 'free-time-activities',
+    level: 'beginner',
+    items: FREE_TIME_ACTIVITIES,
+    tags: ['free-time', 'hobbies', 'activities', 'leisure'],
+  },
+]
+
+export const TAG_FILTERS: string[] = [
+  'Beginner',
+  'Intermediate',
+  'Advanced',
+  'Travel',
+  'Business',
+  'Daily Life',
+  'Technology',
+  'Food',
+  'Health',
 ]

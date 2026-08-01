@@ -8,6 +8,7 @@ export interface Topic {
   slug: string
   level: string
   items: VocabularyItem[]
+  tags: string[]
 }
 
 export interface VocabularyItem {
