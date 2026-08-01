@@ -1,16 +1,61 @@
-@keyframes categoryEnter {
+@keyframes elementEnterFromBottom {
   from {
     opacity: 0;
-    transform: translateY(10px) scale(0.98);
+    transform: translateY(-10px);
   }
   to {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: translateY(0);
   }
 }
 
-.category-enter {
-  animation: categoryEnter 320ms ease-out both;
+@keyframes elementEnterFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes searchEnterFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInChips {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in-chips {
+  animation: fadeInChips 300ms both;
+  animation-delay: 10ms;
+}
+
+.search-enter-from-top {
+  animation: searchEnterFromTop 300ms both;
+  animation-delay: 50ms;
+}
+
+.element-enter-from-bottom {
+  animation: elementEnterFromBottom 300ms both;
+}
+
+.element-enter-from-top {
+  animation: elementEnterFromTop 300ms both;
 }
 
 .topic-title-clamp {

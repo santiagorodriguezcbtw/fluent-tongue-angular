@@ -48,6 +48,11 @@ export class HomePage {
     this.search.set('')
   }
 
+  clearFilters() {
+    this.search.set('')
+    this.selectedTag.set('All')
+  }
+
   setTagFilter(tag: string) {
     this.selectedTag.set(tag)
   }
