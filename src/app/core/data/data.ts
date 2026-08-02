@@ -11,6 +11,7 @@ import {
   FOOD_ITEMS,
   WORK_ITEMS,
   DAILY_LIFE_ITEMS,
+  TYPES_OF_RELATIONSHIPS,
 } from './vocabulary-items'
 
 export const INITIAL_TOPICS: Topic[] = [
@@ -123,6 +124,16 @@ export const INITIAL_TOPICS: Topic[] = [
     level: 'beginner',
     items: FREE_TIME_ACTIVITIES,
     tags: ['free-time', 'hobbies', 'activities', 'leisure'],
+  },
+  {
+    id: '12',
+    name: 'Types of Relationships',
+    emoji: '💞',
+    description: 'Vocabulary for social and romantic relationship types in everyday English.',
+    slug: 'types-of-relationships',
+    level: 'Beginner',
+    tags: ['relationships', 'social', 'everyday'],
+    items: TYPES_OF_RELATIONSHIPS,
   },
 ]
 

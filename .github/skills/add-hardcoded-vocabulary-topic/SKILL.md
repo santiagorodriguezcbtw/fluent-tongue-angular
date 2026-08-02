@@ -23,9 +23,9 @@ Add exactly one new topic and its vocabulary items by editing only:
 ## Input contract
 
 - Exactly 1 Topic object:
-  - `id`, `name`, `emoji`, `description`, `slug`, `level`
+  - `id`, `name`, `emoji`, `description`, `slug`, `level`, `tags` (string[])
 - 1+ Vocabulary items:
-  - `id`, `topicId`, `term`, `definition`, `examples` (string[]), `notes`
+  - `id`, `topicId`, `term`, `translation`, `definition`, `examples` (string[]), `notes`
 
 ## Validation rules (must pass before editing)
 
