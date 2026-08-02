@@ -1,5 +1,5 @@
 <header class="border-b border-border/60 bg-background">
-  <div class="mx-auto max-w-7xl px-4 py-4 flex items-center">
+  <div class="mx-auto max-w-7xl px-4 py-4 flex items-start">
     <!-- <a
       [routerLink]="['/']"
       class="inline-flex items-center gap-2 rounded-full border border-border/60 bg-card px-4 py-2 text-sm font-medium text-foreground shadow-sm transition hover:bg-muted justify-self-start cursor-pointer"
@@ -7,10 +7,14 @@
       <app-chevron-left-icon />
       <span>Deck</span>
     </a> -->
-    <a [routerLink]="['/']" class="text-foreground text-2xl font-semibold tracking-tight">{{ title() }}</a>
+    <div class="min-w-0">
+      <a [routerLink]="['/']" class="text-foreground text-2xl font-semibold tracking-tight">{{ title() }}</a>
 
-    <!-- <h1 class="text-foreground text-2xl font-semibold tracking-tight">{{ title() }}</h1> -->
-
-    <!-- <div></div> -->
+      @if (subTitle()) {
+        <p class="mt-1 text-sm text-muted-foreground whitespace-normal wrap-break-word line-clamp-2">
+          {{ subTitle() }}
+        </p>
+      }
+    </div>
   </div>
 </header>
