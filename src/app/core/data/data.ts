@@ -138,13 +138,19 @@ export const INITIAL_TOPICS: Topic[] = [
 ]
 
 export const TAG_FILTERS: string[] = [
-  'Beginner',
-  'Intermediate',
-  'Advanced',
-  'Travel',
-  'Business',
-  'Daily Life',
-  'Technology',
-  'Food',
-  'Health',
+  'beginner',
+  'intermediate',
+  'travel',
+  'food',
+  'work',
+  'daily-life',
+  'technology',
+  'phrasal-verbs',
+  'relationships',
+  'free-time',
+  'airport',
+  'clothing',
+  'classroom',
+  'look',
+  'hobbies',
 ]
