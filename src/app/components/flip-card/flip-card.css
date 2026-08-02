@@ -31,8 +31,23 @@
   }
 }
 
+@keyframes card-exit-desktop {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+}
+
 .card-entrance-desktop {
-  animation: card-entrance-desktop 0.25s both;
+  animation: card-entrance-desktop 0.25s both 0.1s;
+}
+
+.card-exit-desktop {
+  animation: card-exit-desktop 0.25s both;
 }
 
 .card-entrance-animation-mobile {

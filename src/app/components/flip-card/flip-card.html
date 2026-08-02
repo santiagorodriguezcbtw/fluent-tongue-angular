@@ -1,49 +1,50 @@
-<div animate.enter="card-entrance-desktop">
+<div
+  #cardContainer
+  role="button"
+  class="card-entrance-desktop relative w-full cursor-pointer select-none"
+  (click)="toggleFlip()"
+  [attr.aria-label]="isFlipped() ? 'See front' : 'See answer'"
+  (keydown)="onCardKeydown($event)"
+  tabindex="0"
+  style="perspective: 1200px; min-height: 260px"
+  (animationend)="cardAnimationEnd($event)"
+>
   <div
-    role="button"
-    class="relative w-full cursor-pointer select-none"
-    (click)="toggleFlip()"
-    [attr.aria-label]="isFlipped() ? 'See front' : 'See answer'"
-    (keydown)="onCardKeydown($event)"
-    tabindex="0"
-    style="perspective: 1200px; min-height: 260px"
+    class="relative w-full h-full transition-transform duration-500 ease-[cubic-bezier(0.4, 0, 0.2, 1)]"
+    style="transform-style: preserve-3d"
+    [style.transform]="isFlipped() ? 'rotateY(180deg)' : 'rotateY(0deg)'"
+    (transitionend)="onFlipTransitionEnd($event)"
   >
     <div
-      class="relative w-full h-full transition-transform duration-500 ease-[cubic-bezier(0.4, 0, 0.2, 1)]"
-      style="transform-style: preserve-3d"
-      [style.transform]="isFlipped() ? 'rotateY(180deg)' : 'rotateY(0deg)'"
+      class="absolute inset-0 w-full rounded-2xl bg-card border border-border shadow-lg flex flex-col items-center justify-center p-8 gap-3"
+      style="backface-visibility: hidden; min-height: 260px"
     >
-      <div
-        class="absolute inset-0 w-full rounded-2xl bg-card border border-border shadow-lg flex flex-col items-center justify-center p-8 gap-3"
-        style="backface-visibility: hidden; min-height: 260px"
+      <span
+        class="font-mono text-xs text-muted-foreground uppercase tracking-widest border border-border rounded-full px-3 py-1"
+        >Vocabulary</span
       >
-        <span
-          class="font-mono text-xs text-muted-foreground uppercase tracking-widest border border-border rounded-full px-3 py-1"
-          >Vocabulary</span
-        >
-        <h2 class="text-4xl md:text-5xl font-bold text-foreground text-center leading-tight">
-          {{ termCapitalized() }}
-        </h2>
-        <!-- Pronunciation -->
-        <!-- <p class="font-mono text-sm text-muted-foreground">/ɪˈfem.ər.əl/</p> -->
-        <div class="mt-4 flex items-center gap-2 text-muted-foreground">
-          <div class="w-8 h-px bg-border"></div>
-          <span class="text-xs font-mono">Click to see the meaning</span>
-          <div class="w-8 h-px bg-border"></div>
-        </div>
+      <h2 class="text-4xl md:text-5xl font-bold text-foreground text-center leading-tight">
+        {{ termCapitalized() }}
+      </h2>
+      <!-- Pronunciation -->
+      <!-- <p class="font-mono text-sm text-muted-foreground">/ɪˈfem.ər.əl/</p> -->
+      <div class="mt-4 flex items-center gap-2 text-muted-foreground">
+        <div class="w-8 h-px bg-border"></div>
+        <span class="text-xs font-mono">Click to see the meaning</span>
+        <div class="w-8 h-px bg-border"></div>
       </div>
-      <div
-        class="absolute inset-0 w-full rounded-2xl bg-foreground text-primary-foreground border border-foreground shadow-lg flex flex-col items-center justify-center p-8 gap-4"
-        style="backface-visibility: hidden; transform: rotateY(180deg); min-height: 260px"
+    </div>
+    <div
+      class="absolute inset-0 w-full rounded-2xl bg-foreground text-primary-foreground border border-foreground shadow-lg flex flex-col items-center justify-center p-8 gap-4"
+      style="backface-visibility: hidden; transform: rotateY(180deg); min-height: 260px"
+    >
+      <span
+        class="font-mono text-xs text-primary-foreground/50 uppercase tracking-widest border border-primary-foreground/20 rounded-full px-3 py-1"
+        >Meaning</span
       >
-        <span
-          class="font-mono text-xs text-primary-foreground/50 uppercase tracking-widest border border-primary-foreground/20 rounded-full px-3 py-1"
-          >Meaning</span
-        >
-        <p class="text-xl md:text-2xl font-medium text-primary-foreground text-center leading-relaxed">
-          {{ definitionCapitalized() }}
-        </p>
-      </div>
+      <p class="text-xl md:text-2xl font-medium text-primary-foreground text-center leading-relaxed">
+        {{ definitionCapitalized() }}
+      </p>
     </div>
   </div>
 </div>

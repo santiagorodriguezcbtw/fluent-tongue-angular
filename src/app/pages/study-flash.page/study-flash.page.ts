@@ -1,15 +1,9 @@
-import { Component, computed, inject, signal } from '@angular/core'
+import { Component, inject, signal } from '@angular/core'
 import { FlipCard } from '../../components/flip-card/flip-card'
 import { Topic, VocabularyItem } from '../../core/models'
 import { CoreService } from '../../core/core.service'
 import { ActivatedRoute } from '@angular/router'
-import {
-  BookOpenIcon,
-  BookPlaceholderIcon,
-  ChevronLeftIcon,
-  ChevronRightIcon,
-  ZapIcon,
-} from '../../components/icons'
+import { BookOpenIcon, BookPlaceholderIcon, ChevronLeftIcon, ChevronRightIcon, ZapIcon } from '../../components/icons'
 import { FlipCardService } from '../../services/flip-card.service'
 import { Footer } from '../../components/footer/footer'
 import { Header } from '../../components/header/header'
@@ -18,36 +12,25 @@ import { Header } from '../../components/header/header'
   selector: 'app-study-flash-page',
   templateUrl: './study-flash.page.html',
   styleUrls: ['./study-flash.page.css'],
-  imports: [
-    FlipCard,
-    ChevronLeftIcon,
-    ChevronRightIcon,
-    BookOpenIcon,
-    ZapIcon,
-    BookPlaceholderIcon,
-    Footer,
-    Header,
-  ],
+  imports: [FlipCard, ChevronLeftIcon, ChevronRightIcon, BookOpenIcon, ZapIcon, BookPlaceholderIcon, Footer, Header],
 })
 export class StudyFlashPage {
   coreService = inject(CoreService)
   readonly route = inject(ActivatedRoute)
-  readonly total = computed(() => this.vocabularyItems().length)
-  readonly currentIndex = signal(0)
   protected readonly flipCardService = inject(FlipCardService)
-  readonly currentTerm = computed(() => this.vocabularyItems()[this.currentIndex()] ?? null)
-  readonly progress = computed(() => ((this.currentIndex() + 1) / this.total()) * 100)
+
+  readonly currentIndex = this.flipCardService.currentIndex
+  readonly total = this.flipCardService.total
+  readonly currentTerm = this.flipCardService.currentTerm
+  readonly progress = this.flipCardService.progress
+  isFlipped = this.flipCardService.isFlipped
 
   readonly isError = signal('')
-  readonly vocabularyItems = signal<VocabularyItem[]>([])
   readonly vocabTopic = signal<Topic | null>(null)
-
-  isFlipped = this.flipCardService.isFlipped
 
   constructor() {
     this.route.paramMap.subscribe((params) => {
       const slugUrlParam = params.get('slug')
-
       if (!slugUrlParam) {
         const errorMessage = 'No slug parameter found in the route.'
         console.error(errorMessage)
@@ -67,22 +50,12 @@ export class StudyFlashPage {
         return
       }
 
-      this.vocabularyItems.set(vocabularyItems)
+      this.flipCardService.setVocabularyItems(vocabularyItems)
     })
   }
 
-  goNext(): void {
-    if (this.currentIndex() < this.total() - 1) {
-      this.flipCardService.setFlipped(false)
-      this.currentIndex.update((i) => i + 1)
-    }
-  }
-
-  goPrev(): void {
-    if (this.currentIndex() > 0) {
-      this.flipCardService.setFlipped(false)
-      this.currentIndex.update((i) => i - 1)
-    }
+  requestNavigation(isNext: boolean): void {
+    this.flipCardService.requestNavigation(isNext ? 'next' : 'prev')
   }
 
   toggleFlip(): void {
