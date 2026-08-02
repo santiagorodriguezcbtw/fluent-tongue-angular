@@ -7,7 +7,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "fluent-tongue-angular": {
+    "StudyFlash": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -55,10 +55,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "fluent-tongue-angular:build:production"
+              "buildTarget": "StudyFlash:build:production"
             },
             "development": {
-              "buildTarget": "fluent-tongue-angular:build:development"
+              "buildTarget": "StudyFlash:build:development"
             }
           },
           "defaultConfiguration": "development"

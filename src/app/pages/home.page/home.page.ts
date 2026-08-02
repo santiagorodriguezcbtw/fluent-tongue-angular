@@ -2,12 +2,11 @@ import { Component, signal, inject, computed } from '@angular/core'
 import { CoreService } from '../../core/core.service'
 import type { Topic } from '../../core/models'
 import { RouterLink } from '@angular/router'
-import { Header } from '../../components/header/header'
 import { TAG_FILTERS } from '../../core/data/data'
 
 @Component({
   selector: 'app-home.page',
-  imports: [RouterLink, Header],
+  imports: [RouterLink],
   templateUrl: './home.page.html',
   styleUrl: './home.page.css',
 })
