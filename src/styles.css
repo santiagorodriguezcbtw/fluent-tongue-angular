@@ -124,3 +124,8 @@
 
   --font-jakarta: var(--font-jakarta);
 }
+
+body {
+  touch-action: manipulation;
+  background-color: var(--background);
+}
