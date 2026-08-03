@@ -4,10 +4,14 @@ import type { Topic } from '../../core/models'
 import { RouterLink } from '@angular/router'
 import { TAG_FILTERS } from '../../core/data/data'
 import { Footer } from '../../components/footer/footer'
+import { LayersIcon } from '../../components/icons/layers-icon'
+import { SearchIcon } from '../../components/icons/search-icon'
+import { FunnelIcon } from '../../components/icons/funnel-icon'
+import { ChevronRightIcon } from '../../components/icons/chevron-right-icon'
 
 @Component({
   selector: 'app-home.page',
-  imports: [RouterLink, Footer],
+  imports: [RouterLink, Footer, LayersIcon, SearchIcon, FunnelIcon, ChevronRightIcon],
   templateUrl: './home.page.html',
   styleUrl: './home.page.css',
 })

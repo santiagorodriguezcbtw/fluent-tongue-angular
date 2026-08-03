@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   selector: 'app-chevron-right-icon',
@@ -18,8 +18,8 @@ import { Component, input } from '@angular/core';
     >
       <path d="m9 18 6-6-6-6"></path>
     </svg>
-  `
+  `,
 })
 export class ChevronRightIcon {
-  size = input<number | string>(16);
+  size = input<number | string>(16)
 }

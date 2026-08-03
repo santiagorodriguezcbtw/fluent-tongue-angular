@@ -9,24 +9,7 @@
           class="w-8 h-8 rounded-lg flex items-center justify-center"
           style="background: linear-gradient(135deg, rgb(26, 26, 24), rgb(58, 58, 54))"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="15"
-            height="15"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-layers text-primary-foreground"
-          >
-            <path
-              d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"
-            ></path>
-            <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path>
-            <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path>
-          </svg>
+          <app-layers-icon [size]="15" class="text-primary-foreground"></app-layers-icon>
         </div>
         <div class="flex flex-col leading-none">
           <span class="font-semibold text-foreground text-sm tracking-tight">StudyFlash</span
@@ -47,21 +30,10 @@
     </div>
     <div class="mb-5 flex items-center gap-2" animate.enter="search-enter-from-top">
       <div class="relative flex-1">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="15"
-          height="15"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-search absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none text-muted-foreground"
-        >
-          <circle cx="11" cy="11" r="8"></circle>
-          <path d="m21 21-4.3-4.3"></path>
-        </svg>
+        <app-search-icon
+          [size]="15"
+          class="absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none text-muted-foreground"
+        ></app-search-icon>
         <input
           id="searchInput"
           type="text"
@@ -86,22 +58,8 @@
       <button
         class="h-11 px-4 rounded-xl border border-border bg-card text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted transition-all flex items-center gap-2"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="14"
-          height="14"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-funnel"
-        >
-          <path
-            d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"
-          ></path></svg
-        ><span class="hidden sm:inline">Filter</span>
+        <app-funnel-icon [size]="14"></app-funnel-icon>
+        <span class="hidden sm:inline">Filter</span>
       </button>
     </div>
     <div
@@ -157,20 +115,10 @@
             </div>
           </div>
 
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="15"
-            height="15"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-chevron-right shrink-0 text-muted-foreground opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all duration-200"
-          >
-            <path d="m9 18 6-6-6-6"></path>
-          </svg>
+          <app-chevron-right-icon
+            [size]="15"
+            class="shrink-0 text-muted-foreground opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all duration-200"
+          ></app-chevron-right-icon>
         </a>
       } @empty {
         <div class="flex flex-col items-center justify-center py-24 gap-3 text-muted-foreground col-span-full">
