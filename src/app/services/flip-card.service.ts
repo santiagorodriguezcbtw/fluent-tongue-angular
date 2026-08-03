@@ -2,7 +2,10 @@ import { Service, computed, signal } from '@angular/core'
 import type { VocabularyItem } from '../core/models'
 
 export type CardNavigationDirection = 'next' | 'prev'
-export type CardNavigationRequest = { direction: CardNavigationDirection; token: number }
+export interface CardNavigationRequest {
+  direction: CardNavigationDirection
+  token: number
+}
 
 @Service()
 export class FlipCardService {

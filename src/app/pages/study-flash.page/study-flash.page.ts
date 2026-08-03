@@ -1,12 +1,13 @@
-import { Component, inject, signal } from '@angular/core'
+import { Component, inject, OnInit, signal } from '@angular/core'
 import { FlipCard } from '../../components/flip-card/flip-card'
-import { Topic, VocabularyItem } from '../../core/models'
+import { Topic } from '../../core/models'
 import { CoreService } from '../../core/core.service'
-import { ActivatedRoute } from '@angular/router'
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router'
 import { BookOpenIcon, BookPlaceholderIcon, ChevronLeftIcon, ChevronRightIcon, ZapIcon } from '../../components/icons'
 import { FlipCardService } from '../../services/flip-card.service'
 import { Footer } from '../../components/footer/footer'
 import { Header } from '../../components/header/header'
+import { filter } from 'rxjs'
 
 @Component({
   selector: 'app-study-flash-page',
@@ -14,9 +15,10 @@ import { Header } from '../../components/header/header'
   styleUrls: ['./study-flash.page.css'],
   imports: [FlipCard, ChevronLeftIcon, ChevronRightIcon, BookOpenIcon, ZapIcon, BookPlaceholderIcon, Footer, Header],
 })
-export class StudyFlashPage {
+export class StudyFlashPage implements OnInit {
   coreService = inject(CoreService)
   readonly route = inject(ActivatedRoute)
+  readonly router = inject(Router)
   protected readonly flipCardService = inject(FlipCardService)
 
   readonly currentIndex = this.flipCardService.currentIndex
@@ -52,6 +54,10 @@ export class StudyFlashPage {
 
       this.flipCardService.setVocabularyItems(vocabularyItems)
     })
+  }
+
+  ngOnInit() {
+    this.router.events.pipe(filter((event) => event instanceof NavigationEnd)).subscribe(() => window.scrollTo(0, 0))
   }
 
   requestNavigation(isNext: boolean): void {
