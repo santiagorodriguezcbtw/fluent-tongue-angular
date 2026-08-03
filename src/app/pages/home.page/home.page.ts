@@ -3,10 +3,11 @@ import { CoreService } from '../../core/core.service'
 import type { Topic } from '../../core/models'
 import { RouterLink } from '@angular/router'
 import { TAG_FILTERS } from '../../core/data/data'
+import { Footer } from '../../components/footer/footer'
 
 @Component({
   selector: 'app-home.page',
-  imports: [RouterLink],
+  imports: [RouterLink, Footer],
   templateUrl: './home.page.html',
   styleUrl: './home.page.css',
 })
