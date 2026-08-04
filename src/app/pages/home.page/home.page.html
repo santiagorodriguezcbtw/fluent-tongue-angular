@@ -91,7 +91,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
       @for (topic of filteredTopics(); track topic.id; let i = $index) {
         <a
-          [routerLink]="['/studyflash', topic.slug]"
+          [routerLink]="['/study', topic.slug]"
           animate.enter="element-enter-from-bottom"
           [style.animation-delay.ms]="i * 35"
           class="group w-full text-left bg-card border border-border rounded-2xl p-5 flex items-center gap-4 shadow-sm hover:shadow-md transition-shadow duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring cursor-pointer"

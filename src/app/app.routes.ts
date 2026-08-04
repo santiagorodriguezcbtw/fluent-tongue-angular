@@ -17,7 +17,7 @@ export const routes: Routes = [
     loadComponent: loadAdminPage
   },
   {
-    path: 'studyflash/:slug',
+    path: 'study/:slug',
     loadComponent: () =>
       import('./pages/study-flash.page/study-flash.page').then((m) => m.StudyFlashPage)
   },
