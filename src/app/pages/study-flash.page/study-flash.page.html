@@ -48,7 +48,7 @@
             <span class="hidden sm:inline">Next</span><app-chevron-right-icon />
           </button>
         </div>
-        <p class="font-mono text-xs text-muted-foreground text-center">
+        <p class="font-mono text-xs text-muted-foreground text-center hidden sm:block">
           Press
           <kbd class="border border-border rounded px-1.5 py-0.5 bg-card mx-1">Space</kbd>
           to flip ·
@@ -58,7 +58,7 @@
           next
         </p>
       </div>
-      <div class="pt-13">
+      <div class="sm:pt-13">
         @if (isFlipped()) {
           <div animate.enter="fade-up-animation" animate.leave="fade-down-animation">
             <div class="w-full space-y-4">
