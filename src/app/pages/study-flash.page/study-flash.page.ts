@@ -7,7 +7,7 @@ import { BookOpenIcon, BookPlaceholderIcon, ChevronLeftIcon, ChevronRightIcon, Z
 import { FlipCardService } from '../../services/flip-card.service'
 import { Footer } from '../../components/footer/footer'
 import { Header } from '../../components/header/header'
-import { filter } from 'rxjs'
+import { ViewportScroller } from '@angular/common'
 
 @Component({
   selector: 'app-study-flash-page',
@@ -29,6 +29,7 @@ export class StudyFlashPage implements OnInit {
 
   readonly isError = signal('')
   readonly vocabTopic = signal<Topic | null>(null)
+  private viewportScroller = inject(ViewportScroller)
 
   constructor() {
     this.route.paramMap.subscribe((params) => {
@@ -56,8 +57,8 @@ export class StudyFlashPage implements OnInit {
     })
   }
 
-  ngOnInit() {
-    this.router.events.pipe(filter((event) => event instanceof NavigationEnd)).subscribe(() => window.scrollTo(0, 0))
+  ngOnInit(): void {
+    this.viewportScroller.scrollToPosition([0, 0])
   }
 
   requestNavigation(isNext: boolean): void {

@@ -106,7 +106,9 @@
             <p class="font-semibold text-foreground text-sm leading-snug topic-title-clamp">{{ topic.name }}</p>
             <div class="flex items-center gap-1.5 mt-1">
               <span class="w-1.5 h-1.5 rounded-full shrink-0" style="background: rgb(22, 163, 74)"></span>
-              <span class="font-mono text-[11px] text-muted-foreground">{{ topic.items.length }} cards</span>
+              <span class="font-mono text-[11px] text-muted-foreground leading-none"
+                >{{ topic.items.length }} cards</span
+              >
               <span class="font-mono text-[11px] text-muted-foreground">·</span>
               <span class="font-mono text-[11px] text-muted-foreground">{{ topic.level }}</span>
             </div>
