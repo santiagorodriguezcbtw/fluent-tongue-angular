@@ -22,7 +22,7 @@
         <app-flip-card />
         <div class="flex items-center gap-3">
           <button
-            (click)="requestNavigation(false)"
+            (click)="navigateClick(false)"
             [disabled]="currentIndex() === 0"
             class="flex items-center gap-2 px-4 py-3 rounded-xl border border-border bg-card hover:bg-muted disabled:opacity-30 disabled:cursor-not-allowed transition-all text-sm font-medium text-foreground cursor-pointer"
           >
@@ -35,7 +35,7 @@
             {{ isFlipped() ? 'Hide answer' : 'Reveal answer' }}
           </button>
           <button
-            (click)="requestNavigation(true)"
+            (click)="navigateClick(true)"
             [disabled]="currentIndex() === total() - 1"
             class="flex items-center gap-2 px-5 py-3 rounded-xl bg-foreground text-primary-foreground hover:opacity-90 disabled:opacity-30 disabled:cursor-not-allowed transition-all text-sm font-semibold shadow-sm cursor-pointer"
           >

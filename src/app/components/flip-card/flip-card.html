@@ -1,19 +1,18 @@
 <div
   #cardContainer
+  animate.enter="card-entrance-desktop"
   role="button"
-  class="card-entrance-desktop relative w-full cursor-pointer select-none min-h-50 sm:min-h-65"
+  class="relative w-full cursor-pointer select-none min-h-50 sm:min-h-65"
   (click)="toggleFlip()"
   [attr.aria-label]="isFlipped() ? 'See front' : 'See answer'"
   (keydown)="onCardKeydown($event)"
   tabindex="0"
   style="perspective: 1200px"
-  (animationend)="cardAnimationEnd($event)"
 >
   <div
     class="relative w-full h-full transition-transform duration-500 ease-[cubic-bezier(0.4, 0, 0.2, 1)]"
     style="transform-style: preserve-3d"
     [style.transform]="isFlipped() ? 'rotateY(180deg)' : 'rotateY(0deg)'"
-    (transitionend)="onFlipTransitionEnd($event)"
   >
     <div
       class="absolute inset-0 w-full rounded-2xl bg-card border border-border shadow-lg flex flex-col items-center justify-center p-8 gap-3 min-h-50 sm:min-h-65"

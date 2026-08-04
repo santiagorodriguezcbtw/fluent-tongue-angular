@@ -61,8 +61,8 @@ export class StudyFlashPage implements OnInit {
     this.viewportScroller.scrollToPosition([0, 0])
   }
 
-  requestNavigation(isNext: boolean): void {
-    this.flipCardService.requestNavigation(isNext ? 'next' : 'prev')
+  navigateClick(isNext: boolean): void {
+    this.flipCardService.navigate(isNext ? 'next' : 'prev')
   }
 
   toggleFlip(): void {

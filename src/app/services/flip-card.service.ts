@@ -1,5 +1,7 @@
-import { Service, computed, signal } from '@angular/core'
+import { DestroyRef, Service, computed, inject, signal } from '@angular/core'
+import { Subject, throttleTime } from 'rxjs'
 import type { VocabularyItem } from '../core/models'
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop'
 
 export type CardNavigationDirection = 'next' | 'prev'
 export interface CardNavigationRequest {
@@ -9,21 +11,16 @@ export interface CardNavigationRequest {
 
 @Service()
 export class FlipCardService {
+  private readonly destroyRef = inject(DestroyRef)
   private _isFlipped = signal(false)
   public isFlipped = this._isFlipped.asReadonly()
-
-  private navigationToken = 0
-  private _navigationRequest = signal<CardNavigationRequest | null>(null)
-  public navigationRequest = this._navigationRequest.asReadonly()
-
-  private _navigationCompleted = signal<CardNavigationRequest | null>(null)
-  public navigationCompleted = this._navigationCompleted.asReadonly()
-
   private _vocabularyItems = signal<VocabularyItem[]>([])
   private _currentIndex = signal(0)
+  private readonly navigateRequests$ = new Subject<CardNavigationDirection>()
 
   public vocabularyItems = this._vocabularyItems.asReadonly()
   public currentIndex = this._currentIndex.asReadonly()
+
   public total = computed(() => this._vocabularyItems().length)
   public currentTerm = computed(() => this._vocabularyItems()[this._currentIndex()] ?? null)
   public progress = computed(() => {
@@ -32,36 +29,32 @@ export class FlipCardService {
     return ((this._currentIndex() + 1) / total) * 100
   })
 
-  private canNavigate(direction: CardNavigationDirection): boolean {
-    if (direction === 'next') return this._currentIndex() < this.total() - 1
-    return this._currentIndex() > 0
+  constructor() {
+    this.navigateRequests$
+      .pipe(throttleTime(250, undefined, { leading: true, trailing: true }), takeUntilDestroyed(this.destroyRef))
+      .subscribe((direction) => this.applyNavigation(direction))
   }
 
   setVocabularyItems(items: VocabularyItem[]): void {
     this._vocabularyItems.set(items)
     this._currentIndex.set(0)
     this._isFlipped.set(false)
-    this._navigationRequest.set(null)
-    this._navigationCompleted.set(null)
   }
 
-  requestNavigation(direction: CardNavigationDirection): void {
-    if (!this.canNavigate(direction)) return
-
-    this.navigationToken += 1
-    this._navigationRequest.set({ direction, token: this.navigationToken })
+  navigate(direction: CardNavigationDirection): void {
+    this.navigateRequests$.next(direction)
   }
 
-  completeNavigation(request: CardNavigationRequest): void {
-    if (request.direction === 'next' && this.canNavigate('next')) {
-      this._currentIndex.update((i) => i + 1)
+  private applyNavigation(direction: CardNavigationDirection): void {
+    this._isFlipped.set(false)
+
+    if (direction === 'next') {
+      this._currentIndex.update((i) => Math.min(i + 1, this.total() - 1))
     }
 
-    if (request.direction === 'prev' && this.canNavigate('prev')) {
-      this._currentIndex.update((i) => i - 1)
+    if (direction === 'prev') {
+      this._currentIndex.update((i) => Math.max(i - 1, 0))
     }
-
-    this._navigationCompleted.set(request)
   }
 
   toggleFlip(): void {
