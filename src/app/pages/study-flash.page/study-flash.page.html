@@ -1,15 +1,9 @@
 <div class="min-h-screen bg-background flex flex-col font-jakarta">
   <app-header [subTitle]="vocabTopic()?.description" />
 
-  <!-- <div class="">
-    <div class="mx-auto max-w-5xl px-4 py-5 flex items-center justify-between">
-      <a class="text-foreground tracking-tight">Category: {{ vocabTopic()?.description }}</a>
-    </div>
-  </div> -->
-
-  <main class="flex-1 flex items-start justify-center pt-8 pb-8 px-4">
+  <main class="flex-1 flex items-start justify-center py-5 sm:py-8 px-4">
     <div class="w-full max-w-5xl grid md:grid-cols-[1fr_340px] gap-6 items-start">
-      <div class="flex flex-col gap-5">
+      <div class="flex flex-col gap-4 sm:gap-5">
         <div class="w-full">
           <div class="flex items-center justify-between mb-2">
             <span class="text-xs font-mono text-muted-foreground tracking-widest uppercase">Progress </span>
@@ -58,7 +52,7 @@
           next
         </p>
       </div>
-      <div class="sm:pt-13">
+      <div class="sm:pt-12">
         @if (isFlipped()) {
           <div animate.enter="fade-up-animation" animate.leave="fade-down-animation">
             <div class="w-full space-y-4">

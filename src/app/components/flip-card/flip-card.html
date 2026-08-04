@@ -1,12 +1,12 @@
 <div
   #cardContainer
   role="button"
-  class="card-entrance-desktop relative w-full cursor-pointer select-none"
+  class="card-entrance-desktop relative w-full cursor-pointer select-none min-h-50 sm:min-h-65"
   (click)="toggleFlip()"
   [attr.aria-label]="isFlipped() ? 'See front' : 'See answer'"
   (keydown)="onCardKeydown($event)"
   tabindex="0"
-  style="perspective: 1200px; min-height: 260px"
+  style="perspective: 1200px"
   (animationend)="cardAnimationEnd($event)"
 >
   <div
@@ -16,8 +16,8 @@
     (transitionend)="onFlipTransitionEnd($event)"
   >
     <div
-      class="absolute inset-0 w-full rounded-2xl bg-card border border-border shadow-lg flex flex-col items-center justify-center p-8 gap-3"
-      style="backface-visibility: hidden; min-height: 260px"
+      class="absolute inset-0 w-full rounded-2xl bg-card border border-border shadow-lg flex flex-col items-center justify-center p-8 gap-3 min-h-50 sm:min-h-65"
+      style="backface-visibility: hidden"
     >
       <span
         class="font-mono text-xs text-muted-foreground uppercase tracking-widest border border-border rounded-full px-3 py-1"
@@ -35,8 +35,8 @@
       </div>
     </div>
     <div
-      class="absolute inset-0 w-full rounded-2xl bg-foreground text-primary-foreground border border-foreground shadow-lg flex flex-col items-center justify-center p-8 gap-4"
-      style="backface-visibility: hidden; transform: rotateY(180deg); min-height: 260px"
+      class="absolute inset-0 w-full rounded-2xl bg-foreground text-primary-foreground border border-foreground shadow-lg flex flex-col items-center justify-center p-8 gap-4 min-h-50 sm:min-h-65"
+      style="backface-visibility: hidden; transform: rotateY(180deg)"
     >
       <span
         class="font-mono text-xs text-primary-foreground/50 uppercase tracking-widest border border-primary-foreground/20 rounded-full px-3 py-1"
