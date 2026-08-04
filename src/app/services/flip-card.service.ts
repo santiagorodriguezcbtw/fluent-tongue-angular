@@ -31,7 +31,7 @@ export class FlipCardService {
 
   constructor() {
     this.navigateRequests$
-      .pipe(throttleTime(250, undefined, { leading: true, trailing: true }), takeUntilDestroyed(this.destroyRef))
+      .pipe(throttleTime(100, undefined, { leading: true, trailing: true }), takeUntilDestroyed(this.destroyRef))
       .subscribe((direction) => this.applyNavigation(direction))
   }
 

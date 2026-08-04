@@ -14,6 +14,7 @@ export class FlipCard implements OnDestroy {
   readonly definitionCapitalized = computed(() =>
     capitalizeFirstLetter(this.flipCardService.currentTerm()?.definition ?? ''),
   )
+  private cardSwapAnimationFrameId: number | null = null
 
   constructor() {
     let isFirstRun = true
@@ -23,7 +24,6 @@ export class FlipCard implements OnDestroy {
         isFirstRun = false
         return
       }
-      console.log('Current index changed, triggering card swap animation')
       this.triggerCardSwapAnimation()
     })
   }
@@ -37,28 +37,41 @@ export class FlipCard implements OnDestroy {
 
   onCardKeydown(event: KeyboardEvent): void {
     event.preventDefault()
-
     if (event.key === 'Enter' || event.key === ' ') {
       this.toggleFlip()
       return
     }
-
     if (event.key === 'ArrowRight') {
       this.flipCardService.navigate('next')
       return
     }
-
     if (event.key === 'ArrowLeft') {
       this.flipCardService.navigate('prev')
     }
   }
 
   triggerCardSwapAnimation(): void {
-    this.cardRef()?.nativeElement.classList.remove('card-swap-desktop')
-    setTimeout(() => this.cardRef()?.nativeElement.classList.add('card-swap-desktop'), 0)
+    const cardElement = this.cardRef()?.nativeElement
+    if (!cardElement) {
+      return
+    }
+
+    cardElement.classList.remove('card-swap-desktop')
+
+    if (this.cardSwapAnimationFrameId !== null) {
+      cancelAnimationFrame(this.cardSwapAnimationFrameId)
+    }
+
+    this.cardSwapAnimationFrameId = requestAnimationFrame(() => {
+      cardElement.classList.add('card-swap-desktop')
+      this.cardSwapAnimationFrameId = null
+    })
   }
 
   ngOnDestroy(): void {
+    if (this.cardSwapAnimationFrameId !== null) {
+      cancelAnimationFrame(this.cardSwapAnimationFrameId)
+    }
     this.flipCardService.setFlipped(false)
   }
 }
