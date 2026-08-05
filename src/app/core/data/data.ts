@@ -12,6 +12,7 @@ import {
   WORK_ITEMS,
   DAILY_LIFE_ITEMS,
   TYPES_OF_RELATIONSHIPS,
+  TYPES_OF_HOUSES_AND_RENTING,
 } from './vocabulary-items'
 
 export const INITIAL_TOPICS: Topic[] = [
@@ -134,6 +135,16 @@ export const INITIAL_TOPICS: Topic[] = [
     level: 'Beginner',
     tags: ['relationships', 'social', 'everyday'],
     items: TYPES_OF_RELATIONSHIPS,
+  },
+  {
+    id: 'topic-011',
+    name: 'Types of Houses and Renting',
+    emoji: '🏘️',
+    description: 'Learn housing types and essential renting vocabulary through practical examples and short exercises.',
+    slug: 'types-of-houses-and-renting',
+    level: 'A2',
+    tags: ['housing', 'renting', 'daily-life', 'vocabulary'],
+    items: TYPES_OF_HOUSES_AND_RENTING,
   },
 ]
 
