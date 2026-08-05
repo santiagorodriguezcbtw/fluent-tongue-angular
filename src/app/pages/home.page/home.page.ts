@@ -4,7 +4,7 @@ import type { Topic } from '../../core/models'
 import { RouterLink } from '@angular/router'
 import { TAG_FILTERS } from '../../core/data/data'
 import { Footer } from '../../components/footer/footer'
-import { ChevronRightIcon, FunnelIcon, SearchIcon } from '../../components/icons'
+import { ChevronRightIcon, SearchIcon } from '../../components/icons'
 
 @Component({
   selector: 'app-home.page',
