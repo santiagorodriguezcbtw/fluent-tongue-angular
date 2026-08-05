@@ -21,9 +21,9 @@
 }
 
 .card-entrance-desktop {
-  animation: card-entrance-desktop 0.2s;
+  animation: card-entrance-desktop 0.25s;
 }
 
 .card-exit-desktop {
-  animation: card-exit-desktop 0.2s both;
+  animation: card-exit-desktop 0.25s both;
 }

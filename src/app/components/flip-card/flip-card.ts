@@ -22,9 +22,7 @@ export class FlipCard implements OnDestroy {
         isFirstRun = false
         return
       }
-      const phase = untracked(() => this.phase())
 
-      if (phase !== 'idle') return // prevent overlap
       this.phase.set('card-exit-desktop')
     })
   }
