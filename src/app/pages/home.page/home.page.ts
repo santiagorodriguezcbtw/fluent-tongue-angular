@@ -8,7 +8,7 @@ import { ChevronRightIcon, FunnelIcon, SearchIcon } from '../../components/icons
 
 @Component({
   selector: 'app-home.page',
-  imports: [RouterLink, Footer, FunnelIcon, ChevronRightIcon, SearchIcon],
+  imports: [RouterLink, Footer, ChevronRightIcon, SearchIcon],
   templateUrl: './home.page.html',
   styleUrl: './home.page.css',
 })

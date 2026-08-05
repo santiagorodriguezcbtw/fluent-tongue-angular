@@ -21,9 +21,11 @@
     </div>
   </header>
   <main class="flex-1 w-full max-w-5xl mx-auto px-4 sm:px-6 py-10">
-    <div class="mb-8" animate.enter="elementEnterFromTop">
+    <div class="mb-4" animate.enter="elementEnterFromTop">
       <h1 class="text-3xl font-bold text-foreground tracking-tight">Categories</h1>
-      <p class="mt-1.5 text-sm text-muted-foreground">Choose a topic to start your study session.</p>
+      <label for="searchInput" class="mt-1.5 text-sm text-muted-foreground"
+        >Choose a topic to start your study session.</label
+      >
     </div>
     <div class="mb-5 flex items-center gap-2" animate.enter="search-enter-from-top">
       <div class="relative flex-1">
@@ -52,12 +54,12 @@
           </button>
         }
       </div>
-      <button
+      <!-- <button
         class="h-11 px-4 rounded-xl border border-border bg-card text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted transition-all flex items-center gap-2"
       >
         <app-funnel-icon [size]="14"></app-funnel-icon>
         <span class="hidden sm:inline">Filter</span>
-      </button>
+      </button> -->
     </div>
     <div
       class="mb-8 flex gap-2 overflow-x-auto pb-1"
