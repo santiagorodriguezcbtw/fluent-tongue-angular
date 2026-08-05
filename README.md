@@ -1,9 +1,15 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ff302063-4b43-483a-b583-82818d939e72/deploy-status)](https://app.netlify.com/projects/startling-dieffenbachia-a90272/deploys)
+# StudyCard
 
-# Fluent Tongue
+## About
 
-**Live URL:** [Fluent Tongue](https://startling-dieffenbachia-a90272.netlify.app)\
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.0.0.
+StudyCard is an Angular vocabulary-learning app focused on practicing English terms by topic using flashcard-style interactions.
+
+## Current scope
+
+- Browse hardcoded vocabulary topics
+- Practice terms and definitions with flip cards
+- Run locally with Angular CLI
+- Test with Vitest (`ng test`)
 
 ## Development server
 
@@ -56,70 +62,3 @@ ng e2e
 ```
 
 Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Folder Structure
-
-```text
-app/
-├── core/ # Singleton services, guards, interceptors, config global
-│   ├── services/
-│   ├── guards/
-│   ├── interceptors/
-│   ├── models/
-│   └── core.module.ts
-│
-├── shared/ # Reutilizable en toda la app
-│   ├── components/
-│   ├── directives/
-│   ├── pipes/
-│   ├── ui/
-│   └── shared.module.ts
-│
-├── layouts/ # Estructuras visuales principales
-│   ├── main-layout/
-│   │   ├── components/
-│   │   ├── main-layout.component.ts
-│   │   ├── main-layout.component.html
-│   │   └── main-layout.component.scss
-│   ├── auth-layout/
-│   └── admin-layout/
-│
-├── routes/ # Configuración central de rutas
-│   ├── app.routes.ts
-│   ├── auth.routes.ts
-│   └── admin.routes.ts
-│
-├── pages/ # Páginas agrupadas por dominio/feature
-│   ├── home/
-│   │   ├── components/
-│   │   ├── services/
-│   │   ├── home.page.ts
-│   │   ├── home.page.html
-│   │   └── home.page.scss
-│   ├── auth/
-│   │   ├── login/
-│   │   ├── register/
-│   │   └── services/
-│   ├── users/
-│   │   ├── components/
-│   │   ├── services/
-│   │   ├── pages/
-│   │   │   ├── user-list/
-│   │   │   └── user-detail/
-│   │   └── models/
-│   └── dashboard/
-│
-├── components/ # Componentes globales si no van en shared
-│   ├── header/
-│   ├── footer/
-│   └── sidebar/
-│
-├── services/ # Servicios globales si no pertenecen a core
-│   ├── api.service.ts
-│   └── storage.service.ts
-│
-├── app.component.ts
-├── app.component.html
-├── app.component.scss
-└── app.config.ts
-```

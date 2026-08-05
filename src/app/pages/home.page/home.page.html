@@ -1,4 +1,4 @@
-<div class="min-h-dvh flex flex-col" style="font-family: 'Plus Jakarta Sans', sans-serif">
+<div class="min-h-dvh flex flex-col font-jakarta">
   <header class="w-full border-b border-border bg-background backdrop-blur-sm sticky top-0 z-10">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
       <div class="w-28 flex justify-start">
@@ -40,7 +40,6 @@
           class="w-full h-11 pl-10 pr-10 rounded-xl border border-border bg-card text-[16px] md:text-sm text-foreground placeholder:text-muted-foreground outlie-none focus:border-foreground/30 transition-colors"
           [value]="search()"
           (input)="onSearchInput($event)"
-          style="font-family: inherit"
         />
 
         @if (search().length > 0) {
