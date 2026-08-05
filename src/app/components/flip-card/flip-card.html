@@ -1,13 +1,15 @@
 <div
-  #cardContainer
+  /* #cardContainer */
   animate.enter="card-entrance-desktop"
+  [class.card-exit-desktop]="phase() === 'card-exit-desktop'"
+  [class.card-entrance-desktop]="phase() === 'card-entrance-desktop'"
   role="button"
   class="relative w-full cursor-pointer select-none min-h-50 sm:min-h-65"
   (click)="toggleFlip()"
   [attr.aria-label]="isFlipped() ? 'See front' : 'See answer'"
   (keydown)="onCardKeydown($event)"
   tabindex="0"
-  style="perspective: 1200px"
+  (animationend)="onAnimEnd()"
 >
   <div
     class="relative w-full h-full transition-transform duration-500 ease-[cubic-bezier(0.4, 0, 0.2, 1)]"

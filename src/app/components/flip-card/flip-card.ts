@@ -1,5 +1,4 @@
-import { Component, computed, effect, ElementRef, inject, OnDestroy, viewChild } from '@angular/core'
-import { capitalizeFirstLetter } from '../../utils'
+import { Component, computed, effect, inject, OnDestroy, signal, untracked } from '@angular/core'
 import { FlipCardService } from '../../services/flip-card.service'
 
 @Component({
@@ -10,11 +9,10 @@ import { FlipCardService } from '../../services/flip-card.service'
 })
 export class FlipCard implements OnDestroy {
   protected readonly flipCardService = inject(FlipCardService)
-  readonly termCapitalized = computed(() => capitalizeFirstLetter(this.flipCardService.currentTerm()?.term ?? ''))
-  readonly definitionCapitalized = computed(() =>
-    capitalizeFirstLetter(this.flipCardService.currentTerm()?.definition ?? ''),
-  )
-  private cardSwapAnimationFrameId: number | null = null
+  readonly termCapitalized = signal(this.flipCardService.currentTerm()?.term ?? '')
+  readonly definitionCapitalized = signal(this.flipCardService.currentTerm()?.definition ?? '')
+  phase = signal<'idle' | 'card-entrance-desktop' | 'card-exit-desktop'>('idle')
+  isFlipped = computed(() => this.flipCardService.isFlipped())
 
   constructor() {
     let isFirstRun = true
@@ -24,15 +22,25 @@ export class FlipCard implements OnDestroy {
         isFirstRun = false
         return
       }
-      this.triggerCardSwapAnimation()
+      const phase = untracked(() => this.phase())
+
+      if (phase !== 'idle') return // prevent overlap
+      this.phase.set('card-exit-desktop')
     })
   }
 
-  isFlipped = this.flipCardService.isFlipped
-  cardRef = viewChild<ElementRef<HTMLDivElement>>('cardContainer')
-
   toggleFlip(): void {
     this.flipCardService.toggleFlip()
+  }
+
+  onAnimEnd(): void {
+    if (this.phase() === 'card-exit-desktop') {
+      this.phase.set('card-entrance-desktop')
+      this.termCapitalized.set(this.flipCardService.currentTerm()?.term ?? '')
+      this.definitionCapitalized.set(this.flipCardService.currentTerm()?.definition ?? '')
+    } else if (this.phase() === 'card-entrance-desktop') {
+      this.phase.set('idle')
+    }
   }
 
   onCardKeydown(event: KeyboardEvent): void {
@@ -50,28 +58,7 @@ export class FlipCard implements OnDestroy {
     }
   }
 
-  triggerCardSwapAnimation(): void {
-    const cardElement = this.cardRef()?.nativeElement
-    if (!cardElement) {
-      return
-    }
-
-    cardElement.classList.remove('card-swap-desktop')
-
-    if (this.cardSwapAnimationFrameId !== null) {
-      cancelAnimationFrame(this.cardSwapAnimationFrameId)
-    }
-
-    this.cardSwapAnimationFrameId = requestAnimationFrame(() => {
-      cardElement.classList.add('card-swap-desktop')
-      this.cardSwapAnimationFrameId = null
-    })
-  }
-
   ngOnDestroy(): void {
-    if (this.cardSwapAnimationFrameId !== null) {
-      cancelAnimationFrame(this.cardSwapAnimationFrameId)
-    }
     this.flipCardService.setFlipped(false)
   }
 }

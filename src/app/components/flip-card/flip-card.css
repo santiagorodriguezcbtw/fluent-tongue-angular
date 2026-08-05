@@ -9,7 +9,7 @@
   }
 }
 
-/* @keyframes card-exit-desktop {
+@keyframes card-exit-desktop {
   from {
     opacity: 1;
     transform: translateX(0);
@@ -18,36 +18,12 @@
     opacity: 0;
     transform: translateX(-30px);
   }
-} */
-
-@keyframes card-swap-desktop {
-  0% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-
-  50% {
-    opacity: 0;
-    transform: translateX(-30px);
-  }
-  51% {
-    opacity: 0;
-    transform: translateX(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
 }
 
 .card-entrance-desktop {
   animation: card-entrance-desktop 0.2s;
 }
 
-/* .card-exit-desktop {
+.card-exit-desktop {
   animation: card-exit-desktop 0.2s both;
-} */
-
-/* .card-swap-desktop {
-  animation: card-swap-desktop 0.5s linear;
-} */
+}
