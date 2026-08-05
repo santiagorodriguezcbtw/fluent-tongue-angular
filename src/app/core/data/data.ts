@@ -13,6 +13,7 @@ import {
   DAILY_LIFE_ITEMS,
   TYPES_OF_RELATIONSHIPS,
   TYPES_OF_HOUSES_AND_RENTING,
+  LEGAL_ENGLISH_BASICS_ITEMS,
 } from './vocabulary-items'
 
 export const INITIAL_TOPICS: Topic[] = [
@@ -145,6 +146,16 @@ export const INITIAL_TOPICS: Topic[] = [
     level: 'A2',
     tags: ['housing', 'renting', 'daily-life', 'vocabulary'],
     items: TYPES_OF_HOUSES_AND_RENTING,
+  },
+  {
+    id: '14',
+    name: 'Legal English Basics',
+    emoji: '⚖️',
+    description: 'Core legal vocabulary for claims, disputes, and payment status.',
+    slug: 'legal-english-basics',
+    level: 'B1',
+    tags: ['legal', 'contracts', 'disputes'],
+    items: LEGAL_ENGLISH_BASICS_ITEMS,
   },
 ]
 

@@ -5,7 +5,6 @@ import { CoreService } from '../../core/core.service'
 import { ActivatedRoute, Router } from '@angular/router'
 import { BookOpenIcon, BookPlaceholderIcon, ChevronLeftIcon, ChevronRightIcon, ZapIcon } from '../../components/icons'
 import { FlipCardService } from '../../services/flip-card.service'
-import { Footer } from '../../components/footer/footer'
 import { Header } from '../../components/header/header'
 import { ViewportScroller } from '@angular/common'
 
@@ -13,7 +12,7 @@ import { ViewportScroller } from '@angular/common'
   selector: 'app-study-flash-page',
   templateUrl: './study-flash.page.html',
   styleUrls: ['./study-flash.page.css'],
-  imports: [FlipCard, ChevronLeftIcon, ChevronRightIcon, BookOpenIcon, ZapIcon, BookPlaceholderIcon, Footer, Header],
+  imports: [FlipCard, ChevronLeftIcon, ChevronRightIcon, BookOpenIcon, ZapIcon, BookPlaceholderIcon, Header],
 })
 export class StudyFlashPage implements OnInit {
   coreService = inject(CoreService)

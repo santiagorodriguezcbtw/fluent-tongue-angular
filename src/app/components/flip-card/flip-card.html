@@ -3,7 +3,7 @@
   [class.card-exit-desktop]="phase() === 'card-exit-desktop'"
   [class.card-entrance-desktop]="phase() === 'card-entrance-desktop'"
   role="button"
-  class="relative w-full cursor-pointer select-none min-h-50 sm:min-h-65"
+  class="relative w-full cursor-pointer select-none h-50 sm:h-65"
   (click)="toggleFlip()"
   [attr.aria-label]="isFlipped() ? 'See front' : 'See answer'"
   (keydown)="onCardKeydown($event)"
@@ -16,7 +16,7 @@
     [style.transform]="isFlipped() ? 'rotateY(180deg)' : 'rotateY(0deg)'"
   >
     <div
-      class="absolute inset-0 w-full rounded-2xl bg-card border border-border shadow-lg flex flex-col items-center justify-center p-6 gap-3 min-h-50 sm:min-h-65"
+      class="absolute inset-0 w-full rounded-2xl bg-card border border-border shadow-lg flex flex-col items-center justify-center p-6 gap-3 h-50 sm:h-65"
     >
       <span
         class="font-mono text-xs text-muted-foreground uppercase tracking-widest border border-border rounded-full px-3 py-1"
@@ -34,7 +34,7 @@
       </div>
     </div>
     <div
-      class="absolute inset-0 w-full rounded-2xl bg-foreground text-primary-foreground border border-foreground shadow-lg flex flex-col items-center justify-center p-8 gap-4 min-h-50 sm:min-h-65"
+      class="absolute inset-0 w-full rounded-2xl bg-foreground text-primary-foreground border border-foreground shadow-lg flex flex-col items-center justify-center p-8 gap-4 h-50 sm:h-65"
       style="backface-visibility: hidden; transform: rotateY(180deg)"
     >
       <span
