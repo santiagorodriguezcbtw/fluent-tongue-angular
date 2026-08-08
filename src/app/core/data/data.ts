@@ -14,6 +14,7 @@ import {
   TYPES_OF_RELATIONSHIPS,
   TYPES_OF_HOUSES_AND_RENTING,
   LEGAL_ENGLISH_BASICS_ITEMS,
+  DESCRIBING_PLACES,
 } from './vocabulary-items'
 
 export const INITIAL_TOPICS: Topic[] = [
@@ -146,6 +147,16 @@ export const INITIAL_TOPICS: Topic[] = [
     level: 'A2',
     tags: ['housing', 'renting', 'daily-life', 'vocabulary'],
     items: TYPES_OF_HOUSES_AND_RENTING,
+  },
+  {
+    id: 'topic-describing-places',
+    name: 'Describing Places',
+    emoji: '🏙️',
+    description: 'Adjectives and phrases to describe size, light, space, cleanliness, tidiness, and noise.',
+    slug: 'describing-places',
+    level: 'A2',
+    tags: ['adjectives', 'places', 'descriptions', 'everyday-english'],
+    items: DESCRIBING_PLACES,
   },
   {
     id: '14',

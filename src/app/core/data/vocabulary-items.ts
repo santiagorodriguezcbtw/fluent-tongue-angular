@@ -31,7 +31,7 @@ export const B1_PHRASAL_VERBS_I_ITEMS: VocabularyItem[] = [
     id: '5-03',
     topicId: '5',
     term: 'Come up with',
-    translation: 'idear',
+    translation: 'Idear',
     definition: 'Think of an idea or plan',
     examples: [
       'We need to come up with a better title.',
@@ -44,7 +44,7 @@ export const B1_PHRASAL_VERBS_I_ITEMS: VocabularyItem[] = [
     id: '5-04',
     topicId: '5',
     term: 'Fall for',
-    translation: 'caer en el engaño',
+    translation: 'Caer en el engaño',
     definition: 'Believe something false',
     examples: [
       'I almost fell for that fake message.',
@@ -57,7 +57,7 @@ export const B1_PHRASAL_VERBS_I_ITEMS: VocabularyItem[] = [
     id: '5-05',
     topicId: '5',
     term: 'Get ahead',
-    translation: 'progresar',
+    translation: 'Progresar',
     definition: 'Become successful',
     examples: [
       'She studies hard to get ahead in her field.',
@@ -70,7 +70,7 @@ export const B1_PHRASAL_VERBS_I_ITEMS: VocabularyItem[] = [
     id: '5-06',
     topicId: '5',
     term: 'Get over',
-    translation: 'superar',
+    translation: 'Superar',
     definition: 'Recover from something',
     examples: [
       'It took him weeks to get over the flu.',
@@ -83,7 +83,7 @@ export const B1_PHRASAL_VERBS_I_ITEMS: VocabularyItem[] = [
     id: '5-07',
     topicId: '5',
     term: 'Go ahead',
-    translation: 'continuar',
+    translation: 'Continuar',
     definition: 'Start or continue',
     examples: [
       'Go ahead and submit the form now.',
@@ -96,7 +96,7 @@ export const B1_PHRASAL_VERBS_I_ITEMS: VocabularyItem[] = [
     id: '5-08',
     topicId: '5',
     term: 'Hold on to',
-    translation: 'conservar',
+    translation: 'Conservar',
     definition: 'Keep and not lose',
     examples: [
       'Hold on to your receipt in case you need a refund.',
@@ -109,7 +109,7 @@ export const B1_PHRASAL_VERBS_I_ITEMS: VocabularyItem[] = [
     id: '5-09',
     topicId: '5',
     term: 'Keep away from',
-    translation: 'mantenerse alejado de',
+    translation: 'Mantenerse alejado de',
     definition: 'Avoid',
     examples: [
       'You should keep away from unsafe websites.',
@@ -122,7 +122,7 @@ export const B1_PHRASAL_VERBS_I_ITEMS: VocabularyItem[] = [
     id: '5-10',
     topicId: '5',
     term: 'Look around',
-    translation: 'mirar alrededor',
+    translation: 'Mirar alrededor',
     definition: 'Explore a place',
     examples: [
       'We looked around the neighborhood before renting.',
@@ -135,7 +135,7 @@ export const B1_PHRASAL_VERBS_I_ITEMS: VocabularyItem[] = [
     id: '5-11',
     topicId: '5',
     term: 'Look back on',
-    translation: 'recordar con perspectiva',
+    translation: 'Recordar con perspectiva',
     definition: 'Remember and reflect on the past',
     examples: [
       'I look back on that year with pride.',
@@ -148,7 +148,7 @@ export const B1_PHRASAL_VERBS_I_ITEMS: VocabularyItem[] = [
     id: '5-12',
     topicId: '5',
     term: 'Make up for',
-    translation: 'compensar',
+    translation: 'Compensar',
     definition: 'Compensate for something',
     examples: [
       'He made up for being late by helping extra.',
@@ -161,20 +161,20 @@ export const B1_PHRASAL_VERBS_I_ITEMS: VocabularyItem[] = [
     id: '5-13',
     topicId: '5',
     term: 'Pay off',
-    translation: 'dar resultados',
+    translation: 'Dar resultados',
     definition: 'Produce good results',
     examples: [
       'All the practice finally paid off.',
       'Daily reading will pay off over time.',
       'Her patience paid off in the interview.',
     ],
-    notes: 'Describes effort producing good long-term results.',
+    notes: 'Describes effort producing good long-term reSults.',
   },
   {
     id: '5-14',
     topicId: '5',
     term: 'Rule out',
-    translation: 'descartar',
+    translation: 'Descartar',
     definition: 'Eliminate as impossible',
     examples: [
       'Doctors ruled out a serious infection.',
@@ -187,7 +187,7 @@ export const B1_PHRASAL_VERBS_I_ITEMS: VocabularyItem[] = [
     id: '5-15',
     topicId: '5',
     term: 'See through',
-    translation: 'descubrir el engaño',
+    translation: 'Descubrir el engaño',
     definition: 'Detect the truth behind a lie',
     examples: [
       'She saw through his excuse immediately.',
@@ -200,7 +200,7 @@ export const B1_PHRASAL_VERBS_I_ITEMS: VocabularyItem[] = [
     id: '5-16',
     topicId: '5',
     term: 'Stand out',
-    translation: 'destacar',
+    translation: 'Destacar',
     definition: 'Be easy to notice',
     examples: [
       'Her portfolio stands out from the rest.',
@@ -213,7 +213,7 @@ export const B1_PHRASAL_VERBS_I_ITEMS: VocabularyItem[] = [
     id: '5-17',
     topicId: '5',
     term: 'Take over',
-    translation: 'tomar el control',
+    translation: 'Tomar el control',
     definition: 'Take control of something',
     examples: [
       'A new director will take over next month.',
@@ -226,7 +226,7 @@ export const B1_PHRASAL_VERBS_I_ITEMS: VocabularyItem[] = [
     id: '5-18',
     topicId: '5',
     term: 'Turn out',
-    translation: 'resultar',
+    translation: 'Resultar',
     definition: 'Happen in a particular way',
     examples: [
       'The event turned out better than expected.',
@@ -239,7 +239,7 @@ export const B1_PHRASAL_VERBS_I_ITEMS: VocabularyItem[] = [
     id: '5-19',
     topicId: '5',
     term: 'Work on',
-    translation: 'trabajar en',
+    translation: 'Trabajar en',
     definition: 'Spend time improving or developing',
     examples: [
       'I am working on my pronunciation daily.',
@@ -252,7 +252,7 @@ export const B1_PHRASAL_VERBS_I_ITEMS: VocabularyItem[] = [
     id: '5-20',
     topicId: '5',
     term: 'Write off',
-    translation: 'descartar',
+    translation: 'Descartar',
     definition: 'Dismiss as not important or useful',
     examples: [
       'Do not write off the idea too early.',
@@ -267,8 +267,8 @@ export const TECHNOLOGY_ITEMS: VocabularyItem[] = [
   {
     id: '6-01',
     topicId: '6',
-    term: 'AI (artificial intelligence)',
-    translation: 'IA (inteligencia artificial)',
+    term: 'Ai (artificial intelligence)',
+    translation: 'Ia (inteligencia artificial)',
     definition: 'Technology that simulates human intelligence',
     examples: [
       'Ai helps detect spam emails automatically.',
@@ -281,7 +281,7 @@ export const TECHNOLOGY_ITEMS: VocabularyItem[] = [
     id: '6-02',
     topicId: '6',
     term: 'Gadget',
-    translation: 'artilugio',
+    translation: 'Artilugio',
     definition: 'A small useful electronic device',
     examples: [
       'My favorite gadget is my smartwatch.',
@@ -294,7 +294,7 @@ export const TECHNOLOGY_ITEMS: VocabularyItem[] = [
     id: '6-03',
     topicId: '6',
     term: 'Smart device',
-    translation: 'dispositivo inteligente',
+    translation: 'Dispositivo inteligente',
     definition: 'An internet-connected electronic device',
     examples: [
       'A smart device can be controlled from your phone.',
@@ -307,7 +307,7 @@ export const TECHNOLOGY_ITEMS: VocabularyItem[] = [
     id: '6-04',
     topicId: '6',
     term: 'Wearable technology',
-    translation: 'tecnología vestible',
+    translation: 'Tecnología vestible',
     definition: 'Electronics worn on the body',
     examples: [
       'Wearable technology tracks heart rate and sleep.',
@@ -319,8 +319,8 @@ export const TECHNOLOGY_ITEMS: VocabularyItem[] = [
   {
     id: '6-05',
     topicId: '6',
-    term: 'VR (headset/game)',
-    translation: 'RV (realidad virtual)',
+    term: 'Vr (headset/game)',
+    translation: 'Rv (realidad virtual)',
     definition: 'Virtual reality equipment or experience',
     examples: [
       'He uses a VR headset to play games.',
@@ -333,7 +333,7 @@ export const TECHNOLOGY_ITEMS: VocabularyItem[] = [
     id: '6-06',
     topicId: '6',
     term: 'Freeware',
-    translation: 'software gratuito',
+    translation: 'Software gratuito',
     definition: 'Software available at no cost',
     examples: [
       'We downloaded freeware for editing images.',
@@ -346,7 +346,7 @@ export const TECHNOLOGY_ITEMS: VocabularyItem[] = [
     id: '6-07',
     topicId: '6',
     term: 'Internet provider',
-    translation: 'proveedor de internet',
+    translation: 'Proveedor de internet',
     definition: 'A company that gives internet access',
     examples: [
       'Our internet provider upgraded our speed.',
@@ -359,7 +359,7 @@ export const TECHNOLOGY_ITEMS: VocabularyItem[] = [
     id: '6-08',
     topicId: '6',
     term: 'Search engine',
-    translation: 'motor de búsqueda',
+    translation: 'Motor de búsqueda',
     definition: 'A website or tool used to find information online',
     examples: [
       'Use a search engine to find tutorials quickly.',
@@ -372,7 +372,7 @@ export const TECHNOLOGY_ITEMS: VocabularyItem[] = [
     id: '6-09',
     topicId: '6',
     term: 'Web browser',
-    translation: 'navegador web',
+    translation: 'Navegador web',
     definition: 'Software used to access websites',
     examples: [
       'Please update your web browser to the latest version.',
@@ -385,20 +385,20 @@ export const TECHNOLOGY_ITEMS: VocabularyItem[] = [
     id: '6-10',
     topicId: '6',
     term: 'Server',
-    translation: 'servidor',
+    translation: 'Servidor',
     definition: 'A computer that provides data or services to others',
     examples: [
       'The server is down for maintenance tonight.',
       'We deployed the app to a cloud server.',
       'The server handled thousands of requests per minute.',
     ],
-    notes: 'Server-client architecture term; server provides resources/services.',
+    notes: 'Server-client architecture term; sErver provides resources/services.',
   },
   {
     id: '6-11',
     topicId: '6',
     term: 'Cybersecurity',
-    translation: 'ciberseguridad',
+    translation: 'Ciberseguridad',
     definition: 'Protection of systems and data from digital attacks',
     examples: [
       'Cybersecurity training is required for all employees.',
@@ -411,7 +411,7 @@ export const TECHNOLOGY_ITEMS: VocabularyItem[] = [
     id: '6-12',
     topicId: '6',
     term: 'Apps',
-    translation: 'aplicaciones',
+    translation: 'Aplicaciones',
     definition: 'Software applications for phones or computers',
     examples: [
       'I installed new apps for language practice.',
@@ -424,7 +424,7 @@ export const TECHNOLOGY_ITEMS: VocabularyItem[] = [
     id: '6-13',
     topicId: '6',
     term: 'Social network',
-    translation: 'red social',
+    translation: 'Red social',
     definition: 'An online platform for connecting with people',
     examples: [
       'She joined a social network for professionals.',
@@ -437,20 +437,20 @@ export const TECHNOLOGY_ITEMS: VocabularyItem[] = [
     id: '6-14',
     topicId: '6',
     term: 'Social media',
-    translation: 'redes sociales',
+    translation: 'Redes sociales',
     definition: 'Websites and apps for sharing content and interaction',
     examples: [
       'Many brands use social media for marketing.',
       'He took a break from social media for a week.',
       'Social media can spread news very quickly.',
     ],
-    notes: 'Broader term for content sharing and online interaction ecosystems.',
+    notes: 'Broader term foR content sharing and online interaction ecosystems.',
   },
   {
     id: '6-15',
     topicId: '6',
     term: 'Wi-Fi hotspot',
-    translation: 'punto de acceso Wi‑Fi',
+    translation: 'Punto de acceso Wi‑Fi',
     definition: 'A place or device that provides wireless internet access',
     examples: [
       'We used a Wi-Fi hotspot at the airport.',
@@ -463,7 +463,7 @@ export const TECHNOLOGY_ITEMS: VocabularyItem[] = [
     id: '6-16',
     topicId: '6',
     term: 'Screenshot',
-    translation: 'captura de pantalla',
+    translation: 'Captura de pantalla',
     definition: 'An image capture of a device screen',
     examples: [
       'Take a screenshot and send it to support.',
@@ -479,7 +479,7 @@ export const AIR_TRAVEL_VERBS_ITEMS: VocabularyItem[] = [
     id: '7-01',
     topicId: '7',
     term: 'Board',
-    translation: 'abordar',
+    translation: 'Abordar',
     definition: 'Get onto a plane',
     examples: [
       'Passengers will board at Gate 12.',
@@ -492,7 +492,7 @@ export const AIR_TRAVEL_VERBS_ITEMS: VocabularyItem[] = [
     id: '7-02',
     topicId: '7',
     term: 'Check in',
-    translation: 'hacer el check-in',
+    translation: 'Hacer el check-in',
     definition: 'Register for a flight and get a boarding pass',
     examples: [
       'We checked in online the night before.',
@@ -505,7 +505,7 @@ export const AIR_TRAVEL_VERBS_ITEMS: VocabularyItem[] = [
     id: '7-03',
     topicId: '7',
     term: 'Get on/off a plane',
-    translation: 'subir/bajar de un avión',
+    translation: 'Subir/bajar de un avión',
     definition: 'Enter or leave an aircraft',
     examples: [
       'Please wait until your row is called to get off the plane.',
@@ -518,12 +518,12 @@ export const AIR_TRAVEL_VERBS_ITEMS: VocabularyItem[] = [
     id: '7-04',
     topicId: '7',
     term: 'Pick up someone',
-    translation: 'recoger a alguien',
+    translation: 'Recoger a alguien',
     definition: 'Collect someone from the airport',
     examples: [
       'I will pick you up at arrivals.',
       'Can you pick up my cousin after her flight lands?',
-      'He picked me up outside Terminal 1.',
+      'He picked me up outside TerminaL 1.',
     ],
     notes: 'Separable phrasal verb: “pick someone up”.',
   },
@@ -531,10 +531,10 @@ export const AIR_TRAVEL_VERBS_ITEMS: VocabularyItem[] = [
     id: '7-05',
     topicId: '7',
     term: 'Drop off someone',
-    translation: 'dejar a alguien',
+    translation: 'Dejar a alguien',
     definition: 'Take someone to the airport and leave them there',
     examples: [
-      'He dropped off his brother at Terminal 2.',
+      'He dropped off his brother at TerminaL 2.',
       'I will drop off my parents before work.',
       'They dropped us off near the departure entrance.',
     ],
@@ -544,7 +544,7 @@ export const AIR_TRAVEL_VERBS_ITEMS: VocabularyItem[] = [
     id: '7-06',
     topicId: '7',
     term: 'Take off',
-    translation: 'despegar',
+    translation: 'Despegar',
     definition: 'Leave the ground and begin flying',
     examples: [
       'The flight took off on time.',
@@ -557,7 +557,7 @@ export const AIR_TRAVEL_VERBS_ITEMS: VocabularyItem[] = [
     id: '7-07',
     topicId: '7',
     term: 'Land',
-    translation: 'aterrizar',
+    translation: 'Aterrizar',
     definition: 'Arrive on the ground after flying',
     examples: [
       'Our plane landed safely despite the rain.',
@@ -570,7 +570,7 @@ export const AIR_TRAVEL_VERBS_ITEMS: VocabularyItem[] = [
     id: '7-08',
     topicId: '7',
     term: 'Delay a flight',
-    translation: 'retrasar un vuelo',
+    translation: 'Retrasar un vuelo',
     definition: 'Postpone a flight to a later time',
     examples: [
       'Fog delayed the flight by two hours.',
@@ -583,7 +583,7 @@ export const AIR_TRAVEL_VERBS_ITEMS: VocabularyItem[] = [
     id: '7-09',
     topicId: '7',
     term: 'Go through security',
-    translation: 'pasar por seguridad',
+    translation: 'Pasar por seguridad',
     definition: 'Pass airport security checks',
     examples: [
       'You must go through security before entering the gate area.',
@@ -596,7 +596,7 @@ export const AIR_TRAVEL_VERBS_ITEMS: VocabularyItem[] = [
     id: '7-10',
     topicId: '7',
     term: 'Book a ticket',
-    translation: 'reservar un billete',
+    translation: 'Reservar un billete',
     definition: 'Reserve and buy a flight ticket',
     examples: [
       'I booked a ticket to Madrid for next week.',
@@ -609,12 +609,12 @@ export const AIR_TRAVEL_VERBS_ITEMS: VocabularyItem[] = [
     id: '7-11',
     topicId: '7',
     term: 'Take a connecting flight',
-    translation: 'tomar un vuelo de conexión',
+    translation: 'Tomar un vuelo de conexión',
     definition: 'Change planes to reach the final destination',
     examples: [
       'We took a connecting flight in Frankfurt.',
       'You may need to take a connecting flight to reach the island.',
-      'Our connecting flight leaves from a different terminal.',
+      'Our connecting flight leaves from a different terminaL.',
     ],
     notes: 'Used when a route requires transfer through another airport.',
   },
@@ -622,7 +622,7 @@ export const AIR_TRAVEL_VERBS_ITEMS: VocabularyItem[] = [
     id: '7-12',
     topicId: '7',
     term: 'Change flights',
-    translation: 'cambiar de vuelo',
+    translation: 'Cambiar de vuelo',
     definition: 'Switch from one flight to another',
     examples: [
       'You need to change flights in Istanbul.',
@@ -638,7 +638,7 @@ export const ENGLISH_CLASS_JULY_31: VocabularyItem[] = [
     id: '8-01',
     topicId: '8',
     term: 'Break down',
-    translation: 'averiarse / derrumbarse emocionalmente',
+    translation: 'Averiarse / Derrumbarse emocionalmente',
     definition: 'Used for "break down": stop working or lose emotional control',
     examples: [
       'My car breaks down on cold mornings.',
@@ -651,7 +651,7 @@ export const ENGLISH_CLASS_JULY_31: VocabularyItem[] = [
     id: '8-02',
     topicId: '8',
     term: 'Put down',
-    translation: 'menospreciar / poner',
+    translation: 'Menospreciar / Poner',
     definition: 'Criticize someone or place something on a surface',
     examples: [
       'He puts people down in meetings.',
@@ -664,7 +664,7 @@ export const ENGLISH_CLASS_JULY_31: VocabularyItem[] = [
     id: '8-03',
     topicId: '8',
     term: 'Run down',
-    translation: 'descuidado / agotado / resumen',
+    translation: 'Descuidado / Agotado / Resumen',
     definition: 'Be in poor condition, feel tired, or give a short summary',
     examples: [
       'That apartment looks run down now.',
@@ -677,7 +677,7 @@ export const ENGLISH_CLASS_JULY_31: VocabularyItem[] = [
     id: '8-04',
     topicId: '8',
     term: 'Come around',
-    translation: 'pasar por / recuperarse / cambiar de opinión',
+    translation: 'Pasar por / Recuperarse / Cambiar de opinión',
     definition: 'Visit, recover, or change your opinion',
     examples: [
       'My friends come around on Friday evenings.',
@@ -690,7 +690,7 @@ export const ENGLISH_CLASS_JULY_31: VocabularyItem[] = [
     id: '8-05',
     topicId: '8',
     term: 'Come through',
-    translation: 'cumplir / salir adelante',
+    translation: 'Cumplir / Salir adelante',
     definition: 'Deliver what is expected or succeed in a difficult moment',
     examples: [
       'She always comes through when the team needs help.',
@@ -703,7 +703,7 @@ export const ENGLISH_CLASS_JULY_31: VocabularyItem[] = [
     id: '8-06',
     topicId: '8',
     term: 'Come about',
-    translation: 'suceder',
+    translation: 'Suceder',
     definition: 'Happen or occur',
     examples: [
       'How does this mistake come about?',
@@ -716,7 +716,7 @@ export const ENGLISH_CLASS_JULY_31: VocabularyItem[] = [
     id: '8-07',
     topicId: '8',
     term: 'Came off',
-    translation: 'se desprendió / salió / pareció',
+    translation: 'Se desprendió / Salió / Pareció',
     definition: 'Became detached, succeeded, or seemed in a particular way',
     examples: [
       'The handle came off the door this morning.',
@@ -729,7 +729,7 @@ export const ENGLISH_CLASS_JULY_31: VocabularyItem[] = [
     id: '8-08',
     topicId: '8',
     term: 'Wear and tear',
-    translation: 'desgaste por uso',
+    translation: 'Desgaste por uso',
     definition: 'Damage caused by normal use over time',
     examples: [
       'The contract covers normal wear and tear.',
@@ -742,7 +742,7 @@ export const ENGLISH_CLASS_JULY_31: VocabularyItem[] = [
     id: '8-09',
     topicId: '8',
     term: 'Due',
-    translation: 'vencido / programado / debido',
+    translation: 'Vencido / Programado / Debido',
     definition: 'Expected, required, or payable at a certain time',
     examples: [
       'The report is due tomorrow morning.',
@@ -755,7 +755,7 @@ export const ENGLISH_CLASS_JULY_31: VocabularyItem[] = [
     id: '8-10',
     topicId: '8',
     term: 'Fine print',
-    translation: 'letra pequeña',
+    translation: 'Letra pequeña',
     definition: 'Important details in small text, usually in a contract or offer',
     examples: [
       'I read the fine print before I sign anything.',
@@ -768,12 +768,12 @@ export const ENGLISH_CLASS_JULY_31: VocabularyItem[] = [
     id: '8-11',
     topicId: '8',
     term: 'Tenance',
-    translation: 'tenencia / arrendamiento',
+    translation: 'Tenencia / Arrendamiento',
     definition: 'Used for "tenancy": the condition of renting and occupying a property',
     examples: [
       'Their tenance starts next Monday.',
       'The tenance agreement lasts one year.',
-      'He reviews the tenance terms before moving in.',
+      'He reviews the tenance terms bEfore moving in.',
     ],
     notes: 'Kept as provided; the common form is "tenancy".',
   },
@@ -781,7 +781,7 @@ export const ENGLISH_CLASS_JULY_31: VocabularyItem[] = [
     id: '8-12',
     topicId: '8',
     term: 'Plead the fifth',
-    translation: 'acogerse a la quinta enmienda',
+    translation: 'Acogerse a la quinta enmienda',
     definition: 'Refuse to answer a question to avoid self-incrimination',
     examples: [
       'He pleads the fifth during the interview.',
@@ -797,7 +797,7 @@ export const CLOTHING_PHRASAL_VERBS: VocabularyItem[] = [
     id: '9-01',
     topicId: '9',
     term: 'Try on',
-    translation: 'probarse',
+    translation: 'Probarse',
     definition: 'Put on a piece of clothing to see if it fits or looks good',
     examples: [
       'I try on the jacket before I buy it.',
@@ -810,7 +810,7 @@ export const CLOTHING_PHRASAL_VERBS: VocabularyItem[] = [
     id: '9-02',
     topicId: '9',
     term: 'Put on',
-    translation: 'ponerse',
+    translation: 'Ponerse',
     definition: 'Dress yourself in a piece of clothing',
     examples: [
       'I put on my coat before I leave the house.',
@@ -823,7 +823,7 @@ export const CLOTHING_PHRASAL_VERBS: VocabularyItem[] = [
     id: '9-03',
     topicId: '9',
     term: 'Take off',
-    translation: 'quitarse',
+    translation: 'Quitarse',
     definition: 'Remove a piece of clothing',
     examples: [
       'I take off my shoes at the door.',
@@ -836,7 +836,7 @@ export const CLOTHING_PHRASAL_VERBS: VocabularyItem[] = [
     id: '9-04',
     topicId: '9',
     term: 'Dress up',
-    translation: 'vestirse elegantemente / disfrazarse',
+    translation: 'Vestirse elegantemente / Disfrazarse',
     definition: 'Wear formal or special clothes',
     examples: [
       'We dress up for weddings.',
@@ -849,7 +849,7 @@ export const CLOTHING_PHRASAL_VERBS: VocabularyItem[] = [
     id: '9-05',
     topicId: '9',
     term: 'Button up',
-    translation: 'abotonarse',
+    translation: 'Abotonarse',
     definition: 'Fasten clothing with buttons',
     examples: [
       'I button up my shirt before the meeting.',
@@ -862,7 +862,7 @@ export const CLOTHING_PHRASAL_VERBS: VocabularyItem[] = [
     id: '9-06',
     topicId: '9',
     term: 'Zip up',
-    translation: 'subirse la cremallera',
+    translation: 'Subirse la cremallera',
     definition: 'Close clothing with a zipper',
     examples: [
       'I zip up my hoodie before I go outside.',
@@ -875,7 +875,7 @@ export const CLOTHING_PHRASAL_VERBS: VocabularyItem[] = [
     id: '9-07',
     topicId: '9',
     term: 'Roll up',
-    translation: 'remangarse / enrollar',
+    translation: 'Remangarse / Enrollar',
     definition: 'Fold clothing upward, especially sleeves or trouser legs',
     examples: [
       'I roll up my sleeves before I start cooking.',
@@ -888,7 +888,7 @@ export const CLOTHING_PHRASAL_VERBS: VocabularyItem[] = [
     id: '9-08',
     topicId: '9',
     term: 'Throw on',
-    translation: 'ponerse rápidamente',
+    translation: 'Ponerse rápidamente',
     definition: 'Put on clothes quickly and casually',
     examples: [
       'I throw on a sweater before I answer the door.',
@@ -901,7 +901,7 @@ export const CLOTHING_PHRASAL_VERBS: VocabularyItem[] = [
     id: '9-09',
     topicId: '9',
     term: 'Change into',
-    translation: 'cambiarse a',
+    translation: 'Cambiarse a',
     definition: 'Put on different clothes',
     examples: [
       'I change into sports clothes after work.',
@@ -914,7 +914,7 @@ export const CLOTHING_PHRASAL_VERBS: VocabularyItem[] = [
     id: '9-10',
     topicId: '9',
     term: 'Slip on',
-    translation: 'ponerse fácilmente',
+    translation: 'Ponerse fácilmente',
     definition: 'Put on clothing or shoes quickly and easily',
     examples: [
       'I slip on my sandals before I go outside.',
@@ -930,7 +930,7 @@ export const PHRASAL_VERBS_WITH_LOOK: VocabularyItem[] = [
     id: '10-01',
     topicId: '10',
     term: 'Look after',
-    translation: 'cuidar de',
+    translation: 'Cuidar de',
     definition: 'Take care of someone or something',
     examples: [
       'She looks after her little brother after school.',
@@ -943,7 +943,7 @@ export const PHRASAL_VERBS_WITH_LOOK: VocabularyItem[] = [
     id: '10-02',
     topicId: '10',
     term: 'Look for',
-    translation: 'buscar',
+    translation: 'Buscar',
     definition: 'Try to find someone or something',
     examples: [
       'I look for my keys every morning.',
@@ -956,7 +956,7 @@ export const PHRASAL_VERBS_WITH_LOOK: VocabularyItem[] = [
     id: '10-03',
     topicId: '10',
     term: 'Look forward to',
-    translation: 'tener ganas de',
+    translation: 'Tener ganas de',
     definition: 'Feel happy and excited about something in the future',
     examples: [
       'I look forward to the weekend.',
@@ -969,7 +969,7 @@ export const PHRASAL_VERBS_WITH_LOOK: VocabularyItem[] = [
     id: '10-04',
     topicId: '10',
     term: 'Look into',
-    translation: 'investigar',
+    translation: 'Investigar',
     definition: 'Examine or investigate something carefully',
     examples: [
       'The manager looks into every complaint.',
@@ -982,7 +982,7 @@ export const PHRASAL_VERBS_WITH_LOOK: VocabularyItem[] = [
     id: '10-05',
     topicId: '10',
     term: 'Look out',
-    translation: 'tener cuidado',
+    translation: 'Tener cuidado',
     definition: 'Be careful or watch for danger',
     examples: [
       'Look out, there is a car coming.',
@@ -995,7 +995,7 @@ export const PHRASAL_VERBS_WITH_LOOK: VocabularyItem[] = [
     id: '10-06',
     topicId: '10',
     term: 'Look over',
-    translation: 'revisar',
+    translation: 'Revisar',
     definition: 'Check or examine something quickly',
     examples: [
       'I look over the report before I send it.',
@@ -1008,7 +1008,7 @@ export const PHRASAL_VERBS_WITH_LOOK: VocabularyItem[] = [
     id: '10-07',
     topicId: '10',
     term: 'Look through',
-    translation: 'revisar / hojear',
+    translation: 'Revisar / Hojear',
     definition: 'Read or examine something quickly',
     examples: [
       'I look through the emails every morning.',
@@ -1021,7 +1021,7 @@ export const PHRASAL_VERBS_WITH_LOOK: VocabularyItem[] = [
     id: '10-08',
     topicId: '10',
     term: 'Look up',
-    translation: 'buscar información',
+    translation: 'Buscar información',
     definition: 'Search for information in a reference source or online',
     examples: [
       'I look up new words in the dictionary.',
@@ -1034,7 +1034,7 @@ export const PHRASAL_VERBS_WITH_LOOK: VocabularyItem[] = [
     id: '10-09',
     topicId: '10',
     term: 'Look up to',
-    translation: 'admirar',
+    translation: 'Admirar',
     definition: 'Respect and admire someone',
     examples: [
       'Many students look up to their teachers.',
@@ -1047,7 +1047,7 @@ export const PHRASAL_VERBS_WITH_LOOK: VocabularyItem[] = [
     id: '10-10',
     topicId: '10',
     term: 'Look down on',
-    translation: 'menospreciar',
+    translation: 'Menospreciar',
     definition: 'Think you are better than someone',
     examples: [
       'She never looks down on people with less experience.',
@@ -1063,7 +1063,7 @@ export const FREE_TIME_ACTIVITIES: VocabularyItem[] = [
     id: '11-01',
     topicId: '11',
     term: 'Stay in',
-    translation: 'quedarse en casa',
+    translation: 'Quedarse en casa',
     definition: 'Remain at home instead of going out',
     examples: [
       'I usually stay in on rainy evenings.',
@@ -1076,7 +1076,7 @@ export const FREE_TIME_ACTIVITIES: VocabularyItem[] = [
     id: '11-02',
     topicId: '11',
     term: 'Go out',
-    translation: 'salir',
+    translation: 'Salir',
     definition: 'Leave home to spend time outside, often for social activities',
     examples: [
       'They go out most Friday nights.',
@@ -1089,7 +1089,7 @@ export const FREE_TIME_ACTIVITIES: VocabularyItem[] = [
     id: '11-03',
     topicId: '11',
     term: 'Eat out',
-    translation: 'comer fuera',
+    translation: 'Comer fuera',
     definition: 'Eat at a restaurant instead of at home',
     examples: [
       'We eat out once a week.',
@@ -1102,7 +1102,7 @@ export const FREE_TIME_ACTIVITIES: VocabularyItem[] = [
     id: '11-04',
     topicId: '11',
     term: 'Hang out',
-    translation: 'pasar el rato',
+    translation: 'Pasar el rato',
     definition: 'Spend relaxed time with other people',
     examples: [
       'I often hang out with my cousins on Sundays.',
@@ -1115,7 +1115,7 @@ export const FREE_TIME_ACTIVITIES: VocabularyItem[] = [
     id: '11-05',
     topicId: '11',
     term: 'Chill out',
-    translation: 'relajarse',
+    translation: 'Relajarse',
     definition: 'Relax and spend time without stress',
     examples: [
       'I chill out by listening to music.',
@@ -1128,7 +1128,7 @@ export const FREE_TIME_ACTIVITIES: VocabularyItem[] = [
     id: '11-06',
     topicId: '11',
     term: 'Get together',
-    translation: 'reunirse',
+    translation: 'Reunirse',
     definition: 'Meet socially with other people',
     examples: [
       'Our family gets together every December.',
@@ -1141,7 +1141,7 @@ export const FREE_TIME_ACTIVITIES: VocabularyItem[] = [
     id: '11-07',
     topicId: '11',
     term: 'Play an instrument',
-    translation: 'tocar un instrumento',
+    translation: 'Tocar un instrumento',
     definition: 'Perform music using a musical instrument',
     examples: [
       'He plays an instrument in his free time.',
@@ -1154,7 +1154,7 @@ export const FREE_TIME_ACTIVITIES: VocabularyItem[] = [
     id: '11-08',
     topicId: '11',
     term: 'Watch TV',
-    translation: 'ver la televisión',
+    translation: 'Ver la televisión',
     definition: 'Spend time viewing television programs',
     examples: [
       'My parents watch TV after dinner.',
@@ -1167,20 +1167,20 @@ export const FREE_TIME_ACTIVITIES: VocabularyItem[] = [
     id: '11-09',
     topicId: '11',
     term: 'Take up a hobby',
-    translation: 'empezar una afición',
+    translation: 'Empezar una afición',
     definition: 'Start doing a new hobby or regular activity',
     examples: [
       'Many people take up a hobby to reduce stress.',
       'He took up photography last summer.',
       'I am thinking of taking up chess this month.',
     ],
-    notes: 'Often used for new long-term interests.',
+    notes: 'Often used for new long-term inTerests.',
   },
   {
     id: '11-10',
     topicId: '11',
     term: 'Work out',
-    translation: 'hacer ejercicio',
+    translation: 'Hacer ejercicio',
     definition: 'Exercise to improve fitness or health',
     examples: [
       'I work out three times a week.',
@@ -1193,7 +1193,7 @@ export const FREE_TIME_ACTIVITIES: VocabularyItem[] = [
     id: '11-11',
     topicId: '11',
     term: 'Play sports',
-    translation: 'practicar deportes',
+    translation: 'Practicar deportes',
     definition: 'Take part in athletic games or physical activities',
     examples: [
       'Kids play sports after school.',
@@ -1206,7 +1206,7 @@ export const FREE_TIME_ACTIVITIES: VocabularyItem[] = [
     id: '11-12',
     topicId: '11',
     term: 'Go swimming',
-    translation: 'ir a nadar',
+    translation: 'Ir a nadar',
     definition: 'Go somewhere to swim as an activity',
     examples: [
       'They go swimming every Saturday.',
@@ -1219,7 +1219,7 @@ export const FREE_TIME_ACTIVITIES: VocabularyItem[] = [
     id: '11-13',
     topicId: '11',
     term: 'Go for a walk',
-    translation: 'ir a dar un paseo',
+    translation: 'Ir a dar un paseo',
     definition: 'Leave home to walk for pleasure or exercise',
     examples: [
       'I go for a walk after lunch.',
@@ -1232,7 +1232,7 @@ export const FREE_TIME_ACTIVITIES: VocabularyItem[] = [
     id: '11-14',
     topicId: '11',
     term: 'Go to the cinema',
-    translation: 'ir al cine',
+    translation: 'Ir al cine',
     definition: 'Visit a movie theater to watch a film',
     examples: [
       'They go to the cinema twice a month.',
@@ -1245,7 +1245,7 @@ export const FREE_TIME_ACTIVITIES: VocabularyItem[] = [
     id: '11-15',
     topicId: '11',
     term: 'Have lessons',
-    translation: 'tener clases',
+    translation: 'Tener clases',
     definition: 'Attend lessons to learn a skill or subject',
     examples: [
       'I have lessons every Tuesday evening.',
@@ -1258,7 +1258,7 @@ export const FREE_TIME_ACTIVITIES: VocabularyItem[] = [
     id: '11-16',
     topicId: '11',
     term: 'Play computer games',
-    translation: 'jugar videojuegos',
+    translation: 'Jugar videojuegos',
     definition: 'Spend time playing games on a computer or console',
     examples: [
       'My brother plays computer games after homework.',
@@ -1271,7 +1271,7 @@ export const FREE_TIME_ACTIVITIES: VocabularyItem[] = [
     id: '11-17',
     topicId: '11',
     term: 'Go online',
-    translation: 'conectarse a internet',
+    translation: 'Conectarse a internet',
     definition: 'Connect to the internet to browse or use online services',
     examples: [
       'I go online to check the news every morning.',
@@ -1284,7 +1284,7 @@ export const FREE_TIME_ACTIVITIES: VocabularyItem[] = [
     id: '11-18',
     topicId: '11',
     term: 'Spend time with someone',
-    translation: 'pasar tiempo con alguien',
+    translation: 'Pasar tiempo con alguien',
     definition: 'Be with someone for a period of time',
     examples: [
       'I spend time with my grandparents on Sundays.',
@@ -1297,7 +1297,7 @@ export const FREE_TIME_ACTIVITIES: VocabularyItem[] = [
     id: '11-19',
     topicId: '11',
     term: 'Have fun',
-    translation: 'divertirse',
+    translation: 'Divertirse',
     definition: 'Enjoy yourself and feel happy during an activity',
     examples: [
       'We always have fun at the beach.',
@@ -1310,7 +1310,7 @@ export const FREE_TIME_ACTIVITIES: VocabularyItem[] = [
     id: '11-20',
     topicId: '11',
     term: 'Enjoy yourself',
-    translation: 'disfrutar',
+    translation: 'Disfrutar',
     definition: 'Have a good time and feel happy in an activity or event',
     examples: [
       'Please enjoy yourself at the party.',
@@ -1326,7 +1326,7 @@ export const TRAVEL_ITEMS: VocabularyItem[] = [
     id: '1-01',
     topicId: '1',
     term: 'Passport',
-    translation: 'pasaporte',
+    translation: 'Pasaporte',
     definition: 'An official document used for international travel',
     examples: [
       'I always keep my passport in a safe pocket.',
@@ -1339,7 +1339,7 @@ export const TRAVEL_ITEMS: VocabularyItem[] = [
     id: '1-02',
     topicId: '1',
     term: 'Boarding pass',
-    translation: 'tarjeta de embarque',
+    translation: 'Tarjeta de embarque',
     definition: 'A document that allows a passenger to enter a plane',
     examples: [
       'Please show your boarding pass at the gate.',
@@ -1352,7 +1352,7 @@ export const TRAVEL_ITEMS: VocabularyItem[] = [
     id: '1-03',
     topicId: '1',
     term: 'Suitcase',
-    translation: 'maleta',
+    translation: 'Maleta',
     definition: 'A large bag used to carry clothes and personal items while traveling',
     examples: [
       'My suitcase is too heavy for the overhead bin.',
@@ -1365,7 +1365,7 @@ export const TRAVEL_ITEMS: VocabularyItem[] = [
     id: '1-04',
     topicId: '1',
     term: 'Check-in counter',
-    translation: 'mostrador de facturación',
+    translation: 'Mostrador de facturación',
     definition: 'The place at an airport where passengers register and drop off luggage',
     examples: [
       'We are waiting at the check-in counter now.',
@@ -1378,7 +1378,7 @@ export const TRAVEL_ITEMS: VocabularyItem[] = [
     id: '1-05',
     topicId: '1',
     term: 'Gate',
-    translation: 'puerta de embarque',
+    translation: 'Puerta de embarque',
     definition: 'The area where passengers wait before entering a plane',
     examples: [
       'Our gate is near the coffee shop.',
@@ -1391,7 +1391,7 @@ export const TRAVEL_ITEMS: VocabularyItem[] = [
     id: '1-06',
     topicId: '1',
     term: 'Departure',
-    translation: 'salida',
+    translation: 'Salida',
     definition: 'The act or time of leaving a place, especially by plane or train',
     examples: [
       'The departure is scheduled for 8:15 a.m.',
@@ -1404,7 +1404,7 @@ export const TRAVEL_ITEMS: VocabularyItem[] = [
     id: '1-07',
     topicId: '1',
     term: 'Arrival',
-    translation: 'llegada',
+    translation: 'Llegada',
     definition: 'The act or time of reaching a destination',
     examples: [
       'Her arrival surprised everyone at the station.',
@@ -1417,7 +1417,7 @@ export const TRAVEL_ITEMS: VocabularyItem[] = [
     id: '1-08',
     topicId: '1',
     term: 'Delay',
-    translation: 'retraso',
+    translation: 'Retraso',
     definition: 'A situation in which something happens later than expected',
     examples: [
       'There is a delay because of heavy rain.',
@@ -1430,7 +1430,7 @@ export const TRAVEL_ITEMS: VocabularyItem[] = [
     id: '1-09',
     topicId: '1',
     term: 'One-way ticket',
-    translation: 'billete de ida',
+    translation: 'Billete de ida',
     definition: 'A ticket for travel to a destination without a return trip',
     examples: [
       'I need a one-way ticket to Lisbon.',
@@ -1443,7 +1443,7 @@ export const TRAVEL_ITEMS: VocabularyItem[] = [
     id: '1-10',
     topicId: '1',
     term: 'Round-trip ticket',
-    translation: 'billete de ida y vuelta',
+    translation: 'Billete de ida y vuelta',
     definition: 'A ticket that includes travel to a destination and back again',
     examples: [
       'A round-trip ticket is cheaper this week.',
@@ -1459,7 +1459,7 @@ export const FOOD_ITEMS: VocabularyItem[] = [
     id: '2-01',
     topicId: '2',
     term: 'Menu',
-    translation: 'menú',
+    translation: 'Menú',
     definition: 'A list of food and drinks available in a restaurant',
     examples: [
       'Could I see the menu, please?',
@@ -1472,7 +1472,7 @@ export const FOOD_ITEMS: VocabularyItem[] = [
     id: '2-02',
     topicId: '2',
     term: 'Order',
-    translation: 'pedir',
+    translation: 'Pedir',
     definition: 'To ask for food or drinks in a restaurant',
     examples: [
       'I usually order soup and salad.',
@@ -1485,7 +1485,7 @@ export const FOOD_ITEMS: VocabularyItem[] = [
     id: '2-03',
     topicId: '2',
     term: 'Bill',
-    translation: 'cuenta',
+    translation: 'Cuenta',
     definition: 'The statement showing how much money you must pay for a meal',
     examples: [
       'Can we have the bill, please?',
@@ -1498,7 +1498,7 @@ export const FOOD_ITEMS: VocabularyItem[] = [
     id: '2-04',
     topicId: '2',
     term: 'Ingredients',
-    translation: 'ingredientes',
+    translation: 'Ingredientes',
     definition: 'The foods used to make a dish',
     examples: [
       'These ingredients are fresh and local.',
@@ -1511,7 +1511,7 @@ export const FOOD_ITEMS: VocabularyItem[] = [
     id: '2-05',
     topicId: '2',
     term: 'Spicy',
-    translation: 'picante',
+    translation: 'Picante',
     definition: 'Having a strong hot flavor from spices',
     examples: ['This curry is too spicy for me.', 'She loves spicy food.', 'The sauce was spicy but delicious.'],
 
@@ -1521,7 +1521,7 @@ export const FOOD_ITEMS: VocabularyItem[] = [
     id: '2-06',
     topicId: '2',
     term: 'Appetizer',
-    translation: 'entrante',
+    translation: 'Entrante',
     definition: 'A small dish served before the main course',
     examples: [
       'We shared an appetizer before dinner.',
@@ -1534,7 +1534,7 @@ export const FOOD_ITEMS: VocabularyItem[] = [
     id: '2-07',
     topicId: '2',
     term: 'Main course',
-    translation: 'plato principal',
+    translation: 'Plato principal',
     definition: 'The most important dish in a meal',
     examples: [
       'The chicken is my favorite main course.',
@@ -1547,7 +1547,7 @@ export const FOOD_ITEMS: VocabularyItem[] = [
     id: '2-08',
     topicId: '2',
     term: 'Dessert',
-    translation: 'postre',
+    translation: 'Postre',
     definition: 'Sweet food eaten at the end of a meal',
     examples: [
       'I rarely eat dessert after lunch.',
@@ -1560,7 +1560,7 @@ export const FOOD_ITEMS: VocabularyItem[] = [
     id: '2-09',
     topicId: '2',
     term: 'Recipe',
-    translation: 'receta',
+    translation: 'Receta',
     definition: 'A set of instructions for preparing a dish',
     examples: [
       'This recipe is easy to follow.',
@@ -1573,7 +1573,7 @@ export const FOOD_ITEMS: VocabularyItem[] = [
     id: '2-10',
     topicId: '2',
     term: 'Leftovers',
-    translation: 'sobras',
+    translation: 'Sobras',
     definition: 'Food that remains after a meal',
     examples: [
       'We saved the leftovers for lunch.',
@@ -1589,7 +1589,7 @@ export const WORK_ITEMS: VocabularyItem[] = [
     id: '3-01',
     topicId: '3',
     term: 'Deadline',
-    translation: 'fecha límite',
+    translation: 'Fecha límite',
     definition: 'The latest time by which something must be finished',
     examples: [
       'The deadline is next Friday.',
@@ -1602,7 +1602,7 @@ export const WORK_ITEMS: VocabularyItem[] = [
     id: '3-02',
     topicId: '3',
     term: 'Meeting',
-    translation: 'reunión',
+    translation: 'Reunión',
     definition: 'An event in which people gather to discuss work',
     examples: [
       'I have a meeting at ten.',
@@ -1615,7 +1615,7 @@ export const WORK_ITEMS: VocabularyItem[] = [
     id: '3-03',
     topicId: '3',
     term: 'Coworker',
-    translation: 'compañero de trabajo',
+    translation: 'Compañero de trabajo',
     definition: 'A person who works with you',
     examples: [
       'My coworkers are very supportive.',
@@ -1628,7 +1628,7 @@ export const WORK_ITEMS: VocabularyItem[] = [
     id: '3-04',
     topicId: '3',
     term: 'Salary',
-    translation: 'salario',
+    translation: 'Salario',
     definition: 'Money that a person receives regularly for doing a job',
     examples: [
       'Her salary increased this year.',
@@ -1641,7 +1641,7 @@ export const WORK_ITEMS: VocabularyItem[] = [
     id: '3-05',
     topicId: '3',
     term: 'Shift',
-    translation: 'turno',
+    translation: 'Turno',
     definition: 'A period of time during which someone works',
     examples: [
       'I start my shift at 7 a.m.',
@@ -1654,7 +1654,7 @@ export const WORK_ITEMS: VocabularyItem[] = [
     id: '3-06',
     topicId: '3',
     term: 'Task',
-    translation: 'tarea',
+    translation: 'Tarea',
     definition: 'A piece of work that someone must do',
     examples: [
       'This task takes only a few minutes.',
@@ -1667,7 +1667,7 @@ export const WORK_ITEMS: VocabularyItem[] = [
     id: '3-07',
     topicId: '3',
     term: 'Promotion',
-    translation: 'ascenso',
+    translation: 'Ascenso',
     definition: 'A move to a higher position or rank at work',
     examples: [
       'She got a promotion last month.',
@@ -1680,7 +1680,7 @@ export const WORK_ITEMS: VocabularyItem[] = [
     id: '3-08',
     topicId: '3',
     term: 'Remote work',
-    translation: 'trabajo remoto',
+    translation: 'Trabajo remoto',
     definition: 'A way of working from home or another place outside the office',
     examples: [
       'Remote work suits my schedule well.',
@@ -1693,7 +1693,7 @@ export const WORK_ITEMS: VocabularyItem[] = [
     id: '3-09',
     topicId: '3',
     term: 'Schedule',
-    translation: 'horario',
+    translation: 'Horario',
     definition: 'A plan that shows when tasks or events will happen',
     examples: [
       'My schedule is full this afternoon.',
@@ -1706,7 +1706,7 @@ export const WORK_ITEMS: VocabularyItem[] = [
     id: '3-10',
     topicId: '3',
     term: 'Interview',
-    translation: 'entrevista',
+    translation: 'Entrevista',
     definition: 'A formal meeting in which someone is asked questions for a job',
     examples: [
       'Her interview went very well.',
@@ -1722,7 +1722,7 @@ export const DAILY_LIFE_ITEMS: VocabularyItem[] = [
     id: '4-01',
     topicId: '4',
     term: 'Wake up',
-    translation: 'despertarse',
+    translation: 'Despertarse',
     definition: 'Stop sleeping and become awake',
     examples: [
       'I wake up at six every morning.',
@@ -1735,7 +1735,7 @@ export const DAILY_LIFE_ITEMS: VocabularyItem[] = [
     id: '4-02',
     topicId: '4',
     term: 'Commute',
-    translation: 'desplazarse al trabajo',
+    translation: 'Desplazarse al trabajo',
     definition: 'Travel regularly between home and work or school',
     examples: [
       'He commutes by train every day.',
@@ -1748,7 +1748,7 @@ export const DAILY_LIFE_ITEMS: VocabularyItem[] = [
     id: '4-03',
     topicId: '4',
     term: 'Do chores',
-    translation: 'hacer las tareas del hogar',
+    translation: 'Hacer las tareas del hogar',
     definition: 'Do regular small jobs at home',
     examples: [
       'We do chores every Saturday morning.',
@@ -1761,7 +1761,7 @@ export const DAILY_LIFE_ITEMS: VocabularyItem[] = [
     id: '4-04',
     topicId: '4',
     term: 'Grocery shopping',
-    translation: 'compra del supermercado',
+    translation: 'Compra del supermercado',
     definition: 'The activity of buying food and household items',
     examples: [
       'I do grocery shopping on Fridays.',
@@ -1774,7 +1774,7 @@ export const DAILY_LIFE_ITEMS: VocabularyItem[] = [
     id: '4-05',
     topicId: '4',
     term: 'Take a shower',
-    translation: 'ducharse',
+    translation: 'Ducharse',
     definition: 'Wash your body under running water',
     examples: [
       'I take a shower before breakfast.',
@@ -1787,7 +1787,7 @@ export const DAILY_LIFE_ITEMS: VocabularyItem[] = [
     id: '4-06',
     topicId: '4',
     term: 'Make breakfast',
-    translation: 'preparar el desayuno',
+    translation: 'Preparar el desayuno',
     definition: 'Prepare the first meal of the day',
     examples: [
       'She makes breakfast for the family.',
@@ -1800,7 +1800,7 @@ export const DAILY_LIFE_ITEMS: VocabularyItem[] = [
     id: '4-07',
     topicId: '4',
     term: 'Go to bed',
-    translation: 'irse a la cama',
+    translation: 'Irse a la cama',
     definition: 'Go to your bed to sleep',
     examples: [
       'The children go to bed at nine.',
@@ -1813,7 +1813,7 @@ export const DAILY_LIFE_ITEMS: VocabularyItem[] = [
     id: '4-08',
     topicId: '4',
     term: 'Run errands',
-    translation: 'hacer recados',
+    translation: 'Hacer recados',
     definition: 'Go out to complete small necessary tasks',
     examples: [
       'I run errands on Saturday mornings.',
@@ -1826,7 +1826,7 @@ export const DAILY_LIFE_ITEMS: VocabularyItem[] = [
     id: '4-09',
     topicId: '4',
     term: 'Tidy up',
-    translation: 'ordenar',
+    translation: 'Ordenar',
     definition: 'Make a place neat and organized',
     examples: [
       'Please tidy up your room.',
@@ -1839,7 +1839,7 @@ export const DAILY_LIFE_ITEMS: VocabularyItem[] = [
     id: '4-10',
     topicId: '4',
     term: 'Walk the dog',
-    translation: 'pasear al perro',
+    translation: 'Pasear al perro',
     definition: 'Take a dog outside for exercise and a short walk',
     examples: [
       'I walk the dog every evening.',
@@ -1855,7 +1855,7 @@ export const TYPES_OF_RELATIONSHIPS: VocabularyItem[] = [
     id: '13-1',
     topicId: '13',
     term: 'Acquaintance',
-    translation: 'conocido/a',
+    translation: 'Conocido/a',
     definition: 'A person you know a little, but not very well.',
     examples: [
       'He is an acquaintance from my photography class.',
@@ -1868,7 +1868,7 @@ export const TYPES_OF_RELATIONSHIPS: VocabularyItem[] = [
     id: '13-2',
     topicId: '13',
     term: 'Close friend',
-    translation: 'amigo/a cercano/a',
+    translation: 'Amigo/a cercano/a',
     definition: 'A friend with whom you have a strong and trusting relationship.',
     examples: [
       'Laura is a close friend, so I tell her everything.',
@@ -1881,7 +1881,7 @@ export const TYPES_OF_RELATIONSHIPS: VocabularyItem[] = [
     id: '13-3',
     topicId: '13',
     term: 'Best friend',
-    translation: 'mejor amigo/a',
+    translation: 'Mejor amigo/a',
     definition: 'Your closest and most important friend.',
     examples: [
       'My best friend always gives me honest advice.',
@@ -1894,7 +1894,7 @@ export const TYPES_OF_RELATIONSHIPS: VocabularyItem[] = [
     id: '13-4',
     topicId: '13',
     term: 'Colleague',
-    translation: 'colega / compañero/a de trabajo',
+    translation: 'Colega / Compañero/a de trabajo',
     definition: 'A person you work with, especially in the same profession.',
     examples: [
       'I discussed the proposal with a colleague this morning.',
@@ -1907,7 +1907,7 @@ export const TYPES_OF_RELATIONSHIPS: VocabularyItem[] = [
     id: '13-5',
     topicId: '13',
     term: 'Flatmate',
-    translation: 'compañero/a de piso',
+    translation: 'Compañero/a de piso',
     definition: 'A person who shares an apartment with you.',
     examples: [
       'My flatmate cooks dinner every Friday.',
@@ -1920,7 +1920,7 @@ export const TYPES_OF_RELATIONSHIPS: VocabularyItem[] = [
     id: '13-6',
     topicId: '13',
     term: 'Couple',
-    translation: 'pareja',
+    translation: 'Pareja',
     definition: 'Two people who are in a romantic relationship.',
     examples: [
       'They are a happy couple.',
@@ -1933,7 +1933,7 @@ export const TYPES_OF_RELATIONSHIPS: VocabularyItem[] = [
     id: '13-7',
     topicId: '13',
     term: 'Wife',
-    translation: 'esposa',
+    translation: 'Esposa',
     definition: 'A married woman in relation to her spouse.',
     examples: [
       'His wife works as an architect.',
@@ -1946,7 +1946,7 @@ export const TYPES_OF_RELATIONSHIPS: VocabularyItem[] = [
     id: '13-8',
     topicId: '13',
     term: 'Husband',
-    translation: 'esposo / marido',
+    translation: 'Esposo / Marido',
     definition: 'A married man in relation to his spouse.',
     examples: [
       'Her husband is learning Italian.',
@@ -1959,7 +1959,7 @@ export const TYPES_OF_RELATIONSHIPS: VocabularyItem[] = [
     id: '13-9',
     topicId: '13',
     term: 'Partner',
-    translation: 'pareja',
+    translation: 'Pareja',
     definition: 'A person you are in a committed romantic relationship with.',
     examples: [
       'My partner and I are moving to a new city.',
@@ -1972,7 +1972,7 @@ export const TYPES_OF_RELATIONSHIPS: VocabularyItem[] = [
     id: '13-10',
     topicId: '13',
     term: 'Ex',
-    translation: 'ex / expareja',
+    translation: 'Ex / Expareja',
     definition: 'A person you used to have a romantic relationship with.',
     examples: [
       'I ran into my ex at the supermarket.',
@@ -1985,7 +1985,7 @@ export const TYPES_OF_RELATIONSHIPS: VocabularyItem[] = [
     id: '13-11',
     topicId: '13',
     term: 'Date',
-    translation: 'cita',
+    translation: 'Cita',
     definition: 'A social meeting, usually romantic, between two people.',
     examples: [
       'We are going on a date tonight.',
@@ -1998,7 +1998,7 @@ export const TYPES_OF_RELATIONSHIPS: VocabularyItem[] = [
     id: '13-12',
     topicId: '13',
     term: 'Blind date',
-    translation: 'cita a ciegas',
+    translation: 'Cita a ciegas',
     definition: 'A date between two people who have not met before.',
     examples: [
       'My friend set me up on a blind date.',
@@ -2040,7 +2040,7 @@ export const TYPES_OF_HOUSES_AND_RENTING: VocabularyItem[] = [
     id: 'vhr-003',
     topicId: 'topic-011',
     term: 'Townhouse',
-    translation: 'Casa adosada / casa en hilera',
+    translation: 'Casa adosada / Casa en hilera',
     definition: 'A tall, narrow house in a row, often similar to a terraced house.',
     examples: [
       'He moved into a townhouse close to his office.',
@@ -2053,7 +2053,7 @@ export const TYPES_OF_HOUSES_AND_RENTING: VocabularyItem[] = [
     id: 'vhr-004',
     topicId: 'topic-011',
     term: 'Cottage',
-    translation: 'Cabaña / casita de campo',
+    translation: 'Cabaña / Casita de campo',
     definition: 'A small, cozy house, usually in the countryside.',
     examples: [
       'We stayed in a cottage by the lake during winter.',
@@ -2079,7 +2079,7 @@ export const TYPES_OF_HOUSES_AND_RENTING: VocabularyItem[] = [
     id: 'vhr-006',
     topicId: 'topic-011',
     term: 'Flat / Apartment',
-    translation: 'Piso / apartamento',
+    translation: 'Piso / Apartamento',
     definition: 'A set of rooms for living, usually on one floor of a building.',
     examples: [
       'Their flat overlooks the main square.',
@@ -2092,7 +2092,7 @@ export const TYPES_OF_HOUSES_AND_RENTING: VocabularyItem[] = [
     id: 'vhr-007',
     topicId: 'topic-011',
     term: 'Block of flats / Apartment building',
-    translation: 'Bloque de pisos / edificio de apartamentos',
+    translation: 'Bloque de pisos / Edificio de apartamentos',
     definition: 'A large building that contains many separate flats or apartments.',
     examples: [
       'A new block of flats was built next to the station.',
@@ -2118,7 +2118,7 @@ export const TYPES_OF_HOUSES_AND_RENTING: VocabularyItem[] = [
     id: 'vhr-009',
     topicId: 'topic-011',
     term: 'Renter / Tenant',
-    translation: 'Inquilino / arrendatario',
+    translation: 'Inquilino / Arrendatario',
     definition: 'A person who pays to live in a property owned by someone else.',
     examples: [
       'Every renter must sign the contract before moving in.',
@@ -2131,14 +2131,14 @@ export const TYPES_OF_HOUSES_AND_RENTING: VocabularyItem[] = [
     id: 'vhr-010',
     topicId: 'topic-011',
     term: 'Kicked out / Evicted',
-    translation: 'Desalojado / expulsado de la vivienda',
+    translation: 'Desalojado / Expulsado de la vivienda',
     definition: 'Forced to leave a rented property, usually for legal or financial reasons.',
     examples: [
       'They were evicted after missing rent for three months.',
       'He got kicked out because he damaged the apartment.',
       'If she does not pay soon, she will be evicted.',
     ],
-    notes: 'Formal term: evicted; informal term: kicked out.',
+    notes: 'Formal term: eVicted; informal term: kIcked out.',
   },
   {
     id: 'vhr-011',
@@ -2170,7 +2170,7 @@ export const TYPES_OF_HOUSES_AND_RENTING: VocabularyItem[] = [
     id: 'vhr-013',
     topicId: 'topic-011',
     term: 'Landlord',
-    translation: 'Casero / propietario',
+    translation: 'Casero / Propietario',
     definition: 'A person who owns property and rents it to others.',
     examples: [
       'Our landlord fixed the broken heater yesterday.',
@@ -2190,13 +2190,13 @@ export const TYPES_OF_HOUSES_AND_RENTING: VocabularyItem[] = [
       'They were worried, but the landlord gave them a grace period.',
       'By the end of the grace period, he had transferred the full amount.',
     ],
-    notes: 'Important term in rental contracts and payment rules.',
+    notes: 'Important term inRental contracts and payment rules.',
   },
   {
     id: 'vhr-015',
     topicId: 'topic-011',
     term: 'Loan shark',
-    translation: 'Usurero / prestamista ilegal',
+    translation: 'Usurero / Prestamista ilegal',
     definition: 'A person who lends money illegally at very high interest rates.',
     examples: [
       'He borrowed from a loan shark and now owes double the money.',
@@ -2225,7 +2225,7 @@ export const LEGAL_ENGLISH_BASICS_ITEMS: VocabularyItem[] = [
     id: '14-01',
     topicId: '14',
     term: 'Sue',
-    translation: 'demandar',
+    translation: 'Demandar',
     definition: 'Start legal action against a person or company in court',
     examples: [
       'They sued the contractor for poor work last year.',
@@ -2238,7 +2238,7 @@ export const LEGAL_ENGLISH_BASICS_ITEMS: VocabularyItem[] = [
     id: '14-02',
     topicId: '14',
     term: 'Lawsue',
-    translation: 'demanda judicial',
+    translation: 'Demanda judicial',
     definition: 'A legal case brought to court against someone',
     examples: [
       'The lawsuit was settled before trial.',
@@ -2251,7 +2251,7 @@ export const LEGAL_ENGLISH_BASICS_ITEMS: VocabularyItem[] = [
     id: '14-03',
     topicId: '14',
     term: 'Claim',
-    translation: 'reclamación / afirmar',
+    translation: 'Reclamación / Afirmar',
     definition: 'A formal request for money or rights, or a statement that something is true',
     examples: [
       'She submitted a claim to the insurance company.',
@@ -2264,11 +2264,11 @@ export const LEGAL_ENGLISH_BASICS_ITEMS: VocabularyItem[] = [
     id: '14-04',
     topicId: '14',
     term: 'Demand',
-    translation: 'exigir / demanda',
+    translation: 'Exigir / Demanda',
     definition: 'Ask for something forcefully or as a right',
     examples: [
       'The tenant demanded urgent repairs.',
-      'Customers are demanding clearer terms now.',
+      'Customers are demanding clearer terms nOw.',
       'He demanded a full refund after the delay.',
     ],
     notes: 'Used as verb and noun depending on context.',
@@ -2277,7 +2277,7 @@ export const LEGAL_ENGLISH_BASICS_ITEMS: VocabularyItem[] = [
     id: '14-05',
     topicId: '14',
     term: 'Imply',
-    translation: 'implicar / dar a entender',
+    translation: 'Implicar / Dar a entender',
     definition: 'Suggest something indirectly rather than stating it clearly',
     examples: [
       'Her email implied that the deadline might change.',
@@ -2290,7 +2290,7 @@ export const LEGAL_ENGLISH_BASICS_ITEMS: VocabularyItem[] = [
     id: '14-06',
     topicId: '14',
     term: 'Insist',
-    translation: 'insistir',
+    translation: 'Insistir',
     definition: 'Say firmly that something is true or necessary',
     examples: [
       'They insisted on reading the full contract.',
@@ -2303,7 +2303,7 @@ export const LEGAL_ENGLISH_BASICS_ITEMS: VocabularyItem[] = [
     id: '14-07',
     topicId: '14',
     term: 'Acknowledge',
-    translation: 'reconocer / acusar recibo',
+    translation: 'Reconocer / Acusar recibo',
     definition: 'Accept or confirm that something exists, is true, or has been received',
     examples: [
       'The bank acknowledged receipt of the transfer.',
@@ -2316,7 +2316,7 @@ export const LEGAL_ENGLISH_BASICS_ITEMS: VocabularyItem[] = [
     id: '14-08',
     topicId: '14',
     term: 'Payment Goes Through / Has Cleared',
-    translation: 'el pago se procesa / se ha hecho efectivo',
+    translation: 'El pago se procesa / Se ha hecho efectivo',
     definition: 'A payment is successfully processed and confirmed by the bank or platform',
     examples: [
       'The payment went through this morning.',
@@ -2324,5 +2324,333 @@ export const LEGAL_ENGLISH_BASICS_ITEMS: VocabularyItem[] = [
       'Her card failed first, but the payment went through on the second attempt.',
     ],
     notes: 'Useful for banking, invoices, and online transactions.',
+  },
+]
+
+export const DESCRIBING_PLACES: VocabularyItem[] = [
+  {
+    id: 'dp-001',
+    topicId: 'topic-describing-places',
+    term: 'Tiny',
+    translation: 'Minúsculo',
+    definition: 'Extremely small in size.',
+    examples: [
+      'They rented a tiny studio near the station.',
+      'The café was tiny, but it served excellent coffee.',
+      'By next year, this tiny office will become a showroom.',
+    ],
+    notes: 'Stronger than "small".',
+  },
+  {
+    id: 'dp-002',
+    topicId: 'topic-describing-places',
+    term: 'Small',
+    translation: 'Pequeño',
+    definition: 'Not large in size.',
+    examples: [
+      'We found a small classroom on the second floor.',
+      'The park looked small from the hill.',
+      'She has worked in small offices for years.',
+    ],
+    notes: 'Neutral size adjective.',
+  },
+  {
+    id: 'dp-003',
+    topicId: 'topic-describing-places',
+    term: 'Large',
+    translation: 'Grande',
+    definition: 'Big in size; bigger than average.',
+    examples: [
+      'They moved into a large apartment downtown.',
+      'The museum was large and easy to get lost in.',
+      'A large hall will host the event tomorrow.',
+    ],
+    notes: 'Common opposite of "small".',
+  },
+  {
+    id: 'dp-004',
+    topicId: 'topic-describing-places',
+    term: 'Huge',
+    translation: 'Enorme',
+    definition: 'Very large in size.',
+    examples: [
+      'The company built a huge warehouse last year.',
+      'This mall is huge compared with the old one.',
+      'We are planning to open a huge campus in the future.',
+    ],
+    notes: 'Stronger than "large".',
+  },
+  {
+    id: 'dp-005',
+    topicId: 'topic-describing-places',
+    term: 'Dark',
+    translation: 'Oscuro',
+    definition: 'Having little or no light.',
+    examples: [
+      'The hallway is dark at night.',
+      'It got dark quickly after the storm began.',
+      'They have painted the room dark on purpose.',
+    ],
+    notes: 'Can describe light conditions or color.',
+  },
+  {
+    id: 'dp-006',
+    topicId: 'topic-describing-places',
+    term: 'Dim',
+    translation: 'Tenue',
+    definition: 'Not bright; giving only a small amount of light.',
+    examples: [
+      'The restaurant keeps the lights dim in the evening.',
+      'The corridor was dim, so we used our phones.',
+      'The bulbs have become dim over time.',
+    ],
+    notes: 'Often used for soft or weak light.',
+  },
+  {
+    id: 'dp-007',
+    topicId: 'topic-describing-places',
+    term: 'Well lit',
+    translation: 'Bien iluminado',
+    definition: 'Having enough light to see clearly.',
+    examples: [
+      'The library is well lit during study hours.',
+      'The parking area was well lit, so we felt safe.',
+      'They will keep the entrance well lit all night.',
+    ],
+    notes: 'Also written as "well-lit".',
+  },
+  {
+    id: 'dp-008',
+    topicId: 'topic-describing-places',
+    term: 'Bright',
+    translation: 'Luminoso',
+    definition: 'Full of strong light.',
+    examples: [
+      'The office is bright in the morning.',
+      'The lab became bright when they opened the curtains.',
+      'This room has been bright since they installed new windows.',
+    ],
+    notes: 'Often positive for work/study spaces.',
+  },
+  {
+    id: 'dp-009',
+    topicId: 'topic-describing-places',
+    term: 'Cramped',
+    translation: 'Estrecho',
+    definition: 'Too small for the number of people or things in it.',
+    examples: [
+      'The kitchen feels cramped with four people inside.',
+      'Their old apartment was cramped and uncomfortable.',
+      'If we add more desks, the room will look cramped.',
+    ],
+    notes: 'Suggests discomfort due to limited space.',
+  },
+  {
+    id: 'dp-010',
+    topicId: 'topic-describing-places',
+    term: 'Crowded',
+    translation: 'Lleno de gente',
+    definition: 'Full of people, leaving little free space.',
+    examples: [
+      'The station is crowded during rush hour.',
+      'The beach was crowded last weekend.',
+      'This market has become crowded since the festival started.',
+    ],
+    notes: 'Focuses on many people.',
+  },
+  {
+    id: 'dp-011',
+    topicId: 'topic-describing-places',
+    term: 'Open',
+    translation: 'Abierto',
+    definition: 'Having a lot of free space and few barriers.',
+    examples: [
+      'The classroom has an open layout.',
+      'The new office felt open and flexible.',
+      'They are redesigning the floor to keep it open.',
+    ],
+    notes: 'Can refer to layout and atmosphere.',
+  },
+  {
+    id: 'dp-012',
+    topicId: 'topic-describing-places',
+    term: 'Spacious',
+    translation: 'Espacioso',
+    definition: 'Large and with plenty of room.',
+    examples: [
+      'Their living room is spacious and comfortable.',
+      'The venue looked spacious after they moved the tables.',
+      'We have always preferred spacious work areas.',
+    ],
+    notes: 'Usually positive.',
+  },
+  {
+    id: 'dp-013',
+    topicId: 'topic-describing-places',
+    term: 'Filthy',
+    translation: 'Asquerosamente sucio',
+    definition: 'Extremely dirty.',
+    examples: [
+      'The bathroom was filthy after the party.',
+      'That alley looked filthy in the rain.',
+      'The garage has been filthy for months.',
+    ],
+    notes: 'Very strong word for dirtiness.',
+  },
+  {
+    id: 'dp-014',
+    topicId: 'topic-describing-places',
+    term: 'Dirty',
+    translation: 'Sucio',
+    definition: 'Not clean.',
+    examples: [
+      'The floor is dirty again.',
+      'His desk got dirty while he was repairing the bike.',
+      'The windows will be dirty after the dust storm.',
+    ],
+    notes: 'General term foR lack of cleanliness.',
+  },
+  {
+    id: 'dp-015',
+    topicId: 'topic-describing-places',
+    term: 'Clean',
+    translation: 'Limpio',
+    definition: 'Free from dirt, marks, or mess.',
+    examples: [
+      'The kitchen is clean now.',
+      'The clinic stayed clean throughout the day.',
+      'They have kept the classroom clean since Monday.',
+    ],
+    notes: 'Basic positive cleanliness adjective.',
+  },
+  {
+    id: 'dp-016',
+    topicId: 'topic-describing-places',
+    term: 'Spotless',
+    translation: 'Impecable',
+    definition: 'Perfectly clean with no marks or dirt.',
+    examples: [
+      'The hotel lobby looked spotless.',
+      'Her lab coat was spotless before the experiment.',
+      'By tomorrow, the hall will be spotless for the guests.',
+    ],
+    notes: 'Stronger than "clean".',
+  },
+  {
+    id: 'dp-017',
+    topicId: 'topic-describing-places',
+    term: 'Messy',
+    translation: 'Desordenado',
+    definition: 'Untidy and disorganized.',
+    examples: [
+      'My desk is messy after every class.',
+      'Their room became messy during the move.',
+      'It has been messy all week because we are renovating.',
+    ],
+    notes: 'About disorder, not always dirt.',
+  },
+  {
+    id: 'dp-018',
+    topicId: 'topic-describing-places',
+    term: 'Cluttered',
+    translation: 'Atestada',
+    definition: 'Filled with too many things in a disorganized way.',
+    examples: [
+      'The hallway is cluttered with boxes.',
+      'The office looked cluttered before the cleanup.',
+      'If we buy more furniture, the room will feel cluttered.',
+    ],
+    notes: 'Emphasizes excess objects.',
+  },
+  {
+    id: 'dp-019',
+    topicId: 'topic-describing-places',
+    term: 'Neat',
+    translation: 'Ordenado',
+    definition: 'Tidy and well arranged.',
+    examples: [
+      'Her workspace is always neat.',
+      'The shelves were neat after we labeled everything.',
+      'The classroom has stayed neat since the new rules.',
+    ],
+    notes: 'Common positive word for order.',
+  },
+  {
+    id: 'dp-020',
+    topicId: 'topic-describing-places',
+    term: 'Immaculate',
+    translation: 'Inmaculado',
+    definition: 'Perfectly clean and tidy.',
+    examples: [
+      'The showroom is immaculate every morning.',
+      'His office looked immaculate during the inspection.',
+      'By next month, the renovated suite will be immaculate.',
+    ],
+    notes: 'Very strong positive adjective.',
+  },
+  {
+    id: 'dp-021',
+    topicId: 'topic-describing-places',
+    term: 'Silent',
+    translation: 'Silencioso',
+    definition: 'With no sound at all.',
+    examples: [
+      'The library is silent during exams.',
+      'The street became silent after midnight.',
+      'The room has been silent since the meeting started.',
+    ],
+    notes: 'Stronger than "quiet".',
+  },
+  {
+    id: 'dp-022',
+    topicId: 'topic-describing-places',
+    term: 'Quiet',
+    translation: 'Tranquilo',
+    definition: 'Making little noise; peaceful.',
+    examples: [
+      'This neighborhood is quiet at night.',
+      'The office was quiet before everyone arrived.',
+      'We will look for a quiet place to study.',
+    ],
+    notes: 'Can describe noise and atmosphere.',
+  },
+  {
+    id: 'dp-023',
+    topicId: 'topic-describing-places',
+    term: 'Loud',
+    translation: 'Ruidoso',
+    definition: 'Producing a lot of noise.',
+    examples: [
+      'The cafeteria is loud at lunchtime.',
+      'The concert hall was loud but exciting.',
+      'Traffic has become loud since the roadworks began.',
+    ],
+    notes: 'Opposite of "quiet".',
+  },
+  {
+    id: 'dp-024',
+    topicId: 'topic-describing-places',
+    term: 'Deafening',
+    translation: 'Ensordecedor',
+    definition: 'Extremely loud to the point of discomfort.',
+    examples: [
+      'The factory floor was deafening without ear protection.',
+      'The crowd became deafening after the final goal.',
+      'The noise will be deafening if all machines run together.',
+    ],
+    notes: 'Very strong word for loud noise.',
+  },
+  {
+    id: 'dp-025',
+    topicId: 'topic-describing-places',
+    term: 'Noise level',
+    translation: 'Nivel de ruido',
+    definition: 'The amount of sound in a place.',
+    examples: [
+      'The noise level is low in this reading room.',
+      'Yesterday, the noise level rose during construction.',
+      'We have monitored the noise level since last month.',
+    ],
+    notes: 'Useful noun phrase for discussing sound conditions.',
   },
 ]
