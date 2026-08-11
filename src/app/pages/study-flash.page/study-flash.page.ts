@@ -14,7 +14,7 @@ import { ViewportScroller } from '@angular/common'
   styleUrls: ['./study-flash.page.css'],
   imports: [FlipCard, ChevronLeftIcon, ChevronRightIcon, BookOpenIcon, ZapIcon, BookPlaceholderIcon, Header],
 })
-export class StudyFlashPage implements OnInit {
+export class StudyFlashPage {
   coreService = inject(CoreService)
   readonly route = inject(ActivatedRoute)
   readonly router = inject(Router)
@@ -56,9 +56,9 @@ export class StudyFlashPage implements OnInit {
     })
   }
 
-  ngOnInit(): void {
-    this.viewportScroller.scrollToPosition([0, 0])
-  }
+  // ngOnInit(): void {
+  //   this.viewportScroller.scrollToPosition([0, 0])
+  // }
 
   navigateClick(isNext: boolean): void {
     this.flipCardService.navigate(isNext ? 'next' : 'prev')
