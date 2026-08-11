@@ -1,4 +1,4 @@
-import { Component, inject, OnInit, signal } from '@angular/core'
+import { Component, inject, OnInit, signal, computed } from '@angular/core'
 import { FlipCard } from '../../components/flip-card/flip-card'
 import { Topic } from '../../core/models'
 import { CoreService } from '../../core/core.service'
@@ -7,6 +7,7 @@ import { BookOpenIcon, BookPlaceholderIcon, ChevronLeftIcon, ChevronRightIcon, Z
 import { FlipCardService } from '../../services/flip-card.service'
 import { Header } from '../../components/header/header'
 import { ViewportScroller } from '@angular/common'
+import { Meta, Title } from '@angular/platform-browser'
 
 @Component({
   selector: 'app-study-flash-page',
@@ -14,8 +15,8 @@ import { ViewportScroller } from '@angular/common'
   styleUrls: ['./study-flash-page.css'],
   imports: [FlipCard, ChevronLeftIcon, ChevronRightIcon, BookOpenIcon, ZapIcon, BookPlaceholderIcon, Header],
 })
-export class StudyFlashPage {
-  coreService = inject(CoreService)
+export class StudyFlashPage implements OnInit {
+  private readonly coreService = inject(CoreService)
   readonly route = inject(ActivatedRoute)
   readonly router = inject(Router)
   protected readonly flipCardService = inject(FlipCardService)
@@ -24,27 +25,28 @@ export class StudyFlashPage {
   readonly total = this.flipCardService.total
   readonly currentTerm = this.flipCardService.currentTerm
   readonly progress = this.flipCardService.progress
-  isFlipped = this.flipCardService.isFlipped
+  readonly isFlipped = computed(() => this.flipCardService.isFlipped())
 
   readonly isError = signal('')
   readonly vocabTopic = signal<Topic | null>(null)
-  private viewportScroller = inject(ViewportScroller)
+  private title = inject(Title)
+  private meta = inject(Meta)
+  // private viewportScroller = inject(ViewportScroller)
 
   constructor() {
-    this.route.paramMap.subscribe((params) => {
-      const slugUrlParam = params.get('slug')
-      if (!slugUrlParam) {
-        const errorMessage = 'No slug parameter found in the route.'
-        console.error(errorMessage)
-        this.isError.set(errorMessage)
-        return
-      }
+    const slugUrlParam = this.route.snapshot.paramMap.get('slug')
+    if (!slugUrlParam) {
+      const errorMessage = 'No slug parameter found in the route.'
+      console.error(errorMessage)
+      this.isError.set(errorMessage)
+      return
+    }
 
-      const vocabTopic = this.coreService.getTopicBySlug(slugUrlParam)
-      this.vocabTopic.set(vocabTopic ?? null)
+    this.coreService.getTopicBySlug(slugUrlParam).subscribe((topic) => {
+      this.vocabTopic.set(topic ?? null)
+    })
 
-      const vocabularyItems = this.coreService.getVocabularyItemsBySlug(slugUrlParam)
-
+    this.coreService.getVocabularyItemsBySlug(slugUrlParam).subscribe((vocabularyItems) => {
       if (!vocabularyItems || vocabularyItems.length === 0) {
         const errorMessage = 'No vocabulary items found for the given slug.'
         console.error(errorMessage)
@@ -53,6 +55,18 @@ export class StudyFlashPage {
       }
 
       this.flipCardService.setVocabularyItems(vocabularyItems)
+    })
+  }
+
+  ngOnInit(): void {
+    this.title.setTitle(`StudyFlash - ${this.vocabTopic()?.name ?? 'Unknown Topic'}`)
+    this.meta.updateTag({
+      name: 'description',
+      content: this.vocabTopic()?.description ?? 'StudyFlash - Flashcard Study',
+    })
+    this.meta.updateTag({
+      name: 'keywords',
+      content: this.vocabTopic()?.tags.join(', ') ?? 'flashcards, study, learning',
     })
   }
 

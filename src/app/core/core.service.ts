@@ -1,67 +1,29 @@
-import { Injectable } from '@angular/core';
-import { Topic, VocabularyItem } from './models';
-import { INITIAL_TOPICS } from './data/data';
+import { Injectable } from '@angular/core'
+import { Topic, VocabularyItem } from './models'
+import { INITIAL_TOPICS } from './data/data'
+import { delay, map, Observable, of } from 'rxjs'
+import { slugify } from '../utils'
 
 // const TOPICS_STORAGE_KEY = 'fluent-tongue.topics';
 
 @Injectable({ providedIn: 'root' })
 export class CoreService {
-  private memoryTopics = this.cloneTopics(INITIAL_TOPICS);
+  private readonly topics = INITIAL_TOPICS
 
-  getTopics(): Topic[] {
-    return this.memoryTopics.map(this.withTopicDefaults);
+  getTopics() {
+    const data$ = of(this.topics)
+    return data$
   }
 
-  loadTopics(): Topic[] {
-    return this.getTopics();
+  getVocabularyItemsBySlug(slug: string): Observable<VocabularyItem[]> {
+    return this.getTopicBySlug(slug).pipe(map((topic) => topic?.items ?? []))
   }
 
-  getVocabularyItemsBySlug(slug: string): VocabularyItem[] {
-    const topic = this.getTopicBySlug(slug);
-    return topic ? topic.items : [];
-  }
+  getTopicBySlug(slug: string) {
+    const normalizedSlug = slugify(slug)
 
-  getTopicById(id: string): Topic | null {
-    const topic = this.getTopics().find((item) => item.id === id) ?? null;
-    return topic ? this.withTopicDefaults(topic) : null;
-  }
-
-  getTopicBySlug(slug: string): Topic | null {
-    if (!slug?.trim()) return null;
-
-    const normalizedSlug = this.slugify(slug);
-    const topic =
-      this.getTopics().find((item) => this.slugify(item.slug ?? item.name) === normalizedSlug) ??
-      null;
-
-    return topic ? this.withTopicDefaults(topic) : null;
-  }
-
-  hasTopicBySlug(slug: string): boolean {
-    return this.getTopicBySlug(slug) !== null;
-  }
-
-  private slugify(value: string): string {
-    return value
-      .toLowerCase()
-      .trim()
-      .replace(/[^a-z0-9]+/g, '-')
-      .replace(/^-+|-+$/g, '');
-  }
-
-  private hasStorage(): boolean {
-    return typeof localStorage !== 'undefined';
-  }
-
-  private cloneTopics(topics: Topic[]): Topic[] {
-    return topics.map((topic) => ({ ...topic }));
-  }
-
-  private withTopicDefaults(topic: Topic): Topic {
-    return {
-      ...topic,
-      emoji: topic.emoji ?? '📘',
-      items: topic.items ?? []
-    };
+    return this.getTopics().pipe(
+      map((topics) => topics.find((item) => slugify(item.slug ?? item.name) === normalizedSlug)),
+    )
   }
 }

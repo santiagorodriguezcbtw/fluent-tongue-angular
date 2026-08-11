@@ -1,10 +1,11 @@
-import { Component, signal, inject, computed } from '@angular/core'
+import { Component, signal, inject, computed, OnInit } from '@angular/core'
 import { CoreService } from '../../core/core.service'
 import type { Topic } from '../../core/models'
 import { RouterLink } from '@angular/router'
 import { TAG_FILTERS } from '../../core/data/data'
 import { Footer } from '../../components/footer/footer'
 import { ChevronRightIcon, SearchIcon } from '../../components/icons'
+import { Title } from '@angular/platform-browser'
 
 @Component({
   selector: 'app-home.page',
@@ -12,7 +13,7 @@ import { ChevronRightIcon, SearchIcon } from '../../components/icons'
   templateUrl: './home-page.html',
   styleUrl: './home-page.css',
 })
-export class HomePage {
+export class HomePage implements OnInit {
   topics = signal<Topic[]>([])
   search = signal('')
   readonly tagFilters = ['All', ...TAG_FILTERS]
@@ -36,8 +37,20 @@ export class HomePage {
   })
   readonly coreService = inject(CoreService)
 
-  constructor() {
-    this.topics.set(this.coreService.getTopics())
+  private title = inject(Title)
+
+  constructor() {}
+
+  ngOnInit(): void {
+    this.title.setTitle('Study Flash - Home')
+    this.loadTopics()
+  }
+
+  loadTopics() {
+    this.coreService.getTopics().subscribe((topics) => {
+      this.topics.set(topics)
+      console.log('Topics loaded:', topics)
+    })
   }
 
   onSearchInput(event: Event) {
