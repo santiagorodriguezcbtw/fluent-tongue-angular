@@ -7,7 +7,7 @@ export const routes: Routes = [
   },
   {
     path: 'study/:slug',
-    loadComponent: () => import('./pages/study-flash.page/study-flash.page').then((m) => m.StudyFlashPage),
+    loadComponent: () => import('./pages/study-flash-page/study-flash-page').then((m) => m.StudyFlashPage),
   },
   {
     path: '**',

@@ -10,8 +10,8 @@ import { ViewportScroller } from '@angular/common'
 
 @Component({
   selector: 'app-study-flash-page',
-  templateUrl: './study-flash.page.html',
-  styleUrls: ['./study-flash.page.css'],
+  templateUrl: './study-flash-page.html',
+  styleUrls: ['./study-flash-page.css'],
   imports: [FlipCard, ChevronLeftIcon, ChevronRightIcon, BookOpenIcon, ZapIcon, BookPlaceholderIcon, Header],
 })
 export class StudyFlashPage {
