@@ -1,4 +1,5 @@
 # StudyCard
+<img width="1466" height="880" alt="Captura de pantalla 2026-08-10 a la(s) 19 51 23" src="https://github.com/user-attachments/assets/97ab1d14-98c8-4b0a-96b9-fa60ac855b1d" />
 
 ## About
 
