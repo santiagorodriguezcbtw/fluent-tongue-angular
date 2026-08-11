@@ -9,8 +9,8 @@ import { ChevronRightIcon, SearchIcon } from '../../components/icons'
 @Component({
   selector: 'app-home.page',
   imports: [RouterLink, Footer, ChevronRightIcon, SearchIcon],
-  templateUrl: './home.page.html',
-  styleUrl: './home.page.css',
+  templateUrl: './home-page.html',
+  styleUrl: './home-page.css',
 })
 export class HomePage {
   topics = signal<Topic[]>([])
