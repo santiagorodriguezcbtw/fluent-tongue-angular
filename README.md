@@ -1,5 +1,6 @@
 # StudyCard
 <img width="800" height="444" alt="ezgif-8cc854589fc4d58a" src="https://github.com/user-attachments/assets/ae577019-2715-49d3-9eab-f26ecb97154d" />
+
 ## About
 
 StudyCard is an Angular vocabulary-learning app focused on practicing English terms by topic using flashcard-style interactions.
