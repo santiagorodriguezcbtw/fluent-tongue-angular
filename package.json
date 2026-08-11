@@ -11,7 +11,7 @@
     "deploy": "ng deploy"
   },
   "private": true,
-  "packageManager": "npm@11.13.0",
+  "packageManager": "pnpm@11.21.0",
   "dependencies": {
     "@angular/common": "^22.1.1",
     "@angular/compiler": "^22.1.1",
