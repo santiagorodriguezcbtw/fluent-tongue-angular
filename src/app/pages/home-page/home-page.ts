@@ -1,7 +1,7 @@
 import { Component, signal, inject, computed, OnInit } from '@angular/core'
 import { CoreService } from '../../core/core.service'
 import type { Topic } from '../../core/models'
-import { RouterLink } from '@angular/router'
+import { ActivatedRoute, RouterLink } from '@angular/router'
 import { TAG_FILTERS } from '../../core/data/data'
 import { Footer } from '../../components/footer/footer'
 import { ChevronRightIcon, SearchIcon } from '../../components/icons'
@@ -16,8 +16,17 @@ import { Title } from '@angular/platform-browser'
 export class HomePage implements OnInit {
   topics = signal<Topic[]>([])
   search = signal('')
-  readonly tagFilters = ['All', ...TAG_FILTERS]
   selectedTag = signal('All')
+  tagFilters = ['All', ...TAG_FILTERS]
+  coreService = inject(CoreService)
+  private title = inject(Title)
+  route = inject(ActivatedRoute)
+
+  // currentPage = toSignal<number>(this.route.queryParamMap.pipe(
+  //   map(params => params.get('page') ?? '1'),
+  //   map(page => isNaN(+page) ? 1 : +page),
+  //   map(page => Math.max(1, page))
+  // ))
 
   filteredTopics = computed(() => {
     const term = this.search().trim().toLowerCase()
@@ -35,22 +44,15 @@ export class HomePage implements OnInit {
       return matchesSearch && matchesTag
     })
   })
-  readonly coreService = inject(CoreService)
-
-  private title = inject(Title)
-
-  constructor() {}
 
   ngOnInit(): void {
-    this.title.setTitle('Study Flash - Home')
+    this.title.setTitle('StudyFlash - Learn Languages with Flashcards')
+    // this.title.setTitle(`StudyFlash${this.currentPage() === 1 ? '' : ' - Page ' + this.currentPage()}`)
     this.loadTopics()
   }
 
   loadTopics() {
-    this.coreService.getTopics().subscribe((topics) => {
-      this.topics.set(topics)
-      console.log('Topics loaded:', topics)
-    })
+    this.coreService.getTopics().subscribe(this.topics.set)
   }
 
   onSearchInput(event: Event) {
