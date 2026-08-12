@@ -1,4 +1,4 @@
-import { Component, computed, effect, inject, OnDestroy, signal, untracked } from '@angular/core'
+import { Component, computed, effect, inject, OnDestroy, signal } from '@angular/core'
 import { FlipCardService } from '../../services/flip-card.service'
 
 @Component({

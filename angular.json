@@ -18,7 +18,6 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "index": "src/index.html",
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
@@ -29,7 +28,7 @@
             ],
             "styles": ["src/styles.css"],
             "server": "src/main.server.ts",
-            "outputMode": "static",
+            "outputMode": "server",
             "security": {
               "allowedHosts": ["santirodriguez-ews.github.io", "localhost", "localhost:4000"]
             },

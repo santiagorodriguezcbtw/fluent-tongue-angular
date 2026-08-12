@@ -6,7 +6,6 @@ import { ActivatedRoute, Router } from '@angular/router'
 import { BookOpenIcon, BookPlaceholderIcon, ChevronLeftIcon, ChevronRightIcon, ZapIcon } from '../../components/icons'
 import { FlipCardService } from '../../services/flip-card.service'
 import { Header } from '../../components/header/header'
-import { ViewportScroller } from '@angular/common'
 import { Meta, Title } from '@angular/platform-browser'
 
 @Component({
@@ -31,7 +30,6 @@ export class StudyFlashPage implements OnInit {
   readonly vocabTopic = signal<Topic | null>(null)
   private title = inject(Title)
   private meta = inject(Meta)
-  // private viewportScroller = inject(ViewportScroller)
 
   constructor() {
     const slugUrlParam = this.route.snapshot.paramMap.get('slug')
@@ -69,10 +67,6 @@ export class StudyFlashPage implements OnInit {
       content: this.vocabTopic()?.tags.join(', ') ?? 'flashcards, study, learning',
     })
   }
-
-  // ngOnInit(): void {
-  //   this.viewportScroller.scrollToPosition([0, 0])
-  // }
 
   navigateClick(isNext: boolean): void {
     this.flipCardService.navigate(isNext ? 'next' : 'prev')
