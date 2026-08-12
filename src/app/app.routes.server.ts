@@ -4,20 +4,17 @@ import { inject } from '@angular/core'
 import { lastValueFrom } from 'rxjs'
 
 export const serverRoutes: ServerRoute[] = [
-  // {
-  //   path: 'study/:slug',
-  //   renderMode: RenderMode.Prerender,
-  //   async getPrerenderParams() {
-  //     const coreService = inject(CoreService)
-  //     const topics$ = coreService.getTopics()
-
-  //     const topics = await lastValueFrom(topics$)
-
-  //     return topics.map(({ slug }) => ({ slug }))
-  //   },
-  // },
   {
-    path: 'topics',
+    path: 'study/:slug',
+    renderMode: RenderMode.Prerender,
+    async getPrerenderParams() {
+      const topics$ = inject(CoreService).getTopics()
+      const topics = await lastValueFrom(topics$)
+      return topics.map(({ slug }) => ({ slug }))
+    },
+  },
+  {
+    path: '',
     renderMode: RenderMode.Prerender,
   },
   {
