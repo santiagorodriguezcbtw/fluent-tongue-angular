@@ -16,12 +16,12 @@ export const serverRoutes: ServerRoute[] = [
   //     return topics.map(({ slug }) => ({ slug }))
   //   },
   // },
-  // {
-  //   path: 'topics',
-  //   renderMode: RenderMode.Prerender,
-  // },
+  {
+    path: 'topics',
+    renderMode: RenderMode.Prerender,
+  },
   {
     path: '**',
-    renderMode: RenderMode.Client,
+    renderMode: RenderMode.Prerender,
   },
 ]
