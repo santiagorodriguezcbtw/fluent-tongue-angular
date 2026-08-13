@@ -3,13 +3,13 @@
 
   <main class="flex-1 flex items-start justify-center py-5 sm:py-8 px-4">
     <div class="w-full max-w-5xl grid md:grid-cols-[1fr_340px] gap-6 items-start">
-      <div class="flex flex-col gap-4 sm:gap-5 overflow-hidden">
+      <div class="flex flex-col gap-4 sm:gap-5">
         <div class="w-full">
           <div class="flex items-center justify-between mb-2">
             <span class="text-xs font-mono text-muted-foreground tracking-widest uppercase">Progress </span>
             <span class="text-xs font-mono text-muted-foreground"> {{ currentIndex() + 1 }} / {{ total() }} </span>
           </div>
-          <div class="h-1.5 w-full bg-muted rounded-full overflow-hidden">
+          <div class="h-1.5 w-full bg-muted rounded-full">
             <div
               animate.enter="progress-bar-entrance-animation"
               [style.width.%]="progress()"
