@@ -15,6 +15,7 @@ import {
   TYPES_OF_HOUSES_AND_RENTING,
   LEGAL_ENGLISH_BASICS_ITEMS,
   DESCRIBING_PLACES,
+  NATURAL_DISASTERS,
 } from './vocabulary-items'
 
 export const INITIAL_TOPICS: Topic[] = [
@@ -167,6 +168,16 @@ export const INITIAL_TOPICS: Topic[] = [
     level: 'B1',
     tags: ['legal', 'contracts', 'disputes'],
     items: LEGAL_ENGLISH_BASICS_ITEMS,
+  },
+  {
+    id: 'topic-<next-id>',
+    name: 'Natural Disasters',
+    emoji: '🌪️',
+    description: 'Essential vocabulary for describing natural disasters, their effects, and emergency response.',
+    slug: 'natural-disasters',
+    level: 'intermediate',
+    tags: ['weather', 'emergency', 'news'],
+    items: NATURAL_DISASTERS,
   },
 ]
 
