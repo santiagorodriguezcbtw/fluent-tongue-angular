@@ -16,6 +16,7 @@ import {
   LEGAL_ENGLISH_BASICS_ITEMS,
   DESCRIBING_PLACES,
   NATURAL_DISASTERS,
+  MENTAL_HEALTH_ITEMS,
 } from './vocabulary-items'
 
 export const INITIAL_TOPICS: Topic[] = [
@@ -178,6 +179,16 @@ export const INITIAL_TOPICS: Topic[] = [
     level: 'intermediate',
     tags: ['weather', 'emergency', 'news'],
     items: NATURAL_DISASTERS,
+  },
+  {
+    id: '15',
+    name: 'Mental Health',
+    emoji: '🧠',
+    description: 'Key vocabulary for discussing stress, emotions, pressure, and emotional well-being.',
+    slug: 'mental-health',
+    level: 'intermediate',
+    tags: ['mental-health', 'emotions', 'stress', 'well-being'],
+    items: MENTAL_HEALTH_ITEMS,
   },
 ]
 

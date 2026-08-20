@@ -2658,7 +2658,7 @@ export const DESCRIBING_PLACES: VocabularyItem[] = [
 export const NATURAL_DISASTERS: VocabularyItem[] = [
   {
     id: 'natural-disasters-01',
-    topicId: 'topic-<next-id>',
+    topicId: 'topic-1',
     term: 'Tremor',
     translation: 'temblor',
     definition: 'A small or slight earthquake.',
@@ -2671,7 +2671,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
   },
   {
     id: 'natural-disasters-02',
-    topicId: 'topic-<next-id>',
+    topicId: 'topic-1',
     term: 'Earthquake',
     translation: 'terremoto',
     definition: 'A sudden shaking of the ground caused by movement in the Earth’s crust.',
@@ -2684,7 +2684,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
   },
   {
     id: 'natural-disasters-03',
-    topicId: 'topic-<next-id>',
+    topicId: 'topic-1',
     term: 'Tsunami',
     translation: 'tsunami',
     definition: 'A series of very large ocean waves, usually caused by an underwater earthquake.',
@@ -2697,7 +2697,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
   },
   {
     id: 'natural-disasters-04',
-    topicId: 'topic-<next-id>',
+    topicId: 'topic-1',
     term: 'Eruption',
     translation: 'erupción',
     definition: 'The sudden release of lava, ash, and gases from a volcano.',
@@ -2710,7 +2710,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
   },
   {
     id: 'natural-disasters-05',
-    topicId: 'topic-<next-id>',
+    topicId: 'topic-1',
     term: 'Landslide',
     translation: 'deslizamiento de tierra',
     definition: 'A large amount of earth or rock that suddenly moves down a slope.',
@@ -2723,7 +2723,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
   },
   {
     id: 'natural-disasters-06',
-    topicId: 'topic-<next-id>',
+    topicId: 'topic-1',
     term: 'Tornado',
     translation: 'tornado',
     definition: 'A violently rotating column of air that extends from a storm cloud to the ground.',
@@ -2736,7 +2736,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
   },
   {
     id: 'natural-disasters-07',
-    topicId: 'topic-<next-id>',
+    topicId: 'topic-1',
     term: 'Hurricane',
     translation: 'huracán',
     definition: 'A powerful tropical storm with very strong winds and heavy rain.',
@@ -2749,7 +2749,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
   },
   {
     id: 'natural-disasters-08',
-    topicId: 'topic-<next-id>',
+    topicId: 'topic-1',
     term: 'Blizzard',
     translation: 'ventisca',
     definition: 'A severe snowstorm with strong winds and low visibility.',
@@ -2762,7 +2762,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
   },
   {
     id: 'natural-disasters-09',
-    topicId: 'topic-<next-id>',
+    topicId: 'topic-1',
     term: 'Casualty',
     translation: 'víctima',
     definition: 'A person who is injured or killed in a disaster.',
@@ -2775,7 +2775,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
   },
   {
     id: 'natural-disasters-10',
-    topicId: 'topic-<next-id>',
+    topicId: 'topic-1',
     term: 'Destruction',
     translation: 'destrucción',
     definition: 'Severe damage caused to buildings, roads, or other property.',
@@ -2788,7 +2788,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
   },
   {
     id: 'natural-disasters-11',
-    topicId: 'topic-<next-id>',
+    topicId: 'topic-1',
     term: 'Power outage',
     translation: 'corte de energía',
     definition: 'A period when electrical power is unavailable.',
@@ -2801,7 +2801,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
   },
   {
     id: 'natural-disasters-12',
-    topicId: 'topic-<next-id>',
+    topicId: 'topic-1',
     term: 'Collapse',
     translation: 'colapsar',
     definition: 'To suddenly fall down or cave in.',
@@ -2814,7 +2814,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
   },
   {
     id: 'natural-disasters-13',
-    topicId: 'topic-<next-id>',
+    topicId: 'topic-1',
     term: 'Destroyed',
     translation: 'destruido',
     definition: 'Damaged so badly that something no longer exists or cannot be used.',
@@ -2827,7 +2827,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
   },
   {
     id: 'natural-disasters-14',
-    topicId: 'topic-<next-id>',
+    topicId: 'topic-1',
     term: 'Transportation disruption',
     translation: 'interrupción del transporte',
     definition: 'A situation in which transportation cannot operate normally.',
@@ -2840,7 +2840,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
   },
   {
     id: 'natural-disasters-15',
-    topicId: 'topic-<next-id>',
+    topicId: 'topic-1',
     term: 'Touch down',
     translation: 'tocar tierra',
     definition: 'When a tornado reaches the ground.',
@@ -2853,7 +2853,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
   },
   {
     id: 'natural-disasters-16',
-    topicId: 'topic-<next-id>',
+    topicId: 'topic-1',
     term: 'Evacuation',
     translation: 'evacuación',
     definition: 'The process of moving people away from a dangerous area to a safer place.',
@@ -2866,7 +2866,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
   },
   {
     id: 'natural-disasters-17',
-    topicId: 'topic-<next-id>',
+    topicId: 'topic-1',
     term: 'Flood',
     translation: 'inundación',
     definition: 'An overflow of water that covers normally dry land.',
@@ -2879,7 +2879,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
   },
   {
     id: 'natural-disasters-18',
-    topicId: 'topic-<next-id>',
+    topicId: 'topic-1',
     term: 'Aftershock',
     translation: 'réplica',
     definition: 'A smaller earthquake that occurs after a larger earthquake.',
@@ -2892,7 +2892,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
   },
   {
     id: 'natural-disasters-19',
-    topicId: 'topic-<next-id>',
+    topicId: 'topic-1',
     term: 'Emergency shelter',
     translation: 'refugio de emergencia',
     definition: 'A safe place where people can temporarily stay during or after a disaster.',
@@ -2905,7 +2905,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
   },
   {
     id: 'natural-disasters-20',
-    topicId: 'topic-<next-id>',
+    topicId: 'topic-1',
     term: 'Rescue operation',
     translation: 'operación de rescate',
     definition: 'An organized effort to save people from danger.',
@@ -2918,7 +2918,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
   },
   {
     id: 'natural-disasters-21',
-    topicId: 'topic-<next-id>',
+    topicId: 'topic-1',
     term: 'Damage',
     translation: 'daños',
     definition: 'Physical harm caused to buildings, roads, property, or the environment.',
@@ -2931,7 +2931,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
   },
   {
     id: 'natural-disasters-22',
-    topicId: 'topic-<next-id>',
+    topicId: 'topic-1',
     term: 'Disaster area',
     translation: 'zona de desastre',
     definition: 'A place that has been seriously affected by a natural disaster.',
@@ -2944,7 +2944,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
   },
   {
     id: 'natural-disasters-23',
-    topicId: 'topic-<next-id>',
+    topicId: 'topic-1',
     term: 'Warning',
     translation: 'advertencia',
     definition: 'An official notice that a dangerous event may happen.',
@@ -2957,7 +2957,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
   },
   {
     id: 'natural-disasters-24',
-    topicId: 'topic-<next-id>',
+    topicId: 'topic-1',
     term: 'Debris',
     translation: 'escombros',
     definition: 'Scattered pieces of damaged or destroyed buildings, trees, or other objects.',
@@ -2970,7 +2970,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
   },
   {
     id: 'natural-disasters-25',
-    topicId: 'topic-<next-id>',
+    topicId: 'topic-1',
     term: 'Displaced',
     translation: 'desplazado',
     definition: 'Forced to leave one’s home because of a disaster.',
@@ -2980,5 +2980,177 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
       'Additional housing will be needed if more people are displaced.',
     ],
     notes: 'Often used for people affected long term.',
+  },
+  {
+    id: 'natural-disasters-26',
+    topicId: 'topic-1',
+    term: 'Withstand an earthquake',
+    translation: 'soportar un terremoto',
+    definition: 'To survive or remain standing during the shaking caused by an earthquake.',
+    examples: [
+      'Engineers designed the bridge to withstand earthquakes in the region.',
+      'The building was built to withstand earthquakes better than older structures.',
+      'Many homes are not strong enough to withstand an earthquake without damage.',
+    ],
+    notes: 'Common in engineering, construction, and disaster safety vocabulary.',
+  },
+]
+
+export const MENTAL_HEALTH_ITEMS: VocabularyItem[] = [
+  {
+    id: '15-01',
+    topicId: '15',
+    term: 'Depression',
+    translation: 'depresión',
+    definition: 'A mental health condition involving persistent sadness and a loss of interest or pleasure.',
+    examples: [
+      'Depression can make everyday tasks feel exhausting.',
+      'She was diagnosed with depression after months of low mood.',
+      'Talking to a professional helped him manage depression more effectively.',
+    ],
+    notes: 'A serious condition that can affect thoughts, emotions, and daily functioning.',
+  },
+  {
+    id: '15-02',
+    topicId: '15',
+    term: 'Anxiety',
+    translation: 'ansiedad',
+    definition: 'A feeling of worry, nervousness, or fear that is often intense or hard to control.',
+    examples: [
+      'Anxiety can make it hard to relax before a big presentation.',
+      'He experiences anxiety whenever he checks his emails.',
+      'Daily exercise and sleep can reduce anxiety for many people.',
+    ],
+    notes: 'A common mental health issue that may appear in work, school, or social situations.',
+  },
+  {
+    id: '15-03',
+    topicId: '15',
+    term: 'Stressed',
+    translation: 'estresado/a',
+    definition: 'Feeling pressured or tense because of difficult demands or situations.',
+    examples: [
+      'She felt stressed before the exam and could not focus.',
+      'We are all stressed because the project deadline is approaching.',
+      'Taking a short break helps when you start to feel stressed.',
+    ],
+    notes: 'Stress is a normal response, but long-term stress may become harmful.',
+  },
+  {
+    id: '15-04',
+    topicId: '15',
+    term: 'Pressure',
+    translation: 'presión',
+    definition: 'Mental strain caused by expectations, demands, or responsibilities.',
+    examples: [
+      'The pressure of work often builds up during busy weeks.',
+      'He feels pressure to succeed because of his family expectations.',
+      'Pressure can become overwhelming when there are too many deadlines at once.',
+    ],
+    notes: 'Pressure is often described as building up inside a person over time.',
+  },
+  {
+    id: '15-05',
+    topicId: '15',
+    term: 'Overwhelmed',
+    translation: 'abrumado/a',
+    definition: 'Feeling unable to cope because there is too much to do or think about.',
+    examples: [
+      'She was overwhelmed by the number of messages she had to answer.',
+      'After the move, he felt overwhelmed and exhausted.',
+      'Asking for help can prevent you from feeling overwhelmed.',
+    ],
+    notes: 'Common in work, study, and daily life when responsibilities pile up.',
+  },
+  {
+    id: '15-06',
+    topicId: '15',
+    term: 'Mood swings',
+    translation: 'cambios de humor',
+    definition: 'Quick changes in emotional state, often moving between different moods in a short time.',
+    examples: [
+      'Her mood swings made it hard for her friends to know how to support her.',
+      'Stress can cause mood swings during busy periods.',
+      'The doctor said mood swings can be a sign of emotional exhaustion.',
+    ],
+    notes: 'Often linked to stress, hormonal changes, or mental health conditions.',
+  },
+  {
+    id: '15-07',
+    topicId: '15',
+    term: 'Guilt',
+    translation: 'culpa',
+    definition: 'A feeling of responsibility or remorse for something you believe you did wrong.',
+    examples: [
+      'He felt guilt after missing his sister’s birthday.',
+      'Guilt can become heavy when a person blames themselves unfairly.',
+      'Therapy helped her separate guilt from real responsibility.',
+    ],
+    notes: 'Guilt can be helpful in moderation, but excessive guilt may become unhealthy.',
+  },
+  {
+    id: '15-08',
+    topicId: '15',
+    term: 'Defensive',
+    translation: 'a la defensiva',
+    definition: 'Behaving in a way that protects yourself from criticism, blame, or emotional discomfort.',
+    examples: [
+      'He became defensive when the team questioned his plan.',
+      'People often sound defensive when they feel judged.',
+      'She stepped back so she would not become defensive during the conversation.',
+    ],
+    notes: 'Defensiveness is often a reaction to stress, insecurity, or perceived criticism.',
+  },
+  {
+    id: '15-09',
+    topicId: '15',
+    term: 'Indifferent',
+    translation: 'indiferente',
+    definition: 'Showing little interest, concern, or emotion about something.',
+    examples: [
+      'He seemed indifferent to the conversation and barely responded.',
+      'She felt indifferent toward social media after too much negativity online.',
+      'Being indifferent can be a sign of emotional exhaustion rather than apathy alone.',
+    ],
+    notes: 'Sometimes used to describe emotional detachment or reduced motivation.',
+  },
+  {
+    id: '15-10',
+    topicId: '15',
+    term: 'Aggressiveness',
+    translation: 'agresividad',
+    definition: 'Hostile, forceful, or angry behavior directed toward others.',
+    examples: [
+      'Aggressiveness can appear when someone feels trapped or extremely stressed.',
+      'The argument turned into aggressiveness after several tense hours.',
+      'Learning calming techniques can reduce aggressiveness in difficult moments.',
+    ],
+    notes: 'Not always the same as assertiveness; aggressiveness is usually more confrontational.',
+  },
+  {
+    id: '15-11',
+    topicId: '15',
+    term: 'Burnout',
+    translation: 'agotamiento emocional',
+    definition: 'A state of physical and emotional exhaustion caused by prolonged stress.',
+    examples: [
+      'She was experiencing burnout after months of nonstop deadlines.',
+      'Burnout can lead to irritability, low energy, and poor concentration.',
+      'Taking time off is necessary when someone is close to burnout.',
+    ],
+    notes: 'A common term in work, school, and caregiver contexts.',
+  },
+  {
+    id: '15-12',
+    topicId: '15',
+    term: 'Self-care',
+    translation: 'cuidado personal',
+    definition: 'Actions taken to protect and improve physical, emotional, and mental well-being.',
+    examples: [
+      'Self-care includes sleep, healthy food, and time to relax.',
+      'He practices self-care by walking, journaling, and taking breaks.',
+      'Self-care is not selfish when you are trying to recover from stress.',
+    ],
+    notes: 'A widely used phrase for daily habits that support emotional health.',
   },
 ]
