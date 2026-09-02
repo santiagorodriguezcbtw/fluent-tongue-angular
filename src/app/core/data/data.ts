@@ -103,7 +103,7 @@ export const INITIAL_TOPICS: Topic[] = [
   },
   // {
   //   id: '9',
-  //   name: 'Clothing Phrasal Verbs',
+  //   name: 'Clothing phrasal verbs',
   //   emoji: '👕',
   //   description: 'Common phrasal verbs used for clothes, dressing, and changing outfits.',
   //   slug: 'clothing-phrasal-verbs',
@@ -113,7 +113,7 @@ export const INITIAL_TOPICS: Topic[] = [
   // },
   // {
   //   id: '10',
-  //   name: 'Phrasal Verbs with Look',
+  //   name: 'Phrasal verbs with look',
   //   emoji: '👀',
   //   description: 'Common phrasal verbs with "look" for everyday English.',
   //   slug: 'phrasal-verbs-with-look',
@@ -123,7 +123,7 @@ export const INITIAL_TOPICS: Topic[] = [
   // },
   // {
   //   id: '11',
-  //   name: 'Free Time Activities',
+  //   name: 'Free time activities',
   //   emoji: '🎉',
   //   description: 'Common words and phrases for talking about hobbies and free time activities.',
   //   slug: 'free-time-activities',
@@ -133,7 +133,7 @@ export const INITIAL_TOPICS: Topic[] = [
   // },
   // {
   //   id: '12',
-  //   name: 'Types of Relationships',
+  //   name: 'Types of relationships',
   //   emoji: '💞',
   //   description: 'Vocabulary for social and romantic relationship types in everyday English.',
   //   slug: 'types-of-relationships',
@@ -142,8 +142,8 @@ export const INITIAL_TOPICS: Topic[] = [
   //   items: TYPES_OF_RELATIONSHIPS,
   // },
   {
-    id: 'topic-011',
-    name: 'Types of Houses and Renting',
+    id: '13',
+    name: 'Types of houses and renting',
     emoji: '🏘️',
     description: 'Learn housing types and essential renting vocabulary through practical examples and short exercises.',
     slug: 'types-of-houses-and-renting',
@@ -152,8 +152,8 @@ export const INITIAL_TOPICS: Topic[] = [
     items: TYPES_OF_HOUSES_AND_RENTING,
   },
   {
-    id: 'topic-describing-places',
-    name: 'Describing Places',
+    id: '14',
+    name: 'Describing places',
     emoji: '🏙️',
     description: 'Adjectives and phrases to describe size, light, space, cleanliness, tidiness, and noise.',
     slug: 'describing-places',
@@ -162,8 +162,8 @@ export const INITIAL_TOPICS: Topic[] = [
     items: DESCRIBING_PLACES,
   },
   {
-    id: '14',
-    name: 'Legal English Basics',
+    id: '15',
+    name: 'Legal english basics',
     emoji: '⚖️',
     description: 'Core legal vocabulary for claims, disputes, and payment status.',
     slug: 'legal-english-basics',
@@ -172,8 +172,8 @@ export const INITIAL_TOPICS: Topic[] = [
     items: LEGAL_ENGLISH_BASICS_ITEMS,
   },
   {
-    id: 'topic-<next-id>',
-    name: 'Natural Disasters',
+    id: '16',
+    name: 'Natural disasters',
     emoji: '🌪️',
     description: 'Essential vocabulary for describing natural disasters, their effects, and emergency response.',
     slug: 'natural-disasters',
@@ -182,8 +182,8 @@ export const INITIAL_TOPICS: Topic[] = [
     items: NATURAL_DISASTERS,
   },
   {
-    id: '15',
-    name: 'Mental Health',
+    id: '17',
+    name: 'Mental health',
     emoji: '🧠',
     description: 'Key vocabulary for discussing stress, emotions, pressure, and emotional well-being.',
     slug: 'mental-health',
@@ -192,8 +192,8 @@ export const INITIAL_TOPICS: Topic[] = [
     items: MENTAL_HEALTH_ITEMS,
   },
   {
-    id: 'topic-10',
-    name: 'Personality and Relationships',
+    id: '18',
+    name: 'Personality and relationships',
     emoji: '🤝',
     description: 'Vocabulary for describing personality traits, moods, conversations, and relationships.',
     slug: 'personality-and-relationships',

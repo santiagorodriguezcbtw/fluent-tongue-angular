@@ -752,19 +752,6 @@ export const ENGLISH_CLASS_JULY_31: VocabularyItem[] = [
     notes: 'Used for deadlines, schedules, and payments.',
   },
   {
-    id: '8-10',
-    topicId: '8',
-    term: 'Fine print',
-    translation: 'Letra pequeña',
-    definition: 'Important details in small text, usually in a contract or offer',
-    examples: [
-      'I read the fine print before I sign anything.',
-      'The fine print includes extra service fees.',
-      'She checks the fine print on every agreement.',
-    ],
-    notes: 'Often implies hidden conditions.',
-  },
-  {
     id: '8-11',
     topicId: '8',
     term: 'Tenance',
@@ -776,19 +763,6 @@ export const ENGLISH_CLASS_JULY_31: VocabularyItem[] = [
       'He reviews the tenance terms bEfore moving in.',
     ],
     notes: 'Kept as provided; the common form is "tenancy".',
-  },
-  {
-    id: '8-12',
-    topicId: '8',
-    term: 'Plead the fifth',
-    translation: 'Acogerse a la quinta enmienda',
-    definition: 'Refuse to answer a question to avoid self-incrimination',
-    examples: [
-      'He pleads the fifth during the interview.',
-      'She pleads the fifth when the question is too personal.',
-      'They plead the fifth in court proceedings.',
-    ],
-    notes: 'U.S. legal expression.',
   },
 ]
 
@@ -2324,6 +2298,32 @@ export const LEGAL_ENGLISH_BASICS_ITEMS: VocabularyItem[] = [
       'Her card failed first, but the payment went through on the second attempt.',
     ],
     notes: 'Useful for banking, invoices, and online transactions.',
+  },
+  {
+    id: '8-12',
+    topicId: '8',
+    term: 'Plead the fifth',
+    translation: 'Acogerse a la quinta enmienda',
+    definition: 'Refuse to answer a question to avoid self-incrimination',
+    examples: [
+      'He pleads the fifth during the interview.',
+      'She pleads the fifth when the question is too personal.',
+      'They plead the fifth in court proceedings.',
+    ],
+    notes: 'U.S. legal expression.',
+  },
+  {
+    id: '8-13',
+    topicId: '8',
+    term: 'Fine print',
+    translation: 'Letra pequeña',
+    definition: 'Important details in small text, usually in a contract or offer',
+    examples: [
+      'I read the fine print before I sign anything.',
+      'The fine print includes extra service fees.',
+      'She checks the fine print on every agreement.',
+    ],
+    notes: 'Often implies hidden conditions.',
   },
 ]
 
