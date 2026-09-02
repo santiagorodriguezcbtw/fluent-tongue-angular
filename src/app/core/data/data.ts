@@ -18,6 +18,7 @@ import {
   NATURAL_DISASTERS,
   MENTAL_HEALTH_ITEMS,
 } from './vocabulary-items'
+import { PERSONALITY_AND_RELATIONSHIPS } from './vocabulary-items'
 
 export const INITIAL_TOPICS: Topic[] = [
   // {
@@ -189,6 +190,16 @@ export const INITIAL_TOPICS: Topic[] = [
     level: 'intermediate',
     tags: ['mental-health', 'emotions', 'stress', 'well-being'],
     items: MENTAL_HEALTH_ITEMS,
+  },
+  {
+    id: 'topic-10',
+    name: 'Personality and Relationships',
+    emoji: '🤝',
+    description: 'Vocabulary for describing personality traits, moods, conversations, and relationships.',
+    slug: 'personality-and-relationships',
+    level: 'intermediate',
+    tags: ['personality', 'relationships', 'emotions', 'communication'],
+    items: PERSONALITY_AND_RELATIONSHIPS,
   },
 ]
 

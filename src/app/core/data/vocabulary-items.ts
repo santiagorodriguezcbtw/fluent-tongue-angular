@@ -5,7 +5,7 @@ export const B1_PHRASAL_VERBS_I_ITEMS: VocabularyItem[] = [
     id: '5-01',
     topicId: '5',
     term: 'Back down',
-    translation: 'ceder',
+    translation: 'Ceder',
     definition: 'Stop resisting or arguing',
     examples: [
       'He refused to back down during the negotiation.',
@@ -18,7 +18,7 @@ export const B1_PHRASAL_VERBS_I_ITEMS: VocabularyItem[] = [
     id: '5-02',
     topicId: '5',
     term: 'Blow up',
-    translation: 'enfadarse mucho',
+    translation: 'Enfadarse mucho',
     definition: 'Become very angry',
     examples: [
       'She blew up when she saw the broken laptop.',
@@ -2660,7 +2660,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
     id: 'natural-disasters-01',
     topicId: 'topic-1',
     term: 'Tremor',
-    translation: 'temblor',
+    translation: 'Temblor',
     definition: 'A small or slight earthquake.',
     examples: [
       'We felt a brief tremor just after sunrise.',
@@ -2673,7 +2673,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
     id: 'natural-disasters-02',
     topicId: 'topic-1',
     term: 'Earthquake',
-    translation: 'terremoto',
+    translation: 'Terremoto',
     definition: 'A sudden shaking of the ground caused by movement in the Earth’s crust.',
     examples: [
       'The earthquake shook the city for nearly a minute.',
@@ -2686,7 +2686,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
     id: 'natural-disasters-03',
     topicId: 'topic-1',
     term: 'Tsunami',
-    translation: 'tsunami',
+    translation: 'Tsunami',
     definition: 'A series of very large ocean waves, usually caused by an underwater earthquake.',
     examples: [
       'The tsunami flooded coastal villages within minutes.',
@@ -2699,7 +2699,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
     id: 'natural-disasters-04',
     topicId: 'topic-1',
     term: 'Eruption',
-    translation: 'erupción',
+    translation: 'Erupción',
     definition: 'The sudden release of lava, ash, and gases from a volcano.',
     examples: [
       'The eruption sent ash high into the sky.',
@@ -2712,7 +2712,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
     id: 'natural-disasters-05',
     topicId: 'topic-1',
     term: 'Landslide',
-    translation: 'deslizamiento de tierra',
+    translation: 'Deslizamiento de tierra',
     definition: 'A large amount of earth or rock that suddenly moves down a slope.',
     examples: [
       'Heavy rain triggered a landslide on the mountain road.',
@@ -2725,7 +2725,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
     id: 'natural-disasters-06',
     topicId: 'topic-1',
     term: 'Tornado',
-    translation: 'tornado',
+    translation: 'Tornado',
     definition: 'A violently rotating column of air that extends from a storm cloud to the ground.',
     examples: [
       'A tornado ripped through several farms yesterday.',
@@ -2738,7 +2738,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
     id: 'natural-disasters-07',
     topicId: 'topic-1',
     term: 'Hurricane',
-    translation: 'huracán',
+    translation: 'Huracán',
     definition: 'A powerful tropical storm with very strong winds and heavy rain.',
     examples: [
       'The hurricane is moving toward the coast.',
@@ -2751,7 +2751,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
     id: 'natural-disasters-08',
     topicId: 'topic-1',
     term: 'Blizzard',
-    translation: 'ventisca',
+    translation: 'Ventisca',
     definition: 'A severe snowstorm with strong winds and low visibility.',
     examples: [
       'The blizzard reduced visibility to almost zero.',
@@ -2764,7 +2764,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
     id: 'natural-disasters-09',
     topicId: 'topic-1',
     term: 'Casualty',
-    translation: 'víctima',
+    translation: 'Víctima',
     definition: 'A person who is injured or killed in a disaster.',
     examples: [
       'Doctors treated the first casualties at a nearby clinic.',
@@ -2777,7 +2777,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
     id: 'natural-disasters-10',
     topicId: 'topic-1',
     term: 'Destruction',
-    translation: 'destrucción',
+    translation: 'Destrucción',
     definition: 'Severe damage caused to buildings, roads, or other property.',
     examples: [
       'The tornado caused widespread destruction in the industrial area.',
@@ -2790,7 +2790,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
     id: 'natural-disasters-11',
     topicId: 'topic-1',
     term: 'Power outage',
-    translation: 'corte de energía',
+    translation: 'Corte de energía',
     definition: 'A period when electrical power is unavailable.',
     examples: [
       'The power outage lasted all night.',
@@ -2803,7 +2803,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
     id: 'natural-disasters-12',
     topicId: 'topic-1',
     term: 'Collapse',
-    translation: 'colapsar',
+    translation: 'Colapsar',
     definition: 'To suddenly fall down or cave in.',
     examples: [
       'Part of the roof collapsed under the weight of the snow.',
@@ -2816,7 +2816,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
     id: 'natural-disasters-13',
     topicId: 'topic-1',
     term: 'Destroyed',
-    translation: 'destruido',
+    translation: 'Destruido',
     definition: 'Damaged so badly that something no longer exists or cannot be used.',
     examples: [
       'The bridge was destroyed by the flood.',
@@ -2829,7 +2829,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
     id: 'natural-disasters-14',
     topicId: 'topic-1',
     term: 'Transportation disruption',
-    translation: 'interrupción del transporte',
+    translation: 'Interrupción del transporte',
     definition: 'A situation in which transportation cannot operate normally.',
     examples: [
       'The earthquake caused a transportation disruption that affected trains and buses.',
@@ -2842,7 +2842,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
     id: 'natural-disasters-15',
     topicId: 'topic-1',
     term: 'Touch down',
-    translation: 'tocar tierra',
+    translation: 'Tocar tierra',
     definition: 'When a tornado reaches the ground.',
     examples: [
       'The tornado touched down near the airport at 6 p.m.',
@@ -2855,7 +2855,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
     id: 'natural-disasters-16',
     topicId: 'topic-1',
     term: 'Evacuation',
-    translation: 'evacuación',
+    translation: 'Evacuación',
     definition: 'The process of moving people away from a dangerous area to a safer place.',
     examples: [
       'Officials ordered an evacuation of the coastal town.',
@@ -2868,7 +2868,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
     id: 'natural-disasters-17',
     topicId: 'topic-1',
     term: 'Flood',
-    translation: 'inundación',
+    translation: 'Inundación',
     definition: 'An overflow of water that covers normally dry land.',
     examples: [
       'The flood covered streets, fields, and homes.',
@@ -2881,7 +2881,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
     id: 'natural-disasters-18',
     topicId: 'topic-1',
     term: 'Aftershock',
-    translation: 'réplica',
+    translation: 'Réplica',
     definition: 'A smaller earthquake that occurs after a larger earthquake.',
     examples: [
       'A strong aftershock woke everyone before dawn.',
@@ -2894,7 +2894,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
     id: 'natural-disasters-19',
     topicId: 'topic-1',
     term: 'Emergency shelter',
-    translation: 'refugio de emergencia',
+    translation: 'Refugio de emergencia',
     definition: 'A safe place where people can temporarily stay during or after a disaster.',
     examples: [
       'Families stayed in an emergency shelter after the flood.',
@@ -2907,7 +2907,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
     id: 'natural-disasters-20',
     topicId: 'topic-1',
     term: 'Rescue operation',
-    translation: 'operación de rescate',
+    translation: 'Operación de rescate',
     definition: 'An organized effort to save people from danger.',
     examples: [
       'The rescue operation continued through the night.',
@@ -2920,7 +2920,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
     id: 'natural-disasters-21',
     topicId: 'topic-1',
     term: 'Damage',
-    translation: 'daños',
+    translation: 'Daños',
     definition: 'Physical harm caused to buildings, roads, property, or the environment.',
     examples: [
       'Inspectors are assessing the damage to homes and bridges.',
@@ -2933,7 +2933,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
     id: 'natural-disasters-22',
     topicId: 'topic-1',
     term: 'Disaster area',
-    translation: 'zona de desastre',
+    translation: 'Zona de desastre',
     definition: 'A place that has been seriously affected by a natural disaster.',
     examples: [
       'Aid trucks entered the disaster area at sunrise.',
@@ -2946,7 +2946,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
     id: 'natural-disasters-23',
     topicId: 'topic-1',
     term: 'Warning',
-    translation: 'advertencia',
+    translation: 'Advertencia',
     definition: 'An official notice that a dangerous event may happen.',
     examples: [
       'The weather service issued a tornado warning this afternoon.',
@@ -2959,7 +2959,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
     id: 'natural-disasters-24',
     topicId: 'topic-1',
     term: 'Debris',
-    translation: 'escombros',
+    translation: 'Escombros',
     definition: 'Scattered pieces of damaged or destroyed buildings, trees, or other objects.',
     examples: [
       'Crews cleared debris from the main road.',
@@ -2972,7 +2972,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
     id: 'natural-disasters-25',
     topicId: 'topic-1',
     term: 'Displaced',
-    translation: 'desplazado',
+    translation: 'Desplazado',
     definition: 'Forced to leave one’s home because of a disaster.',
     examples: [
       'Hundreds of families were displaced by the flood.',
@@ -2985,7 +2985,7 @@ export const NATURAL_DISASTERS: VocabularyItem[] = [
     id: 'natural-disasters-26',
     topicId: 'topic-1',
     term: 'Withstand an earthquake',
-    translation: 'soportar un terremoto',
+    translation: 'Soportar un terremoto',
     definition: 'To survive or remain standing during the shaking caused by an earthquake.',
     examples: [
       'Engineers designed the bridge to withstand earthquakes in the region.',
@@ -3001,7 +3001,7 @@ export const MENTAL_HEALTH_ITEMS: VocabularyItem[] = [
     id: '15-01',
     topicId: '15',
     term: 'Depression',
-    translation: 'depresión',
+    translation: 'Depresión',
     definition: 'A mental health condition involving persistent sadness and a loss of interest or pleasure.',
     examples: [
       'Depression can make everyday tasks feel exhausting.',
@@ -3014,7 +3014,7 @@ export const MENTAL_HEALTH_ITEMS: VocabularyItem[] = [
     id: '15-02',
     topicId: '15',
     term: 'Anxiety',
-    translation: 'ansiedad',
+    translation: 'Ansiedad',
     definition: 'A feeling of worry, nervousness, or fear that is often intense or hard to control.',
     examples: [
       'Anxiety can make it hard to relax before a big presentation.',
@@ -3027,7 +3027,7 @@ export const MENTAL_HEALTH_ITEMS: VocabularyItem[] = [
     id: '15-03',
     topicId: '15',
     term: 'Stressed',
-    translation: 'estresado/a',
+    translation: 'Estresado/a',
     definition: 'Feeling pressured or tense because of difficult demands or situations.',
     examples: [
       'She felt stressed before the exam and could not focus.',
@@ -3040,7 +3040,7 @@ export const MENTAL_HEALTH_ITEMS: VocabularyItem[] = [
     id: '15-04',
     topicId: '15',
     term: 'Pressure',
-    translation: 'presión',
+    translation: 'Presión',
     definition: 'Mental strain caused by expectations, demands, or responsibilities.',
     examples: [
       'The pressure of work often builds up during busy weeks.',
@@ -3053,7 +3053,7 @@ export const MENTAL_HEALTH_ITEMS: VocabularyItem[] = [
     id: '15-05',
     topicId: '15',
     term: 'Overwhelmed',
-    translation: 'abrumado/a',
+    translation: 'Abrumado/a',
     definition: 'Feeling unable to cope because there is too much to do or think about.',
     examples: [
       'She was overwhelmed by the number of messages she had to answer.',
@@ -3066,7 +3066,7 @@ export const MENTAL_HEALTH_ITEMS: VocabularyItem[] = [
     id: '15-06',
     topicId: '15',
     term: 'Mood swings',
-    translation: 'cambios de humor',
+    translation: 'Cambios de humor',
     definition: 'Quick changes in emotional state, often moving between different moods in a short time.',
     examples: [
       'Her mood swings made it hard for her friends to know how to support her.',
@@ -3079,7 +3079,7 @@ export const MENTAL_HEALTH_ITEMS: VocabularyItem[] = [
     id: '15-07',
     topicId: '15',
     term: 'Guilt',
-    translation: 'culpa',
+    translation: 'Culpa',
     definition: 'A feeling of responsibility or remorse for something you believe you did wrong.',
     examples: [
       'He felt guilt after missing his sister’s birthday.',
@@ -3092,7 +3092,7 @@ export const MENTAL_HEALTH_ITEMS: VocabularyItem[] = [
     id: '15-08',
     topicId: '15',
     term: 'Defensive',
-    translation: 'a la defensiva',
+    translation: 'A la defensiva',
     definition: 'Behaving in a way that protects yourself from criticism, blame, or emotional discomfort.',
     examples: [
       'He became defensive when the team questioned his plan.',
@@ -3105,7 +3105,7 @@ export const MENTAL_HEALTH_ITEMS: VocabularyItem[] = [
     id: '15-09',
     topicId: '15',
     term: 'Indifferent',
-    translation: 'indiferente',
+    translation: 'Indiferente',
     definition: 'Showing little interest, concern, or emotion about something.',
     examples: [
       'He seemed indifferent to the conversation and barely responded.',
@@ -3118,7 +3118,7 @@ export const MENTAL_HEALTH_ITEMS: VocabularyItem[] = [
     id: '15-10',
     topicId: '15',
     term: 'Aggressiveness',
-    translation: 'agresividad',
+    translation: 'Agresividad',
     definition: 'Hostile, forceful, or angry behavior directed toward others.',
     examples: [
       'Aggressiveness can appear when someone feels trapped or extremely stressed.',
@@ -3131,7 +3131,7 @@ export const MENTAL_HEALTH_ITEMS: VocabularyItem[] = [
     id: '15-11',
     topicId: '15',
     term: 'Burnout',
-    translation: 'agotamiento emocional',
+    translation: 'Agotamiento emocional',
     definition: 'A state of physical and emotional exhaustion caused by prolonged stress.',
     examples: [
       'She was experiencing burnout after months of nonstop deadlines.',
@@ -3144,7 +3144,7 @@ export const MENTAL_HEALTH_ITEMS: VocabularyItem[] = [
     id: '15-12',
     topicId: '15',
     term: 'Self-care',
-    translation: 'cuidado personal',
+    translation: 'Cuidado personal',
     definition: 'Actions taken to protect and improve physical, emotional, and mental well-being.',
     examples: [
       'Self-care includes sleep, healthy food, and time to relax.',
@@ -3152,5 +3152,190 @@ export const MENTAL_HEALTH_ITEMS: VocabularyItem[] = [
       'Self-care is not selfish when you are trying to recover from stress.',
     ],
     notes: 'A widely used phrase for daily habits that support emotional health.',
+  },
+]
+
+export const PERSONALITY_AND_RELATIONSHIPS: VocabularyItem[] = [
+  {
+    id: 'personality-001',
+    topicId: 'topic-10',
+    term: 'Thorny',
+    translation: 'Espinoso; complicado',
+    definition: 'Difficult or unpleasant to deal with, especially because it involves sensitive issues.',
+    examples: [
+      'They discussed the thorny issue during the meeting.',
+      'Resolving the conflict has become a thorny problem.',
+      'She will address the thorny question tomorrow.',
+    ],
+    notes: 'Often used for complicated problems or delicate subjects.',
+  },
+  {
+    id: 'personality-002',
+    topicId: 'topic-10',
+    term: 'Touchy',
+    translation: 'Susceptible; delicado',
+    definition: 'Easily offended or upset, or likely to cause disagreement.',
+    examples: [
+      'He gets touchy when people criticize his work.',
+      'Money can be a touchy subject in families.',
+      'He was feeling touchy after a stressful day.',
+    ],
+    notes: 'Can describe a person or a sensitive subject.',
+  },
+  {
+    id: 'personality-003',
+    topicId: 'topic-10',
+    term: 'Harmless',
+    translation: 'Inofensivo',
+    definition: 'Not likely to cause damage, injury, or offense.',
+    examples: [
+      'It was a harmless joke between friends.',
+      'The dog looked large, but it was completely harmless.',
+      'Her comment seemed harmless at first.',
+    ],
+    notes: 'The opposite is harmful.',
+  },
+  {
+    id: 'personality-004',
+    topicId: 'topic-10',
+    term: 'Talkative',
+    translation: 'Hablador; conversador',
+    definition: 'Tending to talk a lot.',
+    examples: [
+      'My cousin is very talkative at family dinners.',
+      'He became more talkative after he felt comfortable.',
+      'The new employee will be talkative during the presentation.',
+    ],
+    notes: 'Usually neutral; can be positive or negative depending on context.',
+  },
+  {
+    id: 'personality-005',
+    topicId: 'topic-10',
+    term: 'Chatty',
+    translation: 'Charlatán; Muy conversador',
+    definition: 'Friendly and talkative in an informal way.',
+    examples: [
+      'We had a chatty conversation on the train.',
+      'He has been chatty since he arrived at the party.',
+      'The receptionist was chatty and welcoming.',
+    ],
+    notes: 'More informal than “talkative.”',
+  },
+  {
+    id: 'personality-006',
+    topicId: 'topic-10',
+    term: 'Taxing',
+    translation: 'Agotador; Exigente',
+    definition: 'Requiring a lot of effort, energy, or concentration.',
+    examples: [
+      'Looking after the children can be taxing.',
+      'The project has been mentally taxing this week.',
+      'Moving to another country will be emotionally taxing.',
+    ],
+    notes: 'Often used for mentally or emotionally demanding situations.',
+  },
+  {
+    id: 'personality-007',
+    topicId: 'topic-10',
+    term: 'Small talk',
+    translation: 'Conversación trivial',
+    definition: 'Polite conversation about unimportant topics, usually with people you do not know well.',
+    examples: [
+      'We made small talk while waiting for the interview.',
+      'He had been making small talk with her colleagues.',
+      'I will try to make small talk at the networking event.',
+    ],
+    notes: 'A “water-cooler conversation” is informal workplace small talk.',
+  },
+  {
+    id: 'personality-008',
+    topicId: 'topic-10',
+    term: 'Chilly willy',
+    translation: 'Frío y distante',
+    definition: 'Cold, unfriendly, or emotionally distant in mood or behavior.',
+    examples: [
+      'He was chilly willy after their argument.',
+      'His chilly willy attitude made everyone uncomfortable.',
+      'They may seem chilly willy until they get to know you.',
+    ],
+    notes: 'Informal expression; use mainly in casual conversation.',
+  },
+  {
+    id: 'personality-009',
+    topicId: 'topic-10',
+    term: 'Toxic relationship',
+    translation: 'Relación tóxica',
+    definition: 'A relationship that is emotionally harmful, unhealthy, or controlling.',
+    examples: [
+      'He left a toxic relationship last year.',
+      'They had been trapped in a toxic relationship for months.',
+      'He is learning how to recognize a toxic relationship.',
+    ],
+    notes: 'Can describe romantic, family, friendship, or work relationships.',
+  },
+  {
+    id: 'personality-010',
+    topicId: 'topic-10',
+    term: 'Sensitive',
+    translation: 'Sensible; sensible a',
+    definition: 'Easily affected emotionally, or requiring careful handling because it may cause offense.',
+    examples: [
+      'He is sensitive to other people’s feelings.',
+      'The team discussed a sensitive issue carefully.',
+      'He has become more sensitive after the experience.',
+    ],
+    notes: '“Sensitive” may describe a person, topic, or situation.',
+  },
+  {
+    id: 'personality-011',
+    topicId: 'topic-10',
+    term: 'Sensible',
+    translation: 'Sensato; razonable',
+    definition: 'Showing good judgment and practical understanding.',
+    examples: [
+      'It was sensible to save some money each month.',
+      'He made a sensible decision yesterday.',
+      'They will choose the most sensible option.',
+    ],
+    notes: 'Do not confuse with Spanish “sensible,” which usually means “sensitive.”',
+  },
+  {
+    id: 'personality-012',
+    topicId: 'topic-10',
+    term: 'Empathetic',
+    translation: 'Empático',
+    definition: 'Able to understand and share the feelings of another person.',
+    examples: [
+      'The counselor was empathetic and patient.',
+      'He has become more empathetic with age.',
+      'An empathetic friend will listen without judging.',
+    ],
+    notes: 'Related noun: empathy.',
+  },
+  {
+    id: 'personality-013',
+    topicId: 'topic-10',
+    term: 'Assertive',
+    translation: 'Asertivo',
+    definition: 'Confidently expressing your opinions and needs while respecting others.',
+    examples: [
+      'She was assertive during the negotiation.',
+      'He is learning to be more assertive at work.',
+      'You should be assertive without being aggressive.',
+    ],
+    notes: 'Assertive is positive; it is not the same as aggressive.',
+  },
+  {
+    id: 'personality-014',
+    topicId: 'topic-10',
+    term: 'Considerate',
+    translation: 'Considerado; atento',
+    definition: 'Careful not to cause inconvenience or hurt to other people.',
+    examples: [
+      'It was considerate of you to call first.',
+      'They have always been considerate neighbors.',
+      'Please be considerate when using shared spaces.',
+    ],
+    notes: 'Often followed by “of someone to do something.”',
   },
 ]

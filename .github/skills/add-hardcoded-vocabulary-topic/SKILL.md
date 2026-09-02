@@ -39,7 +39,11 @@ Add exactly one new topic and its vocabulary items by editing only:
    - Generate complete, natural-sounding example sentences that accurately reflect the definition.
    - Use a variety of verb tenses by default, unless the definition naturally requires a specific tense.
 7. Assign a topic-appropriate emoji; avoid duplicates unless necessary.
-8. Translation should be in Spanish, and the definition in English.
+8. Ensure `term`,
+   `translation`,
+   `definition`,
+   `examples` fields are capitalized
+9. Translation should be in Spanish, and the definition in English.
 
 ## Naming rule for vocabulary array const
 
