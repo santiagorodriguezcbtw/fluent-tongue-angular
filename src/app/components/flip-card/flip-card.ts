@@ -13,6 +13,9 @@ export class FlipCard implements OnDestroy {
   readonly definitionCapitalized = signal(this.flipCardService.currentTerm()?.definition ?? '')
   phase = signal<'idle' | 'card-entrance-desktop' | 'card-exit-desktop'>('idle')
   isFlipped = computed(() => this.flipCardService.isFlipped())
+  private readonly swipeThreshold = 50
+  private touchStartX: number | null = null
+  private shouldSuppressClick = false
 
   constructor() {
     let isFirstRun = true
@@ -39,6 +42,40 @@ export class FlipCard implements OnDestroy {
     } else if (this.phase() === 'card-entrance-desktop') {
       this.phase.set('idle')
     }
+  }
+
+  onCardClick(): void {
+    if (this.shouldSuppressClick) {
+      this.shouldSuppressClick = false
+      return
+    }
+
+    this.toggleFlip()
+  }
+
+  onTouchStart(event: TouchEvent): void {
+    this.touchStartX = event.touches[0]?.clientX ?? null
+  }
+
+  onTouchEnd(event: TouchEvent): void {
+    const touchEndX = event.changedTouches[0]?.clientX
+    if (this.touchStartX === null || touchEndX === undefined) {
+      return
+    }
+
+    const distanceX = touchEndX - this.touchStartX
+    this.touchStartX = null
+
+    if (Math.abs(distanceX) < this.swipeThreshold) {
+      return
+    }
+
+    this.shouldSuppressClick = true
+    this.flipCardService.navigate(distanceX < 0 ? 'next' : 'prev')
+  }
+
+  onTouchCancel(): void {
+    this.touchStartX = null
   }
 
   onCardKeydown(event: KeyboardEvent): void {
