@@ -1987,6 +1987,19 @@ export const TYPES_OF_HOUSES_AND_RENTING: VocabularyItem[] = [
   {
     id: 'vhr-001',
     topicId: 'topic-011',
+    term: 'Real estate',
+    translation: 'Bienes raíces / Inmobiliaria',
+    definition: 'Property consisting of land or buildings.',
+    examples: [
+      'He invested in real estate to diversify his portfolio.',
+      'They are looking for real estate opportunities in the city.',
+      'She has been studying the real estate market for years.',
+    ],
+    notes: 'Exercise: Compare investing in real estate with investing in stocks.',
+  },
+  {
+    id: 'vhr-002',
+    topicId: 'topic-011',
     term: 'Detached house',
     translation: 'Casa independiente',
     definition: 'A house that is not joined to any other house.',
@@ -1996,19 +2009,6 @@ export const TYPES_OF_HOUSES_AND_RENTING: VocabularyItem[] = [
       'If prices drop, she will move from her flat to a detached house.',
     ],
     notes: 'Exercise: Compare a detached house with a flat in two sentences.',
-  },
-  {
-    id: 'vhr-002',
-    topicId: 'topic-011',
-    term: 'Real Estate',
-    translation: 'Bienes raíces / Inmobiliaria',
-    definition: 'Property consisting of land or buildings.',
-    examples: [
-      'He invested in real estate to diversify his portfolio.',
-      'They are looking for real estate opportunities in the city.',
-      'She has been studying the real estate market for years.',
-    ],
-    notes: 'Exercise: Compare investing in real estate with investing in stocks.',
   },
   {
     id: 'vhr-002',
