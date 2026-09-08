@@ -17,6 +17,7 @@ import {
   DESCRIBING_PLACES,
   NATURAL_DISASTERS,
   MENTAL_HEALTH_ITEMS,
+  BRAND_PROTECTION,
 } from './vocabulary-items'
 import { PERSONALITY_AND_RELATIONSHIPS } from './vocabulary-items'
 
@@ -200,6 +201,16 @@ export const INITIAL_TOPICS: Topic[] = [
     level: 'intermediate',
     tags: ['personality', 'relationships', 'emotions', 'communication'],
     items: PERSONALITY_AND_RELATIONSHIPS,
+  },
+  {
+    id: '19',
+    name: 'Brand protection',
+    emoji: '🛡️',
+    description: 'Vocabulary for brands, trademarks, patents, copyright, and intellectual property.',
+    slug: 'brand-protection',
+    level: 'B1',
+    tags: ['business', 'law', 'intellectual-property'],
+    items: BRAND_PROTECTION,
   },
 ]
 
